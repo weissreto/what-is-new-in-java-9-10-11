@@ -16,21 +16,21 @@ import java.awt.Image;
 public final class WhatIsNewInBaseMultiResolutionImage
 {
   /**
-   * Example call to new constructor {@link BaseMultiResolutionImage#BaseMultiResolutionImage(java.awt.Image[])}.
+   * Example call to new constructor {@link BaseMultiResolutionImage#BaseMultiResolutionImage(Image...)}.
    * @since 9
-   * @see BaseMultiResolutionImage#BaseMultiResolutionImage(java.awt.Image[])
+   * @see BaseMultiResolutionImage#BaseMultiResolutionImage(Image...)
    */
-  public WhatIsNewInBaseMultiResolutionImage(Image[] resolutionVariants)
+  public WhatIsNewInBaseMultiResolutionImage(Image... resolutionVariants)
   {
     BaseMultiResolutionImage testee = new BaseMultiResolutionImage(resolutionVariants);
   }
 
   /**
-   * Example call to new constructor {@link BaseMultiResolutionImage#BaseMultiResolutionImage(int, java.awt.Image[])}.
+   * Example call to new constructor {@link BaseMultiResolutionImage#BaseMultiResolutionImage(int, Image...)}.
    * @since 9
-   * @see BaseMultiResolutionImage#BaseMultiResolutionImage(int, java.awt.Image[])
+   * @see BaseMultiResolutionImage#BaseMultiResolutionImage(int, Image...)
    */
-  public WhatIsNewInBaseMultiResolutionImage(int baseImageIndex, Image[] resolutionVariants)
+  public WhatIsNewInBaseMultiResolutionImage(int baseImageIndex, Image... resolutionVariants)
   {
     BaseMultiResolutionImage testee = new BaseMultiResolutionImage(baseImageIndex, resolutionVariants);
   }

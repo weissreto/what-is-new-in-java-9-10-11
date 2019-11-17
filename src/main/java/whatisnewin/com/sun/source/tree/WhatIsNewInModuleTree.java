@@ -1,9 +1,9 @@
 package whatisnewin.com.sun.source.tree;
 
 import com.sun.source.tree.ModuleTree;
-import com.sun.source.tree.ModuleTree.ModuleKind;
 import java.util.List;
 import com.sun.source.tree.AnnotationTree;
+import com.sun.source.tree.ModuleTree.ModuleKind;
 import com.sun.source.tree.ExpressionTree;
 import com.sun.source.tree.DirectiveTree;
 
@@ -20,19 +20,6 @@ import com.sun.source.tree.DirectiveTree;
 public final class WhatIsNewInModuleTree
 {
   /**
-   * Example call to new method {@link ModuleTree#getModuleType()}.
-   * @since 9
-   * @see ModuleTree#getModuleType()
-   */
-  public ModuleKind getModuleType()
-  {
-    ModuleTree testee = $$$();
-
-    ModuleKind result = testee.getModuleType();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ModuleTree#getAnnotations()}.
    * @since 9
    * @see ModuleTree#getAnnotations()
@@ -42,6 +29,19 @@ public final class WhatIsNewInModuleTree
     ModuleTree testee = $$$();
 
     List<? extends AnnotationTree> result = testee.getAnnotations();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleTree#getModuleType()}.
+   * @since 9
+   * @see ModuleTree#getModuleType()
+   */
+  public ModuleKind getModuleType()
+  {
+    ModuleTree testee = $$$();
+
+    ModuleKind result = testee.getModuleType();
     return result;
   }
 

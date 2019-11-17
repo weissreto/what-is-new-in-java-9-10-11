@@ -16,19 +16,6 @@ import jdk.jfr.consumer.RecordedMethod;
 public final class WhatIsNewInRecordedFrame
 {
   /**
-   * Example call to new method {@link RecordedFrame#getLineNumber()}.
-   * @since 9
-   * @see RecordedFrame#getLineNumber()
-   */
-  public int getLineNumber()
-  {
-    RecordedFrame testee = $$$();
-
-    int result = testee.getLineNumber();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RecordedFrame#isJavaFrame()}.
    * @since 9
    * @see RecordedFrame#isJavaFrame()
@@ -55,15 +42,15 @@ public final class WhatIsNewInRecordedFrame
   }
 
   /**
-   * Example call to new method {@link RecordedFrame#getMethod()}.
+   * Example call to new method {@link RecordedFrame#getLineNumber()}.
    * @since 9
-   * @see RecordedFrame#getMethod()
+   * @see RecordedFrame#getLineNumber()
    */
-  public RecordedMethod getMethod()
+  public int getLineNumber()
   {
     RecordedFrame testee = $$$();
 
-    RecordedMethod result = testee.getMethod();
+    int result = testee.getLineNumber();
     return result;
   }
 
@@ -77,6 +64,19 @@ public final class WhatIsNewInRecordedFrame
     RecordedFrame testee = $$$();
 
     String result = testee.getType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RecordedFrame#getMethod()}.
+   * @since 9
+   * @see RecordedFrame#getMethod()
+   */
+  public RecordedMethod getMethod()
+  {
+    RecordedFrame testee = $$$();
+
+    RecordedMethod result = testee.getMethod();
     return result;
   }
 

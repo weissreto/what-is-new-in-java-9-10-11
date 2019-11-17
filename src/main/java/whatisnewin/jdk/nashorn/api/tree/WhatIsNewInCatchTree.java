@@ -30,19 +30,6 @@ public final class WhatIsNewInCatchTree
   }
 
   /**
-   * Example call to new method {@link CatchTree#getCondition()}.
-   * @since 9
-   * @see CatchTree#getCondition()
-   */
-  public ExpressionTree getCondition()
-  {
-    CatchTree testee = $$$();
-
-    ExpressionTree result = testee.getCondition();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link CatchTree#getBlock()}.
    * @since 9
    * @see CatchTree#getBlock()
@@ -52,6 +39,19 @@ public final class WhatIsNewInCatchTree
     CatchTree testee = $$$();
 
     BlockTree result = testee.getBlock();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link CatchTree#getCondition()}.
+   * @since 9
+   * @see CatchTree#getCondition()
+   */
+  public ExpressionTree getCondition()
+  {
+    CatchTree testee = $$$();
+
+    ExpressionTree result = testee.getCondition();
     return result;
   }
 

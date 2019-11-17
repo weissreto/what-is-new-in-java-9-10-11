@@ -18,19 +18,6 @@ import jdk.jfr.AnnotationElement;
 public final class WhatIsNewInSettingDescriptor
 {
   /**
-   * Example call to new method {@link SettingDescriptor#getAnnotation(Class)}.
-   * @since 9
-   * @see SettingDescriptor#getAnnotation(Class)
-   */
-  public <A extends Annotation> A getAnnotation(Class<A> annotationType)
-  {
-    SettingDescriptor testee = $$$();
-
-    A result = testee.getAnnotation(annotationType);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link SettingDescriptor#getName()}.
    * @since 9
    * @see SettingDescriptor#getName()
@@ -57,6 +44,71 @@ public final class WhatIsNewInSettingDescriptor
   }
 
   /**
+   * Example call to new method {@link SettingDescriptor#getDescription()}.
+   * @since 9
+   * @see SettingDescriptor#getDescription()
+   */
+  public String getDescription()
+  {
+    SettingDescriptor testee = $$$();
+
+    String result = testee.getDescription();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SettingDescriptor#getContentType()}.
+   * @since 9
+   * @see SettingDescriptor#getContentType()
+   */
+  public String getContentType()
+  {
+    SettingDescriptor testee = $$$();
+
+    String result = testee.getContentType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SettingDescriptor#getTypeName()}.
+   * @since 9
+   * @see SettingDescriptor#getTypeName()
+   */
+  public String getTypeName()
+  {
+    SettingDescriptor testee = $$$();
+
+    String result = testee.getTypeName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SettingDescriptor#getTypeId()}.
+   * @since 9
+   * @see SettingDescriptor#getTypeId()
+   */
+  public long getTypeId()
+  {
+    SettingDescriptor testee = $$$();
+
+    long result = testee.getTypeId();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SettingDescriptor#getAnnotation(Class)}.
+   * @since 9
+   * @see SettingDescriptor#getAnnotation(Class)
+   */
+  public <A extends Annotation> A getAnnotation(Class<A> annotationType)
+  {
+    SettingDescriptor testee = $$$();
+
+    A result = testee.getAnnotation(annotationType);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link SettingDescriptor#getAnnotationElements()}.
    * @since 9
    * @see SettingDescriptor#getAnnotationElements()
@@ -79,58 +131,6 @@ public final class WhatIsNewInSettingDescriptor
     SettingDescriptor testee = $$$();
 
     String result = testee.getDefaultValue();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SettingDescriptor#getDescription()}.
-   * @since 9
-   * @see SettingDescriptor#getDescription()
-   */
-  public String getDescription()
-  {
-    SettingDescriptor testee = $$$();
-
-    String result = testee.getDescription();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SettingDescriptor#getTypeId()}.
-   * @since 9
-   * @see SettingDescriptor#getTypeId()
-   */
-  public long getTypeId()
-  {
-    SettingDescriptor testee = $$$();
-
-    long result = testee.getTypeId();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SettingDescriptor#getTypeName()}.
-   * @since 9
-   * @see SettingDescriptor#getTypeName()
-   */
-  public String getTypeName()
-  {
-    SettingDescriptor testee = $$$();
-
-    String result = testee.getTypeName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SettingDescriptor#getContentType()}.
-   * @since 9
-   * @see SettingDescriptor#getContentType()
-   */
-  public String getContentType()
-  {
-    SettingDescriptor testee = $$$();
-
-    String result = testee.getContentType();
     return result;
   }
 

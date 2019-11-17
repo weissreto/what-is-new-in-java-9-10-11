@@ -36,17 +36,6 @@ public final class WhatIsNewInLocale$IsoCountryCode
   public static final IsoCountryCode PART3 = IsoCountryCode.PART3;
 
   /**
-   * Example call to new method {@link IsoCountryCode#valueOf(String)}.
-   * @since 9
-   * @see IsoCountryCode#valueOf(String)
-   */
-  public static IsoCountryCode valueOf(String name)
-  {
-    IsoCountryCode result = IsoCountryCode.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link IsoCountryCode#values()}.
    * @since 9
    * @see IsoCountryCode#values()
@@ -54,6 +43,17 @@ public final class WhatIsNewInLocale$IsoCountryCode
   public static IsoCountryCode[] values()
   {
     IsoCountryCode[] result = IsoCountryCode.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link IsoCountryCode#valueOf(String)}.
+   * @since 9
+   * @see IsoCountryCode#valueOf(String)
+   */
+  public static IsoCountryCode valueOf(String name)
+  {
+    IsoCountryCode result = IsoCountryCode.valueOf(name);
     return result;
   }
 

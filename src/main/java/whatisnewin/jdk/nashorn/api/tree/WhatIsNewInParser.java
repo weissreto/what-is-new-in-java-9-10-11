@@ -102,11 +102,11 @@ public final class WhatIsNewInParser
   }
 
   /**
-   * Example call to new method {@link Parser#create(String[])}.
+   * Example call to new method {@link Parser#create(String...)}.
    * @since 9
-   * @see Parser#create(String[])
+   * @see Parser#create(String...)
    */
-  public static Parser create(String[] options) throws IllegalArgumentException
+  public static Parser create(String... options) throws IllegalArgumentException
   {
     Parser result = Parser.create(options);
     return result;

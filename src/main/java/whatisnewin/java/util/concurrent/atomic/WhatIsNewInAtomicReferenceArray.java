@@ -15,15 +15,15 @@ import java.util.concurrent.atomic.AtomicReferenceArray;
 public final class WhatIsNewInAtomicReferenceArray<E>
 {
   /**
-   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetVolatile(int, Object, Object)}.
+   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetPlain(int, Object, Object)}.
    * @since 9
-   * @see AtomicReferenceArray#weakCompareAndSetVolatile(int, Object, Object)
+   * @see AtomicReferenceArray#weakCompareAndSetPlain(int, Object, Object)
    */
-  public boolean weakCompareAndSetVolatile(int i, E expectedValue, E newValue)
+  public boolean weakCompareAndSetPlain(int i, E expectedValue, E newValue)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    boolean result = testee.weakCompareAndSetVolatile(i, expectedValue, newValue);
+    boolean result = testee.weakCompareAndSetPlain(i, expectedValue, newValue);
     return result;
   }
 
@@ -41,6 +41,18 @@ public final class WhatIsNewInAtomicReferenceArray<E>
   }
 
   /**
+   * Example call to new method {@link AtomicReferenceArray#setPlain(int, Object)}.
+   * @since 9
+   * @see AtomicReferenceArray#setPlain(int, Object)
+   */
+  public void setPlain(int i, E newValue)
+  {
+    AtomicReferenceArray<E> testee = $$$();
+
+    testee.setPlain(i, newValue);
+  }
+
+  /**
    * Example call to new method {@link AtomicReferenceArray#getOpaque(int)}.
    * @since 9
    * @see AtomicReferenceArray#getOpaque(int)
@@ -50,19 +62,6 @@ public final class WhatIsNewInAtomicReferenceArray<E>
     AtomicReferenceArray<E> testee = $$$();
 
     E result = testee.getOpaque(i);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicReferenceArray#compareAndExchangeRelease(int, Object, Object)}.
-   * @since 9
-   * @see AtomicReferenceArray#compareAndExchangeRelease(int, Object, Object)
-   */
-  public E compareAndExchangeRelease(int i, E expectedValue, E newValue)
-  {
-    AtomicReferenceArray<E> testee = $$$();
-
-    E result = testee.compareAndExchangeRelease(i, expectedValue, newValue);
     return result;
   }
 
@@ -79,15 +78,15 @@ public final class WhatIsNewInAtomicReferenceArray<E>
   }
 
   /**
-   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetAcquire(int, Object, Object)}.
+   * Example call to new method {@link AtomicReferenceArray#getAcquire(int)}.
    * @since 9
-   * @see AtomicReferenceArray#weakCompareAndSetAcquire(int, Object, Object)
+   * @see AtomicReferenceArray#getAcquire(int)
    */
-  public boolean weakCompareAndSetAcquire(int i, E expectedValue, E newValue)
+  public E getAcquire(int i)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    boolean result = testee.weakCompareAndSetAcquire(i, expectedValue, newValue);
+    E result = testee.getAcquire(i);
     return result;
   }
 
@@ -104,15 +103,15 @@ public final class WhatIsNewInAtomicReferenceArray<E>
   }
 
   /**
-   * Example call to new method {@link AtomicReferenceArray#getAcquire(int)}.
+   * Example call to new method {@link AtomicReferenceArray#compareAndExchange(int, Object, Object)}.
    * @since 9
-   * @see AtomicReferenceArray#getAcquire(int)
+   * @see AtomicReferenceArray#compareAndExchange(int, Object, Object)
    */
-  public E getAcquire(int i)
+  public E compareAndExchange(int i, E expectedValue, E newValue)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    E result = testee.getAcquire(i);
+    E result = testee.compareAndExchange(i, expectedValue, newValue);
     return result;
   }
 
@@ -130,41 +129,42 @@ public final class WhatIsNewInAtomicReferenceArray<E>
   }
 
   /**
-   * Example call to new method {@link AtomicReferenceArray#compareAndExchange(int, Object, Object)}.
+   * Example call to new method {@link AtomicReferenceArray#compareAndExchangeRelease(int, Object, Object)}.
    * @since 9
-   * @see AtomicReferenceArray#compareAndExchange(int, Object, Object)
+   * @see AtomicReferenceArray#compareAndExchangeRelease(int, Object, Object)
    */
-  public E compareAndExchange(int i, E expectedValue, E newValue)
+  public E compareAndExchangeRelease(int i, E expectedValue, E newValue)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    E result = testee.compareAndExchange(i, expectedValue, newValue);
+    E result = testee.compareAndExchangeRelease(i, expectedValue, newValue);
     return result;
   }
 
   /**
-   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetPlain(int, Object, Object)}.
+   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetVolatile(int, Object, Object)}.
    * @since 9
-   * @see AtomicReferenceArray#weakCompareAndSetPlain(int, Object, Object)
+   * @see AtomicReferenceArray#weakCompareAndSetVolatile(int, Object, Object)
    */
-  public boolean weakCompareAndSetPlain(int i, E expectedValue, E newValue)
+  public boolean weakCompareAndSetVolatile(int i, E expectedValue, E newValue)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    boolean result = testee.weakCompareAndSetPlain(i, expectedValue, newValue);
+    boolean result = testee.weakCompareAndSetVolatile(i, expectedValue, newValue);
     return result;
   }
 
   /**
-   * Example call to new method {@link AtomicReferenceArray#setPlain(int, Object)}.
+   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetAcquire(int, Object, Object)}.
    * @since 9
-   * @see AtomicReferenceArray#setPlain(int, Object)
+   * @see AtomicReferenceArray#weakCompareAndSetAcquire(int, Object, Object)
    */
-  public void setPlain(int i, E newValue)
+  public boolean weakCompareAndSetAcquire(int i, E expectedValue, E newValue)
   {
     AtomicReferenceArray<E> testee = $$$();
 
-    testee.setPlain(i, newValue);
+    boolean result = testee.weakCompareAndSetAcquire(i, expectedValue, newValue);
+    return result;
   }
 
   private AtomicReferenceArray $$$()

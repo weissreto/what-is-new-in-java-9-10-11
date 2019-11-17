@@ -28,19 +28,6 @@ public final class WhatIsNewInDrbgParameters$NextBytes
   }
 
   /**
-   * Example call to new method {@link NextBytes#getAdditionalInput()}.
-   * @since 9
-   * @see NextBytes#getAdditionalInput()
-   */
-  public byte[] getAdditionalInput()
-  {
-    NextBytes testee = $$$();
-
-    byte[] result = testee.getAdditionalInput();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link NextBytes#getPredictionResistance()}.
    * @since 9
    * @see NextBytes#getPredictionResistance()
@@ -50,6 +37,19 @@ public final class WhatIsNewInDrbgParameters$NextBytes
     NextBytes testee = $$$();
 
     boolean result = testee.getPredictionResistance();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link NextBytes#getAdditionalInput()}.
+   * @since 9
+   * @see NextBytes#getAdditionalInput()
+   */
+  public byte[] getAdditionalInput()
+  {
+    NextBytes testee = $$$();
+
+    byte[] result = testee.getAdditionalInput();
     return result;
   }
 

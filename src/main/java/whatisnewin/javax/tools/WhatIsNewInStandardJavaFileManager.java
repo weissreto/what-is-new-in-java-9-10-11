@@ -1,11 +1,11 @@
 package whatisnewin.javax.tools;
 
 import javax.tools.StandardJavaFileManager;
+import javax.tools.JavaFileObject;
+import java.nio.file.Path;
 import javax.tools.JavaFileManager.Location;
 import java.util.Collection;
-import java.nio.file.Path;
 import java.io.IOException;
-import javax.tools.JavaFileObject;
 import javax.tools.FileObject;
 
 /**
@@ -21,18 +21,6 @@ import javax.tools.FileObject;
 public final class WhatIsNewInStandardJavaFileManager
 {
   /**
-   * Example call to new method {@link StandardJavaFileManager#setLocationFromPaths(Location, Collection)}.
-   * @since 9
-   * @see StandardJavaFileManager#setLocationFromPaths(Location, Collection)
-   */
-  public void setLocationFromPaths(Location location, Collection<? extends Path> paths) throws IOException
-  {
-    StandardJavaFileManager testee = $$$();
-
-    testee.setLocationFromPaths(location, paths);
-  }
-
-  /**
    * Example call to new method {@link StandardJavaFileManager#getJavaFileObjectsFromPaths(Iterable)}.
    * @since 9
    * @see StandardJavaFileManager#getJavaFileObjectsFromPaths(Iterable)
@@ -46,16 +34,28 @@ public final class WhatIsNewInStandardJavaFileManager
   }
 
   /**
-   * Example call to new method {@link StandardJavaFileManager#getJavaFileObjects(java.nio.file.Path[])}.
+   * Example call to new method {@link StandardJavaFileManager#getJavaFileObjects(Path...)}.
    * @since 9
-   * @see StandardJavaFileManager#getJavaFileObjects(java.nio.file.Path[])
+   * @see StandardJavaFileManager#getJavaFileObjects(Path...)
    */
-  public Iterable<? extends JavaFileObject> getJavaFileObjects(Path[] paths)
+  public Iterable<? extends JavaFileObject> getJavaFileObjects(Path... paths)
   {
     StandardJavaFileManager testee = $$$();
 
     Iterable<? extends JavaFileObject> result = testee.getJavaFileObjects(paths);
     return result;
+  }
+
+  /**
+   * Example call to new method {@link StandardJavaFileManager#setLocationFromPaths(Location, Collection)}.
+   * @since 9
+   * @see StandardJavaFileManager#setLocationFromPaths(Location, Collection)
+   */
+  public void setLocationFromPaths(Location location, Collection<? extends Path> paths) throws IOException
+  {
+    StandardJavaFileManager testee = $$$();
+
+    testee.setLocationFromPaths(location, paths);
   }
 
   /**

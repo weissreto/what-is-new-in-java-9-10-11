@@ -1,11 +1,11 @@
 package whatisnewin.java.lang.module;
 
 import java.lang.module.Configuration;
-import java.util.Set;
-import java.lang.module.ResolvedModule;
-import java.util.List;
 import java.lang.module.ModuleFinder;
 import java.util.Collection;
+import java.util.List;
+import java.util.Set;
+import java.lang.module.ResolvedModule;
 import java.util.Optional;
 
 /**
@@ -21,15 +21,50 @@ import java.util.Optional;
 public final class WhatIsNewInConfiguration
 {
   /**
-   * Example call to new method {@link Configuration#modules()}.
+   * Example call to new method {@link Configuration#resolve(ModuleFinder, ModuleFinder, Collection)}.
    * @since 9
-   * @see Configuration#modules()
+   * @see Configuration#resolve(ModuleFinder, ModuleFinder, Collection)
    */
-  public Set<ResolvedModule> modules()
+  public Configuration resolve(ModuleFinder before, ModuleFinder after, Collection<String> roots)
   {
     Configuration testee = $$$();
 
-    Set<ResolvedModule> result = testee.modules();
+    Configuration result = testee.resolve(before, after, roots);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Configuration#resolveAndBind(ModuleFinder, ModuleFinder, Collection)}.
+   * @since 9
+   * @see Configuration#resolveAndBind(ModuleFinder, ModuleFinder, Collection)
+   */
+  public Configuration resolveAndBind(ModuleFinder before, ModuleFinder after, Collection<String> roots)
+  {
+    Configuration testee = $$$();
+
+    Configuration result = testee.resolveAndBind(before, after, roots);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Configuration#resolve(ModuleFinder, List, ModuleFinder, Collection)}.
+   * @since 9
+   * @see Configuration#resolve(ModuleFinder, List, ModuleFinder, Collection)
+   */
+  public static Configuration resolve(ModuleFinder before, List<Configuration> parents, ModuleFinder after, Collection<String> roots)
+  {
+    Configuration result = Configuration.resolve(before, parents, after, roots);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Configuration#resolveAndBind(ModuleFinder, List, ModuleFinder, Collection)}.
+   * @since 9
+   * @see Configuration#resolveAndBind(ModuleFinder, List, ModuleFinder, Collection)
+   */
+  public static Configuration resolveAndBind(ModuleFinder before, List<Configuration> parents, ModuleFinder after, Collection<String> roots)
+  {
+    Configuration result = Configuration.resolveAndBind(before, parents, after, roots);
     return result;
   }
 
@@ -58,26 +93,15 @@ public final class WhatIsNewInConfiguration
   }
 
   /**
-   * Example call to new method {@link Configuration#resolveAndBind(ModuleFinder, ModuleFinder, Collection)}.
+   * Example call to new method {@link Configuration#modules()}.
    * @since 9
-   * @see Configuration#resolveAndBind(ModuleFinder, ModuleFinder, Collection)
+   * @see Configuration#modules()
    */
-  public Configuration resolveAndBind(ModuleFinder before, ModuleFinder after, Collection<String> roots)
+  public Set<ResolvedModule> modules()
   {
     Configuration testee = $$$();
 
-    Configuration result = testee.resolveAndBind(before, after, roots);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Configuration#resolveAndBind(ModuleFinder, List, ModuleFinder, Collection)}.
-   * @since 9
-   * @see Configuration#resolveAndBind(ModuleFinder, List, ModuleFinder, Collection)
-   */
-  public static Configuration resolveAndBind(ModuleFinder before, List<Configuration> parents, ModuleFinder after, Collection<String> roots)
-  {
-    Configuration result = Configuration.resolveAndBind(before, parents, after, roots);
+    Set<ResolvedModule> result = testee.modules();
     return result;
   }
 
@@ -91,30 +115,6 @@ public final class WhatIsNewInConfiguration
     Configuration testee = $$$();
 
     Optional<ResolvedModule> result = testee.findModule(name);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Configuration#resolve(ModuleFinder, ModuleFinder, Collection)}.
-   * @since 9
-   * @see Configuration#resolve(ModuleFinder, ModuleFinder, Collection)
-   */
-  public Configuration resolve(ModuleFinder before, ModuleFinder after, Collection<String> roots)
-  {
-    Configuration testee = $$$();
-
-    Configuration result = testee.resolve(before, after, roots);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Configuration#resolve(ModuleFinder, List, ModuleFinder, Collection)}.
-   * @since 9
-   * @see Configuration#resolve(ModuleFinder, List, ModuleFinder, Collection)
-   */
-  public static Configuration resolve(ModuleFinder before, List<Configuration> parents, ModuleFinder after, Collection<String> roots)
-  {
-    Configuration result = Configuration.resolve(before, parents, after, roots);
     return result;
   }
 

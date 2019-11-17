@@ -26,6 +26,19 @@ public final class WhatIsNewInEncryptionKey
   }
 
   /**
+   * Example call to new method {@link EncryptionKey#getKeyType()}.
+   * @since 9
+   * @see EncryptionKey#getKeyType()
+   */
+  public int getKeyType()
+  {
+    EncryptionKey testee = $$$();
+
+    int result = testee.getKeyType();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link EncryptionKey#getAlgorithm()}.
    * @since 9
    * @see EncryptionKey#getAlgorithm()
@@ -35,6 +48,19 @@ public final class WhatIsNewInEncryptionKey
     EncryptionKey testee = $$$();
 
     String result = testee.getAlgorithm();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link EncryptionKey#getFormat()}.
+   * @since 9
+   * @see EncryptionKey#getFormat()
+   */
+  public String getFormat()
+  {
+    EncryptionKey testee = $$$();
+
+    String result = testee.getFormat();
     return result;
   }
 
@@ -52,19 +78,6 @@ public final class WhatIsNewInEncryptionKey
   }
 
   /**
-   * Example call to new method {@link EncryptionKey#getKeyType()}.
-   * @since 9
-   * @see EncryptionKey#getKeyType()
-   */
-  public int getKeyType()
-  {
-    EncryptionKey testee = $$$();
-
-    int result = testee.getKeyType();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link EncryptionKey#destroy()}.
    * @since 9
    * @see EncryptionKey#destroy()
@@ -74,19 +87,6 @@ public final class WhatIsNewInEncryptionKey
     EncryptionKey testee = $$$();
 
     testee.destroy();
-  }
-
-  /**
-   * Example call to new method {@link EncryptionKey#getFormat()}.
-   * @since 9
-   * @see EncryptionKey#getFormat()
-   */
-  public String getFormat()
-  {
-    EncryptionKey testee = $$$();
-
-    String result = testee.getFormat();
-    return result;
   }
 
   private EncryptionKey $$$()

@@ -14,17 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInInteger
 {
   /**
-   * Example call to new method {@link Integer#parseUnsignedInt(CharSequence, int, int, int)}.
-   * @since 9
-   * @see Integer#parseUnsignedInt(CharSequence, int, int, int)
-   */
-  public static int parseUnsignedInt(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
-  {
-    int result = Integer.parseUnsignedInt(s, beginIndex, endIndex, radix);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Integer#parseInt(CharSequence, int, int, int)}.
    * @since 9
    * @see Integer#parseInt(CharSequence, int, int, int)
@@ -32,6 +21,17 @@ public final class WhatIsNewInInteger
   public static int parseInt(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
   {
     int result = Integer.parseInt(s, beginIndex, endIndex, radix);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Integer#parseUnsignedInt(CharSequence, int, int, int)}.
+   * @since 9
+   * @see Integer#parseUnsignedInt(CharSequence, int, int, int)
+   */
+  public static int parseUnsignedInt(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
+  {
+    int result = Integer.parseUnsignedInt(s, beginIndex, endIndex, radix);
     return result;
   }
 

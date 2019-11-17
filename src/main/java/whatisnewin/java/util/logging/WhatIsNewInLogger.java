@@ -17,11 +17,11 @@ import java.util.ResourceBundle;
 public final class WhatIsNewInLogger
 {
   /**
-   * Example call to new method {@link Logger#logrb(Level, ResourceBundle, String, Object[])}.
+   * Example call to new method {@link Logger#logrb(Level, ResourceBundle, String, Object...)}.
    * @since 9
-   * @see Logger#logrb(Level, ResourceBundle, String, Object[])
+   * @see Logger#logrb(Level, ResourceBundle, String, Object...)
    */
-  public void logrb(Level level, ResourceBundle bundle, String msg, Object[] params)
+  public void logrb(Level level, ResourceBundle bundle, String msg, Object... params)
   {
     Logger testee = $$$();
 

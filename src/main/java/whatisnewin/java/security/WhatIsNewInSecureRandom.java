@@ -19,31 +19,6 @@ import java.security.Provider;
 public final class WhatIsNewInSecureRandom
 {
   /**
-   * Example call to new method {@link SecureRandom#getParameters()}.
-   * @since 9
-   * @see SecureRandom#getParameters()
-   */
-  public SecureRandomParameters getParameters()
-  {
-    SecureRandom testee = $$$();
-
-    SecureRandomParameters result = testee.getParameters();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SecureRandom#reseed()}.
-   * @since 9
-   * @see SecureRandom#reseed()
-   */
-  public void reseed()
-  {
-    SecureRandom testee = $$$();
-
-    testee.reseed();
-  }
-
-  /**
    * Example call to new method {@link SecureRandom#getInstance(String, SecureRandomParameters)}.
    * @since 9
    * @see SecureRandom#getInstance(String, SecureRandomParameters)
@@ -77,6 +52,19 @@ public final class WhatIsNewInSecureRandom
   }
 
   /**
+   * Example call to new method {@link SecureRandom#getParameters()}.
+   * @since 9
+   * @see SecureRandom#getParameters()
+   */
+  public SecureRandomParameters getParameters()
+  {
+    SecureRandom testee = $$$();
+
+    SecureRandomParameters result = testee.getParameters();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link SecureRandom#nextBytes(byte[], SecureRandomParameters)}.
    * @since 9
    * @see SecureRandom#nextBytes(byte[], SecureRandomParameters)
@@ -86,6 +74,18 @@ public final class WhatIsNewInSecureRandom
     SecureRandom testee = $$$();
 
     testee.nextBytes(bytes, params);
+  }
+
+  /**
+   * Example call to new method {@link SecureRandom#reseed()}.
+   * @since 9
+   * @see SecureRandom#reseed()
+   */
+  public void reseed()
+  {
+    SecureRandom testee = $$$();
+
+    testee.reseed();
   }
 
   private SecureRandom $$$()

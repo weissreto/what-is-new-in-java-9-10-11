@@ -29,19 +29,6 @@ public final class WhatIsNewInModuleElement$RequiresDirective
   }
 
   /**
-   * Example call to new method {@link RequiresDirective#getDependency()}.
-   * @since 9
-   * @see RequiresDirective#getDependency()
-   */
-  public ModuleElement getDependency()
-  {
-    RequiresDirective testee = $$$();
-
-    ModuleElement result = testee.getDependency();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RequiresDirective#isTransitive()}.
    * @since 9
    * @see RequiresDirective#isTransitive()
@@ -51,6 +38,19 @@ public final class WhatIsNewInModuleElement$RequiresDirective
     RequiresDirective testee = $$$();
 
     boolean result = testee.isTransitive();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RequiresDirective#getDependency()}.
+   * @since 9
+   * @see RequiresDirective#getDependency()
+   */
+  public ModuleElement getDependency()
+  {
+    RequiresDirective testee = $$$();
+
+    ModuleElement result = testee.getDependency();
     return result;
   }
 

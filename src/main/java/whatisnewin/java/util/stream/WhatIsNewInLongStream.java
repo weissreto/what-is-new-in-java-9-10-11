@@ -17,17 +17,6 @@ import java.util.function.LongUnaryOperator;
 public final class WhatIsNewInLongStream
 {
   /**
-   * Example call to new method {@link LongStream#iterate(long, LongPredicate, LongUnaryOperator)}.
-   * @since 9
-   * @see LongStream#iterate(long, LongPredicate, LongUnaryOperator)
-   */
-  public static LongStream iterate(long seed, LongPredicate hasNext, LongUnaryOperator next)
-  {
-    LongStream result = LongStream.iterate(seed, hasNext, next);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link LongStream#takeWhile(LongPredicate)}.
    * @since 9
    * @see LongStream#takeWhile(LongPredicate)
@@ -50,6 +39,17 @@ public final class WhatIsNewInLongStream
     LongStream testee = $$$();
 
     LongStream result = testee.dropWhile(predicate);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link LongStream#iterate(long, LongPredicate, LongUnaryOperator)}.
+   * @since 9
+   * @see LongStream#iterate(long, LongPredicate, LongUnaryOperator)
+   */
+  public static LongStream iterate(long seed, LongPredicate hasNext, LongUnaryOperator next)
+  {
+    LongStream result = LongStream.iterate(seed, hasNext, next);
     return result;
   }
 

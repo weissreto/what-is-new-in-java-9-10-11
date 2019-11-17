@@ -40,6 +40,18 @@ public final class WhatIsNewInSSLParameters
   }
 
   /**
+   * Example call to new method {@link SSLParameters#setMaximumPacketSize(int)}.
+   * @since 9
+   * @see SSLParameters#setMaximumPacketSize(int)
+   */
+  public void setMaximumPacketSize(int maximumPacketSize)
+  {
+    SSLParameters testee = $$$();
+
+    testee.setMaximumPacketSize(maximumPacketSize);
+  }
+
+  /**
    * Example call to new method {@link SSLParameters#getMaximumPacketSize()}.
    * @since 9
    * @see SSLParameters#getMaximumPacketSize()
@@ -50,18 +62,6 @@ public final class WhatIsNewInSSLParameters
 
     int result = testee.getMaximumPacketSize();
     return result;
-  }
-
-  /**
-   * Example call to new method {@link SSLParameters#setMaximumPacketSize(int)}.
-   * @since 9
-   * @see SSLParameters#setMaximumPacketSize(int)
-   */
-  public void setMaximumPacketSize(int maximumPacketSize)
-  {
-    SSLParameters testee = $$$();
-
-    testee.setMaximumPacketSize(maximumPacketSize);
   }
 
   /**

@@ -16,19 +16,6 @@ import jdk.nashorn.api.tree.StatementTree;
 public final class WhatIsNewInLabeledStatementTree
 {
   /**
-   * Example call to new method {@link LabeledStatementTree#getStatement()}.
-   * @since 9
-   * @see LabeledStatementTree#getStatement()
-   */
-  public StatementTree getStatement()
-  {
-    LabeledStatementTree testee = $$$();
-
-    StatementTree result = testee.getStatement();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link LabeledStatementTree#getLabel()}.
    * @since 9
    * @see LabeledStatementTree#getLabel()
@@ -38,6 +25,19 @@ public final class WhatIsNewInLabeledStatementTree
     LabeledStatementTree testee = $$$();
 
     String result = testee.getLabel();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link LabeledStatementTree#getStatement()}.
+   * @since 9
+   * @see LabeledStatementTree#getStatement()
+   */
+  public StatementTree getStatement()
+  {
+    LabeledStatementTree testee = $$$();
+
+    StatementTree result = testee.getStatement();
     return result;
   }
 

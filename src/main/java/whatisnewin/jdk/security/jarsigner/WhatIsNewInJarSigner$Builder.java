@@ -6,8 +6,8 @@ import java.security.PrivateKey;
 import java.security.cert.CertPath;
 import java.security.NoSuchAlgorithmException;
 import java.security.Provider;
-import java.util.function.BiConsumer;
 import java.net.URI;
+import java.util.function.BiConsumer;
 import jdk.security.jarsigner.JarSigner;
 
 /**
@@ -69,19 +69,6 @@ public final class WhatIsNewInJarSigner$Builder
   }
 
   /**
-   * Example call to new method {@link Builder#signerName(String)}.
-   * @since 9
-   * @see Builder#signerName(String)
-   */
-  public Builder signerName(String name)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.signerName(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Builder#signatureAlgorithm(String)}.
    * @since 9
    * @see Builder#signatureAlgorithm(String)
@@ -108,19 +95,6 @@ public final class WhatIsNewInJarSigner$Builder
   }
 
   /**
-   * Example call to new method {@link Builder#eventHandler(BiConsumer)}.
-   * @since 9
-   * @see Builder#eventHandler(BiConsumer)
-   */
-  public Builder eventHandler(BiConsumer<String, String> handler)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.eventHandler(handler);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Builder#tsa(URI)}.
    * @since 9
    * @see Builder#tsa(URI)
@@ -134,13 +108,41 @@ public final class WhatIsNewInJarSigner$Builder
   }
 
   /**
-   * Example call to new method {@link Builder#getDefaultSignatureAlgorithm(PrivateKey)}.
+   * Example call to new method {@link Builder#signerName(String)}.
    * @since 9
-   * @see Builder#getDefaultSignatureAlgorithm(PrivateKey)
+   * @see Builder#signerName(String)
    */
-  public static String getDefaultSignatureAlgorithm(PrivateKey key)
+  public Builder signerName(String name)
   {
-    String result = Builder.getDefaultSignatureAlgorithm(key);
+    Builder testee = $$$();
+
+    Builder result = testee.signerName(name);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#eventHandler(BiConsumer)}.
+   * @since 9
+   * @see Builder#eventHandler(BiConsumer)
+   */
+  public Builder eventHandler(BiConsumer<String, String> handler)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.eventHandler(handler);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#setProperty(String, String)}.
+   * @since 9
+   * @see Builder#setProperty(String, String)
+   */
+  public Builder setProperty(String key, String value)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.setProperty(key, value);
     return result;
   }
 
@@ -156,15 +158,13 @@ public final class WhatIsNewInJarSigner$Builder
   }
 
   /**
-   * Example call to new method {@link Builder#setProperty(String, String)}.
+   * Example call to new method {@link Builder#getDefaultSignatureAlgorithm(PrivateKey)}.
    * @since 9
-   * @see Builder#setProperty(String, String)
+   * @see Builder#getDefaultSignatureAlgorithm(PrivateKey)
    */
-  public Builder setProperty(String key, String value)
+  public static String getDefaultSignatureAlgorithm(PrivateKey key)
   {
-    Builder testee = $$$();
-
-    Builder result = testee.setProperty(key, value);
+    String result = Builder.getDefaultSignatureAlgorithm(key);
     return result;
   }
 

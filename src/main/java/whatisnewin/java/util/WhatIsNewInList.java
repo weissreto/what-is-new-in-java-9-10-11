@@ -15,17 +15,6 @@ import java.util.List;
 public final class WhatIsNewInList<E>
 {
   /**
-   * Example call to new method {@link List#of(Object)}.
-   * @since 9
-   * @see List#of(Object)
-   */
-  public static <E> List<E> of(E e1)
-  {
-    List<E> result = List.of(e1);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link List#of()}.
    * @since 9
    * @see List#of()
@@ -33,6 +22,17 @@ public final class WhatIsNewInList<E>
   public static <E> List<E> of()
   {
     List<E> result = List.of();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link List#of(Object)}.
+   * @since 9
+   * @see List#of(Object)
+   */
+  public static <E> List<E> of(E e1)
+  {
+    List<E> result = List.of(e1);
     return result;
   }
 
@@ -103,17 +103,6 @@ public final class WhatIsNewInList<E>
   }
 
   /**
-   * Example call to new method {@link List#of(Object[])}.
-   * @since 9
-   * @see List#of(Object[])
-   */
-  public static <E> List<E> of(E[] elements)
-  {
-    List<E> result = List.of(elements);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link List#of(Object, Object, Object, Object, Object, Object, Object, Object)}.
    * @since 9
    * @see List#of(Object, Object, Object, Object, Object, Object, Object, Object)
@@ -143,6 +132,17 @@ public final class WhatIsNewInList<E>
   public static <E> List<E> of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10)
   {
     List<E> result = List.of(e1, e2, e3, e4, e5, e6, e7, e8, e9, e10);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link List#of(Object...)}.
+   * @since 9
+   * @see List#of(Object...)
+   */
+  public static <E> List<E> of(E... elements)
+  {
+    List<E> result = List.of(elements);
     return result;
   }
 

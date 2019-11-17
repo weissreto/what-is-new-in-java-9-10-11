@@ -64,6 +64,28 @@ public final class WhatIsNewInSystem$Logger$Level
   public static final Level OFF = Level.OFF;
 
   /**
+   * Example call to new method {@link Level#values()}.
+   * @since 9
+   * @see Level#values()
+   */
+  public static Level[] values()
+  {
+    Level[] result = Level.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Level#valueOf(String)}.
+   * @since 9
+   * @see Level#valueOf(String)
+   */
+  public static Level valueOf(String name)
+  {
+    Level result = Level.valueOf(name);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Level#getName()}.
    * @since 9
    * @see Level#getName()
@@ -86,28 +108,6 @@ public final class WhatIsNewInSystem$Logger$Level
     Level testee = $$$();
 
     int result = testee.getSeverity();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Level#values()}.
-   * @since 9
-   * @see Level#values()
-   */
-  public static Level[] values()
-  {
-    Level[] result = Level.values();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Level#valueOf(String)}.
-   * @since 9
-   * @see Level#valueOf(String)
-   */
-  public static Level valueOf(String name)
-  {
-    Level result = Level.valueOf(name);
     return result;
   }
 

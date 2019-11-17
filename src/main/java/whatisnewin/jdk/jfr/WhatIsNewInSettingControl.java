@@ -16,19 +16,6 @@ import java.util.Set;
 public final class WhatIsNewInSettingControl
 {
   /**
-   * Example call to new method {@link SettingControl#getValue()}.
-   * @since 9
-   * @see SettingControl#getValue()
-   */
-  public String getValue()
-  {
-    SettingControl testee = $$$();
-
-    String result = testee.getValue();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link SettingControl#combine(Set)}.
    * @since 9
    * @see SettingControl#combine(Set)
@@ -51,6 +38,19 @@ public final class WhatIsNewInSettingControl
     SettingControl testee = $$$();
 
     testee.setValue(settingValue);
+  }
+
+  /**
+   * Example call to new method {@link SettingControl#getValue()}.
+   * @since 9
+   * @see SettingControl#getValue()
+   */
+  public String getValue()
+  {
+    SettingControl testee = $$$();
+
+    String result = testee.getValue();
+    return result;
   }
 
   private SettingControl $$$()

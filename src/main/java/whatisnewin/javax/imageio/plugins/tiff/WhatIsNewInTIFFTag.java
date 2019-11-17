@@ -158,67 +158,13 @@ public final class WhatIsNewInTIFFTag
   }
 
   /**
-   * Example call to new method {@link TIFFTag#hasValueNames()}.
+   * Example call to new method {@link TIFFTag#getSizeOfType(int)}.
    * @since 9
-   * @see TIFFTag#hasValueNames()
+   * @see TIFFTag#getSizeOfType(int)
    */
-  public boolean hasValueNames()
+  public static int getSizeOfType(int dataType)
   {
-    TIFFTag testee = $$$();
-
-    boolean result = testee.hasValueNames();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFTag#isDataTypeOK(int)}.
-   * @since 9
-   * @see TIFFTag#isDataTypeOK(int)
-   */
-  public boolean isDataTypeOK(int dataType)
-  {
-    TIFFTag testee = $$$();
-
-    boolean result = testee.isDataTypeOK(dataType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFTag#isIFDPointer()}.
-   * @since 9
-   * @see TIFFTag#isIFDPointer()
-   */
-  public boolean isIFDPointer()
-  {
-    TIFFTag testee = $$$();
-
-    boolean result = testee.isIFDPointer();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFTag#getTagSet()}.
-   * @since 9
-   * @see TIFFTag#getTagSet()
-   */
-  public TIFFTagSet getTagSet()
-  {
-    TIFFTag testee = $$$();
-
-    TIFFTagSet result = testee.getTagSet();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFTag#getCount()}.
-   * @since 9
-   * @see TIFFTag#getCount()
-   */
-  public int getCount()
-  {
-    TIFFTag testee = $$$();
-
-    int result = testee.getCount();
+    int result = TIFFTag.getSizeOfType(dataType);
     return result;
   }
 
@@ -249,6 +195,84 @@ public final class WhatIsNewInTIFFTag
   }
 
   /**
+   * Example call to new method {@link TIFFTag#getDataTypes()}.
+   * @since 9
+   * @see TIFFTag#getDataTypes()
+   */
+  public int getDataTypes()
+  {
+    TIFFTag testee = $$$();
+
+    int result = testee.getDataTypes();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTag#getCount()}.
+   * @since 9
+   * @see TIFFTag#getCount()
+   */
+  public int getCount()
+  {
+    TIFFTag testee = $$$();
+
+    int result = testee.getCount();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTag#isDataTypeOK(int)}.
+   * @since 9
+   * @see TIFFTag#isDataTypeOK(int)
+   */
+  public boolean isDataTypeOK(int dataType)
+  {
+    TIFFTag testee = $$$();
+
+    boolean result = testee.isDataTypeOK(dataType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTag#getTagSet()}.
+   * @since 9
+   * @see TIFFTag#getTagSet()
+   */
+  public TIFFTagSet getTagSet()
+  {
+    TIFFTag testee = $$$();
+
+    TIFFTagSet result = testee.getTagSet();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTag#isIFDPointer()}.
+   * @since 9
+   * @see TIFFTag#isIFDPointer()
+   */
+  public boolean isIFDPointer()
+  {
+    TIFFTag testee = $$$();
+
+    boolean result = testee.isIFDPointer();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTag#hasValueNames()}.
+   * @since 9
+   * @see TIFFTag#hasValueNames()
+   */
+  public boolean hasValueNames()
+  {
+    TIFFTag testee = $$$();
+
+    boolean result = testee.hasValueNames();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link TIFFTag#getValueName(int)}.
    * @since 9
    * @see TIFFTag#getValueName(int)
@@ -262,17 +286,6 @@ public final class WhatIsNewInTIFFTag
   }
 
   /**
-   * Example call to new method {@link TIFFTag#getSizeOfType(int)}.
-   * @since 9
-   * @see TIFFTag#getSizeOfType(int)
-   */
-  public static int getSizeOfType(int dataType)
-  {
-    int result = TIFFTag.getSizeOfType(dataType);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link TIFFTag#getNamedValues()}.
    * @since 9
    * @see TIFFTag#getNamedValues()
@@ -282,19 +295,6 @@ public final class WhatIsNewInTIFFTag
     TIFFTag testee = $$$();
 
     int[] result = testee.getNamedValues();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFTag#getDataTypes()}.
-   * @since 9
-   * @see TIFFTag#getDataTypes()
-   */
-  public int getDataTypes()
-  {
-    TIFFTag testee = $$$();
-
-    int result = testee.getDataTypes();
     return result;
   }
 

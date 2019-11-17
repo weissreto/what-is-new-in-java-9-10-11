@@ -53,104 +53,27 @@ public final class WhatIsNewInSubmissionPublisher<T>
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#estimateMaximumLag()}.
+   * Example call to new method {@link SubmissionPublisher#subscribe(Subscriber)}.
    * @since 9
-   * @see SubmissionPublisher#estimateMaximumLag()
+   * @see SubmissionPublisher#subscribe(Subscriber)
    */
-  public int estimateMaximumLag()
+  public void subscribe(Subscriber<? super T> subscriber)
   {
     SubmissionPublisher<T> testee = $$$();
 
-    int result = testee.estimateMaximumLag();
-    return result;
+    testee.subscribe(subscriber);
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#close()}.
+   * Example call to new method {@link SubmissionPublisher#submit(Object)}.
    * @since 9
-   * @see SubmissionPublisher#close()
+   * @see SubmissionPublisher#submit(Object)
    */
-  public void close()
+  public int submit(T item)
   {
     SubmissionPublisher<T> testee = $$$();
 
-    testee.close();
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#closeExceptionally(Throwable)}.
-   * @since 9
-   * @see SubmissionPublisher#closeExceptionally(Throwable)
-   */
-  public void closeExceptionally(Throwable error)
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    testee.closeExceptionally(error);
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#getClosedException()}.
-   * @since 9
-   * @see SubmissionPublisher#getClosedException()
-   */
-  public Throwable getClosedException()
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    Throwable result = testee.getClosedException();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#isClosed()}.
-   * @since 9
-   * @see SubmissionPublisher#isClosed()
-   */
-  public boolean isClosed()
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    boolean result = testee.isClosed();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#estimateMinimumDemand()}.
-   * @since 9
-   * @see SubmissionPublisher#estimateMinimumDemand()
-   */
-  public long estimateMinimumDemand()
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    long result = testee.estimateMinimumDemand();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#hasSubscribers()}.
-   * @since 9
-   * @see SubmissionPublisher#hasSubscribers()
-   */
-  public boolean hasSubscribers()
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    boolean result = testee.hasSubscribers();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SubmissionPublisher#isSubscribed(Subscriber)}.
-   * @since 9
-   * @see SubmissionPublisher#isSubscribed(Subscriber)
-   */
-  public boolean isSubscribed(Subscriber<? super T> subscriber)
-  {
-    SubmissionPublisher<T> testee = $$$();
-
-    boolean result = testee.isSubscribed(subscriber);
+    int result = testee.submit(item);
     return result;
   }
 
@@ -181,15 +104,65 @@ public final class WhatIsNewInSubmissionPublisher<T>
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#getSubscribers()}.
+   * Example call to new method {@link SubmissionPublisher#close()}.
    * @since 9
-   * @see SubmissionPublisher#getSubscribers()
+   * @see SubmissionPublisher#close()
    */
-  public List<Subscriber<? super T>> getSubscribers()
+  public void close()
   {
     SubmissionPublisher<T> testee = $$$();
 
-    List<Subscriber<? super T>> result = testee.getSubscribers();
+    testee.close();
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#closeExceptionally(Throwable)}.
+   * @since 9
+   * @see SubmissionPublisher#closeExceptionally(Throwable)
+   */
+  public void closeExceptionally(Throwable error)
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    testee.closeExceptionally(error);
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#isClosed()}.
+   * @since 9
+   * @see SubmissionPublisher#isClosed()
+   */
+  public boolean isClosed()
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    boolean result = testee.isClosed();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#getClosedException()}.
+   * @since 9
+   * @see SubmissionPublisher#getClosedException()
+   */
+  public Throwable getClosedException()
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    Throwable result = testee.getClosedException();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#hasSubscribers()}.
+   * @since 9
+   * @see SubmissionPublisher#hasSubscribers()
+   */
+  public boolean hasSubscribers()
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    boolean result = testee.hasSubscribers();
     return result;
   }
 
@@ -207,15 +180,15 @@ public final class WhatIsNewInSubmissionPublisher<T>
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#consume(Consumer)}.
+   * Example call to new method {@link SubmissionPublisher#getExecutor()}.
    * @since 9
-   * @see SubmissionPublisher#consume(Consumer)
+   * @see SubmissionPublisher#getExecutor()
    */
-  public CompletableFuture<Void> consume(Consumer<? super T> consumer)
+  public Executor getExecutor()
   {
     SubmissionPublisher<T> testee = $$$();
 
-    CompletableFuture<Void> result = testee.consume(consumer);
+    Executor result = testee.getExecutor();
     return result;
   }
 
@@ -233,41 +206,68 @@ public final class WhatIsNewInSubmissionPublisher<T>
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#getExecutor()}.
+   * Example call to new method {@link SubmissionPublisher#getSubscribers()}.
    * @since 9
-   * @see SubmissionPublisher#getExecutor()
+   * @see SubmissionPublisher#getSubscribers()
    */
-  public Executor getExecutor()
+  public List<Subscriber<? super T>> getSubscribers()
   {
     SubmissionPublisher<T> testee = $$$();
 
-    Executor result = testee.getExecutor();
+    List<Subscriber<? super T>> result = testee.getSubscribers();
     return result;
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#submit(Object)}.
+   * Example call to new method {@link SubmissionPublisher#isSubscribed(Subscriber)}.
    * @since 9
-   * @see SubmissionPublisher#submit(Object)
+   * @see SubmissionPublisher#isSubscribed(Subscriber)
    */
-  public int submit(T item)
+  public boolean isSubscribed(Subscriber<? super T> subscriber)
   {
     SubmissionPublisher<T> testee = $$$();
 
-    int result = testee.submit(item);
+    boolean result = testee.isSubscribed(subscriber);
     return result;
   }
 
   /**
-   * Example call to new method {@link SubmissionPublisher#subscribe(Subscriber)}.
+   * Example call to new method {@link SubmissionPublisher#estimateMinimumDemand()}.
    * @since 9
-   * @see SubmissionPublisher#subscribe(Subscriber)
+   * @see SubmissionPublisher#estimateMinimumDemand()
    */
-  public void subscribe(Subscriber<? super T> subscriber)
+  public long estimateMinimumDemand()
   {
     SubmissionPublisher<T> testee = $$$();
 
-    testee.subscribe(subscriber);
+    long result = testee.estimateMinimumDemand();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#estimateMaximumLag()}.
+   * @since 9
+   * @see SubmissionPublisher#estimateMaximumLag()
+   */
+  public int estimateMaximumLag()
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    int result = testee.estimateMaximumLag();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SubmissionPublisher#consume(Consumer)}.
+   * @since 9
+   * @see SubmissionPublisher#consume(Consumer)
+   */
+  public CompletableFuture<Void> consume(Consumer<? super T> consumer)
+  {
+    SubmissionPublisher<T> testee = $$$();
+
+    CompletableFuture<Void> result = testee.consume(consumer);
+    return result;
   }
 
   private SubmissionPublisher $$$()

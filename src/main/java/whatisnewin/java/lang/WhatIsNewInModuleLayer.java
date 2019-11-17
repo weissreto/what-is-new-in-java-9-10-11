@@ -1,9 +1,9 @@
 package whatisnewin.java.lang;
 
 import java.lang.module.Configuration;
+import java.util.function.Function;
 import java.lang.ModuleLayer.Controller;
 import java.util.List;
-import java.util.function.Function;
 import java.util.Set;
 import java.util.Optional;
 
@@ -33,13 +33,15 @@ public final class WhatIsNewInModuleLayer
   }
 
   /**
-   * Example call to new method {@link ModuleLayer#defineModulesWithOneLoader(Configuration, List, ClassLoader)}.
+   * Example call to new method {@link ModuleLayer#defineModulesWithManyLoaders(Configuration, ClassLoader)}.
    * @since 9
-   * @see ModuleLayer#defineModulesWithOneLoader(Configuration, List, ClassLoader)
+   * @see ModuleLayer#defineModulesWithManyLoaders(Configuration, ClassLoader)
    */
-  public static Controller defineModulesWithOneLoader(Configuration cf, List<ModuleLayer> parentLayers, ClassLoader parentLoader)
+  public ModuleLayer defineModulesWithManyLoaders(Configuration cf, ClassLoader parentLoader)
   {
-    Controller result = ModuleLayer.defineModulesWithOneLoader(cf, parentLayers, parentLoader);
+    ModuleLayer testee = $$$();
+
+    ModuleLayer result = testee.defineModulesWithManyLoaders(cf, parentLoader);
     return result;
   }
 
@@ -57,50 +59,13 @@ public final class WhatIsNewInModuleLayer
   }
 
   /**
-   * Example call to new method {@link ModuleLayer#defineModules(Configuration, List, Function)}.
+   * Example call to new method {@link ModuleLayer#defineModulesWithOneLoader(Configuration, List, ClassLoader)}.
    * @since 9
-   * @see ModuleLayer#defineModules(Configuration, List, Function)
+   * @see ModuleLayer#defineModulesWithOneLoader(Configuration, List, ClassLoader)
    */
-  public static Controller defineModules(Configuration cf, List<ModuleLayer> parentLayers, Function<String, ClassLoader> clf)
+  public static Controller defineModulesWithOneLoader(Configuration cf, List<ModuleLayer> parentLayers, ClassLoader parentLoader)
   {
-    Controller result = ModuleLayer.defineModules(cf, parentLayers, clf);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ModuleLayer#empty()}.
-   * @since 9
-   * @see ModuleLayer#empty()
-   */
-  public static ModuleLayer empty()
-  {
-    ModuleLayer result = ModuleLayer.empty();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ModuleLayer#modules()}.
-   * @since 9
-   * @see ModuleLayer#modules()
-   */
-  public Set<Module> modules()
-  {
-    ModuleLayer testee = $$$();
-
-    Set<Module> result = testee.modules();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ModuleLayer#defineModulesWithManyLoaders(Configuration, ClassLoader)}.
-   * @since 9
-   * @see ModuleLayer#defineModulesWithManyLoaders(Configuration, ClassLoader)
-   */
-  public ModuleLayer defineModulesWithManyLoaders(Configuration cf, ClassLoader parentLoader)
-  {
-    ModuleLayer testee = $$$();
-
-    ModuleLayer result = testee.defineModulesWithManyLoaders(cf, parentLoader);
+    Controller result = ModuleLayer.defineModulesWithOneLoader(cf, parentLayers, parentLoader);
     return result;
   }
 
@@ -112,6 +77,17 @@ public final class WhatIsNewInModuleLayer
   public static Controller defineModulesWithManyLoaders(Configuration cf, List<ModuleLayer> parentLayers, ClassLoader parentLoader)
   {
     Controller result = ModuleLayer.defineModulesWithManyLoaders(cf, parentLayers, parentLoader);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleLayer#defineModules(Configuration, List, Function)}.
+   * @since 9
+   * @see ModuleLayer#defineModules(Configuration, List, Function)
+   */
+  public static Controller defineModules(Configuration cf, List<ModuleLayer> parentLayers, Function<String, ClassLoader> clf)
+  {
+    Controller result = ModuleLayer.defineModules(cf, parentLayers, clf);
     return result;
   }
 
@@ -129,17 +105,6 @@ public final class WhatIsNewInModuleLayer
   }
 
   /**
-   * Example call to new method {@link ModuleLayer#boot()}.
-   * @since 9
-   * @see ModuleLayer#boot()
-   */
-  public static ModuleLayer boot()
-  {
-    ModuleLayer result = ModuleLayer.boot();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ModuleLayer#parents()}.
    * @since 9
    * @see ModuleLayer#parents()
@@ -149,6 +114,19 @@ public final class WhatIsNewInModuleLayer
     ModuleLayer testee = $$$();
 
     List<ModuleLayer> result = testee.parents();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleLayer#modules()}.
+   * @since 9
+   * @see ModuleLayer#modules()
+   */
+  public Set<Module> modules()
+  {
+    ModuleLayer testee = $$$();
+
+    Set<Module> result = testee.modules();
     return result;
   }
 
@@ -175,6 +153,28 @@ public final class WhatIsNewInModuleLayer
     ModuleLayer testee = $$$();
 
     ClassLoader result = testee.findLoader(name);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleLayer#empty()}.
+   * @since 9
+   * @see ModuleLayer#empty()
+   */
+  public static ModuleLayer empty()
+  {
+    ModuleLayer result = ModuleLayer.empty();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleLayer#boot()}.
+   * @since 9
+   * @see ModuleLayer#boot()
+   */
+  public static ModuleLayer boot()
+  {
+    ModuleLayer result = ModuleLayer.boot();
     return result;
   }
 

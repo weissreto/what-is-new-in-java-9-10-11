@@ -51,18 +51,6 @@ public final class WhatIsNewInTIFFImageReadParam
   }
 
   /**
-   * Example call to new method {@link TIFFImageReadParam#setReadUnknownTags(boolean)}.
-   * @since 9
-   * @see TIFFImageReadParam#setReadUnknownTags(boolean)
-   */
-  public void setReadUnknownTags(boolean readUnknownTags)
-  {
-    TIFFImageReadParam testee = $$$();
-
-    testee.setReadUnknownTags(readUnknownTags);
-  }
-
-  /**
    * Example call to new method {@link TIFFImageReadParam#getAllowedTagSets()}.
    * @since 9
    * @see TIFFImageReadParam#getAllowedTagSets()
@@ -73,6 +61,18 @@ public final class WhatIsNewInTIFFImageReadParam
 
     List<TIFFTagSet> result = testee.getAllowedTagSets();
     return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFImageReadParam#setReadUnknownTags(boolean)}.
+   * @since 9
+   * @see TIFFImageReadParam#setReadUnknownTags(boolean)
+   */
+  public void setReadUnknownTags(boolean readUnknownTags)
+  {
+    TIFFImageReadParam testee = $$$();
+
+    testee.setReadUnknownTags(readUnknownTags);
   }
 
   /**

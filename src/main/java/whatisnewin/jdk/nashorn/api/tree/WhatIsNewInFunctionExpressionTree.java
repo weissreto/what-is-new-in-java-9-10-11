@@ -1,9 +1,9 @@
 package whatisnewin.jdk.nashorn.api.tree;
 
 import jdk.nashorn.api.tree.FunctionExpressionTree;
+import jdk.nashorn.api.tree.IdentifierTree;
 import java.util.List;
 import jdk.nashorn.api.tree.ExpressionTree;
-import jdk.nashorn.api.tree.IdentifierTree;
 import jdk.nashorn.api.tree.Tree;
 
 /**
@@ -19,15 +19,15 @@ import jdk.nashorn.api.tree.Tree;
 public final class WhatIsNewInFunctionExpressionTree
 {
   /**
-   * Example call to new method {@link FunctionExpressionTree#isStrict()}.
+   * Example call to new method {@link FunctionExpressionTree#getName()}.
    * @since 9
-   * @see FunctionExpressionTree#isStrict()
+   * @see FunctionExpressionTree#getName()
    */
-  public boolean isStrict()
+  public IdentifierTree getName()
   {
     FunctionExpressionTree testee = $$$();
 
-    boolean result = testee.isStrict();
+    IdentifierTree result = testee.getName();
     return result;
   }
 
@@ -45,15 +45,28 @@ public final class WhatIsNewInFunctionExpressionTree
   }
 
   /**
-   * Example call to new method {@link FunctionExpressionTree#getName()}.
+   * Example call to new method {@link FunctionExpressionTree#getBody()}.
    * @since 9
-   * @see FunctionExpressionTree#getName()
+   * @see FunctionExpressionTree#getBody()
    */
-  public IdentifierTree getName()
+  public Tree getBody()
   {
     FunctionExpressionTree testee = $$$();
 
-    IdentifierTree result = testee.getName();
+    Tree result = testee.getBody();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link FunctionExpressionTree#isStrict()}.
+   * @since 9
+   * @see FunctionExpressionTree#isStrict()
+   */
+  public boolean isStrict()
+  {
+    FunctionExpressionTree testee = $$$();
+
+    boolean result = testee.isStrict();
     return result;
   }
 
@@ -67,19 +80,6 @@ public final class WhatIsNewInFunctionExpressionTree
     FunctionExpressionTree testee = $$$();
 
     boolean result = testee.isArrow();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link FunctionExpressionTree#getBody()}.
-   * @since 9
-   * @see FunctionExpressionTree#getBody()
-   */
-  public Tree getBody()
-  {
-    FunctionExpressionTree testee = $$$();
-
-    Tree result = testee.getBody();
     return result;
   }
 

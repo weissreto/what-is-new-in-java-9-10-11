@@ -16,13 +16,13 @@ import java.util.function.Supplier;
 public final class WhatIsNewInObjects
 {
   /**
-   * Example call to new method {@link Objects#checkIndex(int, int)}.
+   * Example call to new method {@link Objects#requireNonNullElse(Object, Object)}.
    * @since 9
-   * @see Objects#checkIndex(int, int)
+   * @see Objects#requireNonNullElse(Object, Object)
    */
-  public static int checkIndex(int index, int length)
+  public static <T> T requireNonNullElse(T obj, T defaultObj)
   {
-    int result = Objects.checkIndex(index, length);
+    T result = Objects.requireNonNullElse(obj, defaultObj);
     return result;
   }
 
@@ -38,6 +38,17 @@ public final class WhatIsNewInObjects
   }
 
   /**
+   * Example call to new method {@link Objects#checkIndex(int, int)}.
+   * @since 9
+   * @see Objects#checkIndex(int, int)
+   */
+  public static int checkIndex(int index, int length)
+  {
+    int result = Objects.checkIndex(index, length);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Objects#checkFromToIndex(int, int, int)}.
    * @since 9
    * @see Objects#checkFromToIndex(int, int, int)
@@ -45,17 +56,6 @@ public final class WhatIsNewInObjects
   public static int checkFromToIndex(int fromIndex, int toIndex, int length)
   {
     int result = Objects.checkFromToIndex(fromIndex, toIndex, length);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Objects#requireNonNullElse(Object, Object)}.
-   * @since 9
-   * @see Objects#requireNonNullElse(Object, Object)
-   */
-  public static <T> T requireNonNullElse(T obj, T defaultObj)
-  {
-    T result = Objects.requireNonNullElse(obj, defaultObj);
     return result;
   }
 

@@ -75,19 +75,6 @@ public final class WhatIsNewInDiag
   }
 
   /**
-   * Example call to new method {@link Diag#getMessage(Locale)}.
-   * @since 9
-   * @see Diag#getMessage(Locale)
-   */
-  public String getMessage(Locale locale)
-  {
-    Diag testee = $$$();
-
-    String result = testee.getMessage(locale);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Diag#getCode()}.
    * @since 9
    * @see Diag#getCode()
@@ -97,6 +84,19 @@ public final class WhatIsNewInDiag
     Diag testee = $$$();
 
     String result = testee.getCode();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Diag#getMessage(Locale)}.
+   * @since 9
+   * @see Diag#getMessage(Locale)
+   */
+  public String getMessage(Locale locale)
+  {
+    Diag testee = $$$();
+
+    String result = testee.getMessage(locale);
     return result;
   }
 

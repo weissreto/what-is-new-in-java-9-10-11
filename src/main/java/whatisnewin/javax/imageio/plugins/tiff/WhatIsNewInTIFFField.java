@@ -59,197 +59,6 @@ public final class WhatIsNewInTIFFField
   }
 
   /**
-   * Example call to new method {@link TIFFField#getAsDoubles()}.
-   * @since 9
-   * @see TIFFField#getAsDoubles()
-   */
-  public double[] getAsDoubles()
-  {
-    TIFFField testee = $$$();
-
-    double[] result = testee.getAsDoubles();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsString(int)}.
-   * @since 9
-   * @see TIFFField#getAsString(int)
-   */
-  public String getAsString(int index)
-  {
-    TIFFField testee = $$$();
-
-    String result = testee.getAsString(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getValueAsString(int)}.
-   * @since 9
-   * @see TIFFField#getValueAsString(int)
-   */
-  public String getValueAsString(int index)
-  {
-    TIFFField testee = $$$();
-
-    String result = testee.getValueAsString(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsSRational(int)}.
-   * @since 9
-   * @see TIFFField#getAsSRational(int)
-   */
-  public int[] getAsSRational(int index)
-  {
-    TIFFField testee = $$$();
-
-    int[] result = testee.getAsSRational(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsInt(int)}.
-   * @since 9
-   * @see TIFFField#getAsInt(int)
-   */
-  public int getAsInt(int index)
-  {
-    TIFFField testee = $$$();
-
-    int result = testee.getAsInt(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsSRationals()}.
-   * @since 9
-   * @see TIFFField#getAsSRationals()
-   */
-  public int[][] getAsSRationals()
-  {
-    TIFFField testee = $$$();
-
-    int[][] result = testee.getAsSRationals();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsFloat(int)}.
-   * @since 9
-   * @see TIFFField#getAsFloat(int)
-   */
-  public float getAsFloat(int index)
-  {
-    TIFFField testee = $$$();
-
-    float result = testee.getAsFloat(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsBytes()}.
-   * @since 9
-   * @see TIFFField#getAsBytes()
-   */
-  public byte[] getAsBytes()
-  {
-    TIFFField testee = $$$();
-
-    byte[] result = testee.getAsBytes();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsLongs()}.
-   * @since 9
-   * @see TIFFField#getAsLongs()
-   */
-  public long[] getAsLongs()
-  {
-    TIFFField testee = $$$();
-
-    long[] result = testee.getAsLongs();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#isIntegral()}.
-   * @since 9
-   * @see TIFFField#isIntegral()
-   */
-  public boolean isIntegral()
-  {
-    TIFFField testee = $$$();
-
-    boolean result = testee.isIntegral();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#createArrayForType(int, int)}.
-   * @since 9
-   * @see TIFFField#createArrayForType(int, int)
-   */
-  public static Object createArrayForType(int dataType, int count)
-  {
-    Object result = TIFFField.createArrayForType(dataType, count);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getCount()}.
-   * @since 9
-   * @see TIFFField#getCount()
-   */
-  public int getCount()
-  {
-    TIFFField testee = $$$();
-
-    int result = testee.getCount();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getTypeName(int)}.
-   * @since 9
-   * @see TIFFField#getTypeName(int)
-   */
-  public static String getTypeName(int dataType)
-  {
-    String result = TIFFField.getTypeName(dataType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getData()}.
-   * @since 9
-   * @see TIFFField#getData()
-   */
-  public Object getData()
-  {
-    TIFFField testee = $$$();
-
-    Object result = testee.getData();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#hasDirectory()}.
-   * @since 9
-   * @see TIFFField#hasDirectory()
-   */
-  public boolean hasDirectory()
-  {
-    TIFFField testee = $$$();
-
-    boolean result = testee.hasDirectory();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link TIFFField#createFromMetadataNode(TIFFTagSet, Node)}.
    * @since 9
    * @see TIFFField#createFromMetadataNode(TIFFTagSet, Node)
@@ -257,58 +66,6 @@ public final class WhatIsNewInTIFFField
   public static TIFFField createFromMetadataNode(TIFFTagSet tagSet, Node node)
   {
     TIFFField result = TIFFField.createFromMetadataNode(tagSet, node);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsNativeNode()}.
-   * @since 9
-   * @see TIFFField#getAsNativeNode()
-   */
-  public Node getAsNativeNode()
-  {
-    TIFFField testee = $$$();
-
-    Node result = testee.getAsNativeNode();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsLong(int)}.
-   * @since 9
-   * @see TIFFField#getAsLong(int)
-   */
-  public long getAsLong(int index)
-  {
-    TIFFField testee = $$$();
-
-    long result = testee.getAsLong(index);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsShorts()}.
-   * @since 9
-   * @see TIFFField#getAsShorts()
-   */
-  public short[] getAsShorts()
-  {
-    TIFFField testee = $$$();
-
-    short[] result = testee.getAsShorts();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFField#getAsRational(int)}.
-   * @since 9
-   * @see TIFFField#getAsRational(int)
-   */
-  public long[] getAsRational(int index)
-  {
-    TIFFField testee = $$$();
-
-    long[] result = testee.getAsRational(index);
     return result;
   }
 
@@ -339,54 +96,113 @@ public final class WhatIsNewInTIFFField
   }
 
   /**
-   * Example call to new method {@link TIFFField#getAsDouble(int)}.
+   * Example call to new method {@link TIFFField#getType()}.
    * @since 9
-   * @see TIFFField#getAsDouble(int)
+   * @see TIFFField#getType()
    */
-  public double getAsDouble(int index)
+  public int getType()
   {
     TIFFField testee = $$$();
 
-    double result = testee.getAsDouble(index);
+    int result = testee.getType();
     return result;
   }
 
   /**
-   * Example call to new method {@link TIFFField#getAsFloats()}.
+   * Example call to new method {@link TIFFField#getTypeName(int)}.
    * @since 9
-   * @see TIFFField#getAsFloats()
+   * @see TIFFField#getTypeName(int)
    */
-  public float[] getAsFloats()
+  public static String getTypeName(int dataType)
   {
-    TIFFField testee = $$$();
-
-    float[] result = testee.getAsFloats();
+    String result = TIFFField.getTypeName(dataType);
     return result;
   }
 
   /**
-   * Example call to new method {@link TIFFField#getAsInts()}.
+   * Example call to new method {@link TIFFField#getTypeByName(String)}.
    * @since 9
-   * @see TIFFField#getAsInts()
+   * @see TIFFField#getTypeByName(String)
    */
-  public int[] getAsInts()
+  public static int getTypeByName(String typeName)
   {
-    TIFFField testee = $$$();
-
-    int[] result = testee.getAsInts();
+    int result = TIFFField.getTypeByName(typeName);
     return result;
   }
 
   /**
-   * Example call to new method {@link TIFFField#getDirectory()}.
+   * Example call to new method {@link TIFFField#createArrayForType(int, int)}.
    * @since 9
-   * @see TIFFField#getDirectory()
+   * @see TIFFField#createArrayForType(int, int)
    */
-  public TIFFDirectory getDirectory()
+  public static Object createArrayForType(int dataType, int count)
+  {
+    Object result = TIFFField.createArrayForType(dataType, count);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsNativeNode()}.
+   * @since 9
+   * @see TIFFField#getAsNativeNode()
+   */
+  public Node getAsNativeNode()
   {
     TIFFField testee = $$$();
 
-    TIFFDirectory result = testee.getDirectory();
+    Node result = testee.getAsNativeNode();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#isIntegral()}.
+   * @since 9
+   * @see TIFFField#isIntegral()
+   */
+  public boolean isIntegral()
+  {
+    TIFFField testee = $$$();
+
+    boolean result = testee.isIntegral();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getCount()}.
+   * @since 9
+   * @see TIFFField#getCount()
+   */
+  public int getCount()
+  {
+    TIFFField testee = $$$();
+
+    int result = testee.getCount();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getData()}.
+   * @since 9
+   * @see TIFFField#getData()
+   */
+  public Object getData()
+  {
+    TIFFField testee = $$$();
+
+    Object result = testee.getData();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsBytes()}.
+   * @since 9
+   * @see TIFFField#getAsBytes()
+   */
+  public byte[] getAsBytes()
+  {
+    TIFFField testee = $$$();
+
+    byte[] result = testee.getAsBytes();
     return result;
   }
 
@@ -404,26 +220,80 @@ public final class WhatIsNewInTIFFField
   }
 
   /**
-   * Example call to new method {@link TIFFField#getType()}.
+   * Example call to new method {@link TIFFField#getAsShorts()}.
    * @since 9
-   * @see TIFFField#getType()
+   * @see TIFFField#getAsShorts()
    */
-  public int getType()
+  public short[] getAsShorts()
   {
     TIFFField testee = $$$();
 
-    int result = testee.getType();
+    short[] result = testee.getAsShorts();
     return result;
   }
 
   /**
-   * Example call to new method {@link TIFFField#getTypeByName(String)}.
+   * Example call to new method {@link TIFFField#getAsInts()}.
    * @since 9
-   * @see TIFFField#getTypeByName(String)
+   * @see TIFFField#getAsInts()
    */
-  public static int getTypeByName(String typeName)
+  public int[] getAsInts()
   {
-    int result = TIFFField.getTypeByName(typeName);
+    TIFFField testee = $$$();
+
+    int[] result = testee.getAsInts();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsLongs()}.
+   * @since 9
+   * @see TIFFField#getAsLongs()
+   */
+  public long[] getAsLongs()
+  {
+    TIFFField testee = $$$();
+
+    long[] result = testee.getAsLongs();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsFloats()}.
+   * @since 9
+   * @see TIFFField#getAsFloats()
+   */
+  public float[] getAsFloats()
+  {
+    TIFFField testee = $$$();
+
+    float[] result = testee.getAsFloats();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsDoubles()}.
+   * @since 9
+   * @see TIFFField#getAsDoubles()
+   */
+  public double[] getAsDoubles()
+  {
+    TIFFField testee = $$$();
+
+    double[] result = testee.getAsDoubles();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsSRationals()}.
+   * @since 9
+   * @see TIFFField#getAsSRationals()
+   */
+  public int[][] getAsSRationals()
+  {
+    TIFFField testee = $$$();
+
+    int[][] result = testee.getAsSRationals();
     return result;
   }
 
@@ -437,6 +307,136 @@ public final class WhatIsNewInTIFFField
     TIFFField testee = $$$();
 
     long[][] result = testee.getAsRationals();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsInt(int)}.
+   * @since 9
+   * @see TIFFField#getAsInt(int)
+   */
+  public int getAsInt(int index)
+  {
+    TIFFField testee = $$$();
+
+    int result = testee.getAsInt(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsLong(int)}.
+   * @since 9
+   * @see TIFFField#getAsLong(int)
+   */
+  public long getAsLong(int index)
+  {
+    TIFFField testee = $$$();
+
+    long result = testee.getAsLong(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsFloat(int)}.
+   * @since 9
+   * @see TIFFField#getAsFloat(int)
+   */
+  public float getAsFloat(int index)
+  {
+    TIFFField testee = $$$();
+
+    float result = testee.getAsFloat(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsDouble(int)}.
+   * @since 9
+   * @see TIFFField#getAsDouble(int)
+   */
+  public double getAsDouble(int index)
+  {
+    TIFFField testee = $$$();
+
+    double result = testee.getAsDouble(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsString(int)}.
+   * @since 9
+   * @see TIFFField#getAsString(int)
+   */
+  public String getAsString(int index)
+  {
+    TIFFField testee = $$$();
+
+    String result = testee.getAsString(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsSRational(int)}.
+   * @since 9
+   * @see TIFFField#getAsSRational(int)
+   */
+  public int[] getAsSRational(int index)
+  {
+    TIFFField testee = $$$();
+
+    int[] result = testee.getAsSRational(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getAsRational(int)}.
+   * @since 9
+   * @see TIFFField#getAsRational(int)
+   */
+  public long[] getAsRational(int index)
+  {
+    TIFFField testee = $$$();
+
+    long[] result = testee.getAsRational(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getValueAsString(int)}.
+   * @since 9
+   * @see TIFFField#getValueAsString(int)
+   */
+  public String getValueAsString(int index)
+  {
+    TIFFField testee = $$$();
+
+    String result = testee.getValueAsString(index);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#hasDirectory()}.
+   * @since 9
+   * @see TIFFField#hasDirectory()
+   */
+  public boolean hasDirectory()
+  {
+    TIFFField testee = $$$();
+
+    boolean result = testee.hasDirectory();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFField#getDirectory()}.
+   * @since 9
+   * @see TIFFField#getDirectory()
+   */
+  public TIFFDirectory getDirectory()
+  {
+    TIFFField testee = $$$();
+
+    TIFFDirectory result = testee.getDirectory();
     return result;
   }
 

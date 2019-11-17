@@ -15,32 +15,6 @@ import jdk.nashorn.api.tree.IdentifierTree;
 public final class WhatIsNewInIdentifierTree
 {
   /**
-   * Example call to new method {@link IdentifierTree#isSuper()}.
-   * @since 9
-   * @see IdentifierTree#isSuper()
-   */
-  public boolean isSuper()
-  {
-    IdentifierTree testee = $$$();
-
-    boolean result = testee.isSuper();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link IdentifierTree#isStar()}.
-   * @since 9
-   * @see IdentifierTree#isStar()
-   */
-  public boolean isStar()
-  {
-    IdentifierTree testee = $$$();
-
-    boolean result = testee.isStar();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link IdentifierTree#getName()}.
    * @since 9
    * @see IdentifierTree#getName()
@@ -54,28 +28,28 @@ public final class WhatIsNewInIdentifierTree
   }
 
   /**
-   * Example call to new method {@link IdentifierTree#isStarDefaultStar()}.
+   * Example call to new method {@link IdentifierTree#isRestParameter()}.
    * @since 9
-   * @see IdentifierTree#isStarDefaultStar()
+   * @see IdentifierTree#isRestParameter()
    */
-  public boolean isStarDefaultStar()
+  public boolean isRestParameter()
   {
     IdentifierTree testee = $$$();
 
-    boolean result = testee.isStarDefaultStar();
+    boolean result = testee.isRestParameter();
     return result;
   }
 
   /**
-   * Example call to new method {@link IdentifierTree#isDefault()}.
+   * Example call to new method {@link IdentifierTree#isSuper()}.
    * @since 9
-   * @see IdentifierTree#isDefault()
+   * @see IdentifierTree#isSuper()
    */
-  public boolean isDefault()
+  public boolean isSuper()
   {
     IdentifierTree testee = $$$();
 
-    boolean result = testee.isDefault();
+    boolean result = testee.isSuper();
     return result;
   }
 
@@ -93,15 +67,41 @@ public final class WhatIsNewInIdentifierTree
   }
 
   /**
-   * Example call to new method {@link IdentifierTree#isRestParameter()}.
+   * Example call to new method {@link IdentifierTree#isStar()}.
    * @since 9
-   * @see IdentifierTree#isRestParameter()
+   * @see IdentifierTree#isStar()
    */
-  public boolean isRestParameter()
+  public boolean isStar()
   {
     IdentifierTree testee = $$$();
 
-    boolean result = testee.isRestParameter();
+    boolean result = testee.isStar();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link IdentifierTree#isDefault()}.
+   * @since 9
+   * @see IdentifierTree#isDefault()
+   */
+  public boolean isDefault()
+  {
+    IdentifierTree testee = $$$();
+
+    boolean result = testee.isDefault();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link IdentifierTree#isStarDefaultStar()}.
+   * @since 9
+   * @see IdentifierTree#isStarDefaultStar()
+   */
+  public boolean isStarDefaultStar()
+  {
+    IdentifierTree testee = $$$();
+
+    boolean result = testee.isStarDefaultStar();
     return result;
   }
 

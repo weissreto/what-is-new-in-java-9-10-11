@@ -50,17 +50,6 @@ public final class WhatIsNewInModuleElement$DirectiveKind
   public static final DirectiveKind PROVIDES = DirectiveKind.PROVIDES;
 
   /**
-   * Example call to new method {@link DirectiveKind#valueOf(String)}.
-   * @since 9
-   * @see DirectiveKind#valueOf(String)
-   */
-  public static DirectiveKind valueOf(String name)
-  {
-    DirectiveKind result = DirectiveKind.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link DirectiveKind#values()}.
    * @since 9
    * @see DirectiveKind#values()
@@ -68,6 +57,17 @@ public final class WhatIsNewInModuleElement$DirectiveKind
   public static DirectiveKind[] values()
   {
     DirectiveKind[] result = DirectiveKind.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DirectiveKind#valueOf(String)}.
+   * @since 9
+   * @see DirectiveKind#valueOf(String)
+   */
+  public static DirectiveKind valueOf(String name)
+  {
+    DirectiveKind result = DirectiveKind.valueOf(name);
     return result;
   }
 

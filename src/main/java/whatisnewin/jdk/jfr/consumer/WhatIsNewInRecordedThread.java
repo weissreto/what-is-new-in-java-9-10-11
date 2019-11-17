@@ -16,15 +16,15 @@ import jdk.jfr.consumer.RecordedThreadGroup;
 public final class WhatIsNewInRecordedThread
 {
   /**
-   * Example call to new method {@link RecordedThread#getJavaThreadId()}.
+   * Example call to new method {@link RecordedThread#getOSName()}.
    * @since 9
-   * @see RecordedThread#getJavaThreadId()
+   * @see RecordedThread#getOSName()
    */
-  public long getJavaThreadId()
+  public String getOSName()
   {
     RecordedThread testee = $$$();
 
-    long result = testee.getJavaThreadId();
+    String result = testee.getOSName();
     return result;
   }
 
@@ -42,6 +42,19 @@ public final class WhatIsNewInRecordedThread
   }
 
   /**
+   * Example call to new method {@link RecordedThread#getThreadGroup()}.
+   * @since 9
+   * @see RecordedThread#getThreadGroup()
+   */
+  public RecordedThreadGroup getThreadGroup()
+  {
+    RecordedThread testee = $$$();
+
+    RecordedThreadGroup result = testee.getThreadGroup();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link RecordedThread#getJavaName()}.
    * @since 9
    * @see RecordedThread#getJavaName()
@@ -55,15 +68,15 @@ public final class WhatIsNewInRecordedThread
   }
 
   /**
-   * Example call to new method {@link RecordedThread#getOSName()}.
+   * Example call to new method {@link RecordedThread#getJavaThreadId()}.
    * @since 9
-   * @see RecordedThread#getOSName()
+   * @see RecordedThread#getJavaThreadId()
    */
-  public String getOSName()
+  public long getJavaThreadId()
   {
     RecordedThread testee = $$$();
 
-    String result = testee.getOSName();
+    long result = testee.getJavaThreadId();
     return result;
   }
 
@@ -77,19 +90,6 @@ public final class WhatIsNewInRecordedThread
     RecordedThread testee = $$$();
 
     long result = testee.getId();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link RecordedThread#getThreadGroup()}.
-   * @since 9
-   * @see RecordedThread#getThreadGroup()
-   */
-  public RecordedThreadGroup getThreadGroup()
-  {
-    RecordedThread testee = $$$();
-
-    RecordedThreadGroup result = testee.getThreadGroup();
     return result;
   }
 

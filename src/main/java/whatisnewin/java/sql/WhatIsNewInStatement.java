@@ -16,19 +16,6 @@ import java.sql.SQLException;
 public final class WhatIsNewInStatement
 {
   /**
-   * Example call to new method {@link Statement#enquoteIdentifier(String, boolean)}.
-   * @since 9
-   * @see Statement#enquoteIdentifier(String, boolean)
-   */
-  public String enquoteIdentifier(String identifier, boolean alwaysQuote) throws SQLException
-  {
-    Statement testee = $$$();
-
-    String result = testee.enquoteIdentifier(identifier, alwaysQuote);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Statement#enquoteLiteral(String)}.
    * @since 9
    * @see Statement#enquoteLiteral(String)
@@ -38,6 +25,19 @@ public final class WhatIsNewInStatement
     Statement testee = $$$();
 
     String result = testee.enquoteLiteral(val);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Statement#enquoteIdentifier(String, boolean)}.
+   * @since 9
+   * @see Statement#enquoteIdentifier(String, boolean)
+   */
+  public String enquoteIdentifier(String identifier, boolean alwaysQuote) throws SQLException
+  {
+    Statement testee = $$$();
+
+    String result = testee.enquoteIdentifier(identifier, alwaysQuote);
     return result;
   }
 

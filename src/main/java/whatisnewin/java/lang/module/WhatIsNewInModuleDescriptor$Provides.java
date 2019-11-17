@@ -16,19 +16,6 @@ import java.util.List;
 public final class WhatIsNewInModuleDescriptor$Provides
 {
   /**
-   * Example call to new method {@link Provides#compareTo(Provides)}.
-   * @since 9
-   * @see Provides#compareTo(Provides)
-   */
-  public int compareTo(Provides that)
-  {
-    Provides testee = $$$();
-
-    int result = testee.compareTo(that);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Provides#service()}.
    * @since 9
    * @see Provides#service()
@@ -51,6 +38,19 @@ public final class WhatIsNewInModuleDescriptor$Provides
     Provides testee = $$$();
 
     List<String> result = testee.providers();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Provides#compareTo(Provides)}.
+   * @since 9
+   * @see Provides#compareTo(Provides)
+   */
+  public int compareTo(Provides that)
+  {
+    Provides testee = $$$();
+
+    int result = testee.compareTo(that);
     return result;
   }
 

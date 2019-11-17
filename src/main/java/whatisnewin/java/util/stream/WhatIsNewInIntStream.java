@@ -17,19 +17,6 @@ import java.util.function.IntUnaryOperator;
 public final class WhatIsNewInIntStream
 {
   /**
-   * Example call to new method {@link IntStream#dropWhile(IntPredicate)}.
-   * @since 9
-   * @see IntStream#dropWhile(IntPredicate)
-   */
-  public IntStream dropWhile(IntPredicate predicate)
-  {
-    IntStream testee = $$$();
-
-    IntStream result = testee.dropWhile(predicate);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link IntStream#takeWhile(IntPredicate)}.
    * @since 9
    * @see IntStream#takeWhile(IntPredicate)
@@ -39,6 +26,19 @@ public final class WhatIsNewInIntStream
     IntStream testee = $$$();
 
     IntStream result = testee.takeWhile(predicate);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link IntStream#dropWhile(IntPredicate)}.
+   * @since 9
+   * @see IntStream#dropWhile(IntPredicate)
+   */
+  public IntStream dropWhile(IntPredicate predicate)
+  {
+    IntStream testee = $$$();
+
+    IntStream result = testee.dropWhile(predicate);
     return result;
   }
 

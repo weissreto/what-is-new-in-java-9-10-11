@@ -17,6 +17,18 @@ import java.sql.ShardingKey;
 public final class WhatIsNewInConnection
 {
   /**
+   * Example call to new method {@link Connection#beginRequest()}.
+   * @since 9
+   * @see Connection#beginRequest()
+   */
+  public void beginRequest() throws SQLException
+  {
+    Connection testee = $$$();
+
+    testee.beginRequest();
+  }
+
+  /**
    * Example call to new method {@link Connection#endRequest()}.
    * @since 9
    * @see Connection#endRequest()
@@ -64,18 +76,6 @@ public final class WhatIsNewInConnection
     Connection testee = $$$();
 
     testee.setShardingKey(shardingKey, superShardingKey);
-  }
-
-  /**
-   * Example call to new method {@link Connection#beginRequest()}.
-   * @since 9
-   * @see Connection#beginRequest()
-   */
-  public void beginRequest() throws SQLException
-  {
-    Connection testee = $$$();
-
-    testee.beginRequest();
   }
 
   private Connection $$$()

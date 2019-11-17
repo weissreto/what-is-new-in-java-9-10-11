@@ -16,6 +16,19 @@ import com.sun.source.tree.ExpressionTree;
 public final class WhatIsNewInRequiresTree
 {
   /**
+   * Example call to new method {@link RequiresTree#isStatic()}.
+   * @since 9
+   * @see RequiresTree#isStatic()
+   */
+  public boolean isStatic()
+  {
+    RequiresTree testee = $$$();
+
+    boolean result = testee.isStatic();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link RequiresTree#isTransitive()}.
    * @since 9
    * @see RequiresTree#isTransitive()
@@ -38,19 +51,6 @@ public final class WhatIsNewInRequiresTree
     RequiresTree testee = $$$();
 
     ExpressionTree result = testee.getModuleName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link RequiresTree#isStatic()}.
-   * @since 9
-   * @see RequiresTree#isStatic()
-   */
-  public boolean isStatic()
-  {
-    RequiresTree testee = $$$();
-
-    boolean result = testee.isStatic();
     return result;
   }
 

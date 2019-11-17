@@ -42,15 +42,15 @@ public final class WhatIsNewInSettingDescriptorInfo
   }
 
   /**
-   * Example call to new method {@link SettingDescriptorInfo#getDefaultValue()}.
+   * Example call to new method {@link SettingDescriptorInfo#getDescription()}.
    * @since 9
-   * @see SettingDescriptorInfo#getDefaultValue()
+   * @see SettingDescriptorInfo#getDescription()
    */
-  public String getDefaultValue()
+  public String getDescription()
   {
     SettingDescriptorInfo testee = $$$();
 
-    String result = testee.getDefaultValue();
+    String result = testee.getDescription();
     return result;
   }
 
@@ -68,15 +68,28 @@ public final class WhatIsNewInSettingDescriptorInfo
   }
 
   /**
-   * Example call to new method {@link SettingDescriptorInfo#getDescription()}.
+   * Example call to new method {@link SettingDescriptorInfo#getContentType()}.
    * @since 9
-   * @see SettingDescriptorInfo#getDescription()
+   * @see SettingDescriptorInfo#getContentType()
    */
-  public String getDescription()
+  public String getContentType()
   {
     SettingDescriptorInfo testee = $$$();
 
-    String result = testee.getDescription();
+    String result = testee.getContentType();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SettingDescriptorInfo#getDefaultValue()}.
+   * @since 9
+   * @see SettingDescriptorInfo#getDefaultValue()
+   */
+  public String getDefaultValue()
+  {
+    SettingDescriptorInfo testee = $$$();
+
+    String result = testee.getDefaultValue();
     return result;
   }
 
@@ -88,19 +101,6 @@ public final class WhatIsNewInSettingDescriptorInfo
   public static SettingDescriptorInfo from(CompositeData cd)
   {
     SettingDescriptorInfo result = SettingDescriptorInfo.from(cd);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SettingDescriptorInfo#getContentType()}.
-   * @since 9
-   * @see SettingDescriptorInfo#getContentType()
-   */
-  public String getContentType()
-  {
-    SettingDescriptorInfo testee = $$$();
-
-    String result = testee.getContentType();
     return result;
   }
 

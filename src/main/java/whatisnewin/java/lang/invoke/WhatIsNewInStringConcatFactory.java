@@ -19,17 +19,6 @@ import java.lang.invoke.StringConcatException;
 public final class WhatIsNewInStringConcatFactory
 {
   /**
-   * Example call to new method {@link StringConcatFactory#makeConcatWithConstants(Lookup, String, MethodType, String, Object[])}.
-   * @since 9
-   * @see StringConcatFactory#makeConcatWithConstants(Lookup, String, MethodType, String, Object[])
-   */
-  public static CallSite makeConcatWithConstants(Lookup lookup, String name, MethodType concatType, String recipe, Object[] constants) throws StringConcatException
-  {
-    CallSite result = StringConcatFactory.makeConcatWithConstants(lookup, name, concatType, recipe, constants);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link StringConcatFactory#makeConcat(Lookup, String, MethodType)}.
    * @since 9
    * @see StringConcatFactory#makeConcat(Lookup, String, MethodType)
@@ -37,6 +26,17 @@ public final class WhatIsNewInStringConcatFactory
   public static CallSite makeConcat(Lookup lookup, String name, MethodType concatType) throws StringConcatException
   {
     CallSite result = StringConcatFactory.makeConcat(lookup, name, concatType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link StringConcatFactory#makeConcatWithConstants(Lookup, String, MethodType, String, Object...)}.
+   * @since 9
+   * @see StringConcatFactory#makeConcatWithConstants(Lookup, String, MethodType, String, Object...)
+   */
+  public static CallSite makeConcatWithConstants(Lookup lookup, String name, MethodType concatType, String recipe, Object... constants) throws StringConcatException
+  {
+    CallSite result = StringConcatFactory.makeConcatWithConstants(lookup, name, concatType, recipe, constants);
     return result;
   }
 

@@ -44,19 +44,6 @@ public final class WhatIsNewInMethodHandles$Lookup
   }
 
   /**
-   * Example call to new method {@link Lookup#findStaticVarHandle(Class, String, Class)}.
-   * @since 9
-   * @see Lookup#findStaticVarHandle(Class, String, Class)
-   */
-  public VarHandle findStaticVarHandle(Class<?> decl, String name, Class<?> type) throws NoSuchFieldException, IllegalAccessException
-  {
-    Lookup testee = $$$();
-
-    VarHandle result = testee.findStaticVarHandle(decl, name, type);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Lookup#defineClass(byte[])}.
    * @since 9
    * @see Lookup#defineClass(byte[])
@@ -66,19 +53,6 @@ public final class WhatIsNewInMethodHandles$Lookup
     Lookup testee = $$$();
 
     Class<?> result = testee.defineClass(bytes);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Lookup#findVarHandle(Class, String, Class)}.
-   * @since 9
-   * @see Lookup#findVarHandle(Class, String, Class)
-   */
-  public VarHandle findVarHandle(Class<?> recv, String name, Class<?> type) throws NoSuchFieldException, IllegalAccessException
-  {
-    Lookup testee = $$$();
-
-    VarHandle result = testee.findVarHandle(recv, name, type);
     return result;
   }
 
@@ -96,19 +70,6 @@ public final class WhatIsNewInMethodHandles$Lookup
   }
 
   /**
-   * Example call to new method {@link Lookup#unreflectVarHandle(Field)}.
-   * @since 9
-   * @see Lookup#unreflectVarHandle(Field)
-   */
-  public VarHandle unreflectVarHandle(Field f) throws IllegalAccessException
-  {
-    Lookup testee = $$$();
-
-    VarHandle result = testee.unreflectVarHandle(f);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Lookup#accessClass(Class)}.
    * @since 9
    * @see Lookup#accessClass(Class)
@@ -118,6 +79,45 @@ public final class WhatIsNewInMethodHandles$Lookup
     Lookup testee = $$$();
 
     Class<?> result = testee.accessClass(targetClass);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Lookup#findVarHandle(Class, String, Class)}.
+   * @since 9
+   * @see Lookup#findVarHandle(Class, String, Class)
+   */
+  public VarHandle findVarHandle(Class<?> recv, String name, Class<?> type) throws NoSuchFieldException, IllegalAccessException
+  {
+    Lookup testee = $$$();
+
+    VarHandle result = testee.findVarHandle(recv, name, type);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Lookup#findStaticVarHandle(Class, String, Class)}.
+   * @since 9
+   * @see Lookup#findStaticVarHandle(Class, String, Class)
+   */
+  public VarHandle findStaticVarHandle(Class<?> decl, String name, Class<?> type) throws NoSuchFieldException, IllegalAccessException
+  {
+    Lookup testee = $$$();
+
+    VarHandle result = testee.findStaticVarHandle(decl, name, type);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Lookup#unreflectVarHandle(Field)}.
+   * @since 9
+   * @see Lookup#unreflectVarHandle(Field)
+   */
+  public VarHandle unreflectVarHandle(Field f) throws IllegalAccessException
+  {
+    Lookup testee = $$$();
+
+    VarHandle result = testee.unreflectVarHandle(f);
     return result;
   }
 

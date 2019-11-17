@@ -17,6 +17,19 @@ import jdk.nashorn.api.tree.StatementTree;
 public final class WhatIsNewInForLoopTree
 {
   /**
+   * Example call to new method {@link ForLoopTree#getInitializer()}.
+   * @since 9
+   * @see ForLoopTree#getInitializer()
+   */
+  public ExpressionTree getInitializer()
+  {
+    ForLoopTree testee = $$$();
+
+    ExpressionTree result = testee.getInitializer();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ForLoopTree#getCondition()}.
    * @since 9
    * @see ForLoopTree#getCondition()
@@ -39,19 +52,6 @@ public final class WhatIsNewInForLoopTree
     ForLoopTree testee = $$$();
 
     ExpressionTree result = testee.getUpdate();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ForLoopTree#getInitializer()}.
-   * @since 9
-   * @see ForLoopTree#getInitializer()
-   */
-  public ExpressionTree getInitializer()
-  {
-    ForLoopTree testee = $$$();
-
-    ExpressionTree result = testee.getInitializer();
     return result;
   }
 

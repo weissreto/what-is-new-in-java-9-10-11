@@ -28,19 +28,6 @@ public final class WhatIsNewInObjectInputFilter$FilterInfo
   }
 
   /**
-   * Example call to new method {@link FilterInfo#streamBytes()}.
-   * @since 9
-   * @see FilterInfo#streamBytes()
-   */
-  public long streamBytes()
-  {
-    FilterInfo testee = $$$();
-
-    long result = testee.streamBytes();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link FilterInfo#arrayLength()}.
    * @since 9
    * @see FilterInfo#arrayLength()
@@ -76,6 +63,19 @@ public final class WhatIsNewInObjectInputFilter$FilterInfo
     FilterInfo testee = $$$();
 
     long result = testee.references();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link FilterInfo#streamBytes()}.
+   * @since 9
+   * @see FilterInfo#streamBytes()
+   */
+  public long streamBytes()
+  {
+    FilterInfo testee = $$$();
+
+    long result = testee.streamBytes();
     return result;
   }
 

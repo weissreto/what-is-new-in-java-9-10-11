@@ -15,44 +15,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class WhatIsNewInAtomicInteger
 {
   /**
-   * Example call to new method {@link AtomicInteger#compareAndExchangeAcquire(int, int)}.
-   * @since 9
-   * @see AtomicInteger#compareAndExchangeAcquire(int, int)
-   */
-  public int compareAndExchangeAcquire(int expectedValue, int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    int result = testee.compareAndExchangeAcquire(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicInteger#compareAndExchange(int, int)}.
-   * @since 9
-   * @see AtomicInteger#compareAndExchange(int, int)
-   */
-  public int compareAndExchange(int expectedValue, int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    int result = testee.compareAndExchange(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicInteger#setPlain(int)}.
-   * @since 9
-   * @see AtomicInteger#setPlain(int)
-   */
-  public void setPlain(int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    testee.setPlain(newValue);
-  }
-
-  /**
    * Example call to new method {@link AtomicInteger#weakCompareAndSetPlain(int, int)}.
    * @since 9
    * @see AtomicInteger#weakCompareAndSetPlain(int, int)
@@ -62,31 +24,6 @@ public final class WhatIsNewInAtomicInteger
     AtomicInteger testee = $$$();
 
     boolean result = testee.weakCompareAndSetPlain(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicInteger#setOpaque(int)}.
-   * @since 9
-   * @see AtomicInteger#setOpaque(int)
-   */
-  public void setOpaque(int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    testee.setOpaque(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicInteger#weakCompareAndSetVolatile(int, int)}.
-   * @since 9
-   * @see AtomicInteger#weakCompareAndSetVolatile(int, int)
-   */
-  public boolean weakCompareAndSetVolatile(int expectedValue, int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
     return result;
   }
 
@@ -104,6 +41,18 @@ public final class WhatIsNewInAtomicInteger
   }
 
   /**
+   * Example call to new method {@link AtomicInteger#setPlain(int)}.
+   * @since 9
+   * @see AtomicInteger#setPlain(int)
+   */
+  public void setPlain(int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    testee.setPlain(newValue);
+  }
+
+  /**
    * Example call to new method {@link AtomicInteger#getOpaque()}.
    * @since 9
    * @see AtomicInteger#getOpaque()
@@ -113,6 +62,69 @@ public final class WhatIsNewInAtomicInteger
     AtomicInteger testee = $$$();
 
     int result = testee.getOpaque();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicInteger#setOpaque(int)}.
+   * @since 9
+   * @see AtomicInteger#setOpaque(int)
+   */
+  public void setOpaque(int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    testee.setOpaque(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicInteger#getAcquire()}.
+   * @since 9
+   * @see AtomicInteger#getAcquire()
+   */
+  public int getAcquire()
+  {
+    AtomicInteger testee = $$$();
+
+    int result = testee.getAcquire();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicInteger#setRelease(int)}.
+   * @since 9
+   * @see AtomicInteger#setRelease(int)
+   */
+  public void setRelease(int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    testee.setRelease(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicInteger#compareAndExchange(int, int)}.
+   * @since 9
+   * @see AtomicInteger#compareAndExchange(int, int)
+   */
+  public int compareAndExchange(int expectedValue, int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    int result = testee.compareAndExchange(expectedValue, newValue);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicInteger#compareAndExchangeAcquire(int, int)}.
+   * @since 9
+   * @see AtomicInteger#compareAndExchangeAcquire(int, int)
+   */
+  public int compareAndExchangeAcquire(int expectedValue, int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    int result = testee.compareAndExchangeAcquire(expectedValue, newValue);
     return result;
   }
 
@@ -130,15 +142,15 @@ public final class WhatIsNewInAtomicInteger
   }
 
   /**
-   * Example call to new method {@link AtomicInteger#getAcquire()}.
+   * Example call to new method {@link AtomicInteger#weakCompareAndSetVolatile(int, int)}.
    * @since 9
-   * @see AtomicInteger#getAcquire()
+   * @see AtomicInteger#weakCompareAndSetVolatile(int, int)
    */
-  public int getAcquire()
+  public boolean weakCompareAndSetVolatile(int expectedValue, int newValue)
   {
     AtomicInteger testee = $$$();
 
-    int result = testee.getAcquire();
+    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
     return result;
   }
 
@@ -153,18 +165,6 @@ public final class WhatIsNewInAtomicInteger
 
     boolean result = testee.weakCompareAndSetAcquire(expectedValue, newValue);
     return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicInteger#setRelease(int)}.
-   * @since 9
-   * @see AtomicInteger#setRelease(int)
-   */
-  public void setRelease(int newValue)
-  {
-    AtomicInteger testee = $$$();
-
-    testee.setRelease(newValue);
   }
 
   private AtomicInteger $$$()

@@ -22,6 +22,19 @@ import javax.lang.model.element.Element;
 public final class WhatIsNewInTaglet
 {
   /**
+   * Example call to new method {@link Taglet#getAllowedLocations()}.
+   * @since 9
+   * @see Taglet#getAllowedLocations()
+   */
+  public Set<Location> getAllowedLocations()
+  {
+    Taglet testee = $$$();
+
+    Set<Location> result = testee.getAllowedLocations();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Taglet#isInlineTag()}.
    * @since 9
    * @see Taglet#isInlineTag()
@@ -35,15 +48,15 @@ public final class WhatIsNewInTaglet
   }
 
   /**
-   * Example call to new method {@link Taglet#getAllowedLocations()}.
+   * Example call to new method {@link Taglet#getName()}.
    * @since 9
-   * @see Taglet#getAllowedLocations()
+   * @see Taglet#getName()
    */
-  public Set<Location> getAllowedLocations()
+  public String getName()
   {
     Taglet testee = $$$();
 
-    Set<Location> result = testee.getAllowedLocations();
+    String result = testee.getName();
     return result;
   }
 
@@ -69,19 +82,6 @@ public final class WhatIsNewInTaglet
     Taglet testee = $$$();
 
     String result = testee.toString(tags, element);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Taglet#getName()}.
-   * @since 9
-   * @see Taglet#getName()
-   */
-  public String getName()
-  {
-    Taglet testee = $$$();
-
-    String result = testee.getName();
     return result;
   }
 

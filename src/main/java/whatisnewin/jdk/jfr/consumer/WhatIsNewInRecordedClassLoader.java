@@ -29,19 +29,6 @@ public final class WhatIsNewInRecordedClassLoader
   }
 
   /**
-   * Example call to new method {@link RecordedClassLoader#getId()}.
-   * @since 9
-   * @see RecordedClassLoader#getId()
-   */
-  public long getId()
-  {
-    RecordedClassLoader testee = $$$();
-
-    long result = testee.getId();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RecordedClassLoader#getName()}.
    * @since 9
    * @see RecordedClassLoader#getName()
@@ -51,6 +38,19 @@ public final class WhatIsNewInRecordedClassLoader
     RecordedClassLoader testee = $$$();
 
     String result = testee.getName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RecordedClassLoader#getId()}.
+   * @since 9
+   * @see RecordedClassLoader#getId()
+   */
+  public long getId()
+  {
+    RecordedClassLoader testee = $$$();
+
+    long result = testee.getId();
     return result;
   }
 

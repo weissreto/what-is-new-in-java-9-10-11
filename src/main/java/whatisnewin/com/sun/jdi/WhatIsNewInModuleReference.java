@@ -16,19 +16,6 @@ import com.sun.jdi.ClassLoaderReference;
 public final class WhatIsNewInModuleReference
 {
   /**
-   * Example call to new method {@link ModuleReference#classLoader()}.
-   * @since 9
-   * @see ModuleReference#classLoader()
-   */
-  public ClassLoaderReference classLoader()
-  {
-    ModuleReference testee = $$$();
-
-    ClassLoaderReference result = testee.classLoader();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ModuleReference#name()}.
    * @since 9
    * @see ModuleReference#name()
@@ -38,6 +25,19 @@ public final class WhatIsNewInModuleReference
     ModuleReference testee = $$$();
 
     String result = testee.name();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ModuleReference#classLoader()}.
+   * @since 9
+   * @see ModuleReference#classLoader()
+   */
+  public ClassLoaderReference classLoader()
+  {
+    ModuleReference testee = $$$();
+
+    ClassLoaderReference result = testee.classLoader();
     return result;
   }
 

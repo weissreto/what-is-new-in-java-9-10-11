@@ -15,17 +15,6 @@ import java.util.concurrent.locks.StampedLock;
 public final class WhatIsNewInStampedLock
 {
   /**
-   * Example call to new method {@link StampedLock#isOptimisticReadStamp(long)}.
-   * @since 10
-   * @see StampedLock#isOptimisticReadStamp(long)
-   */
-  public static boolean isOptimisticReadStamp(long stamp)
-  {
-    boolean result = StampedLock.isOptimisticReadStamp(stamp);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link StampedLock#isWriteLockStamp(long)}.
    * @since 10
    * @see StampedLock#isWriteLockStamp(long)
@@ -33,6 +22,17 @@ public final class WhatIsNewInStampedLock
   public static boolean isWriteLockStamp(long stamp)
   {
     boolean result = StampedLock.isWriteLockStamp(stamp);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link StampedLock#isReadLockStamp(long)}.
+   * @since 10
+   * @see StampedLock#isReadLockStamp(long)
+   */
+  public static boolean isReadLockStamp(long stamp)
+  {
+    boolean result = StampedLock.isReadLockStamp(stamp);
     return result;
   }
 
@@ -48,13 +48,13 @@ public final class WhatIsNewInStampedLock
   }
 
   /**
-   * Example call to new method {@link StampedLock#isReadLockStamp(long)}.
+   * Example call to new method {@link StampedLock#isOptimisticReadStamp(long)}.
    * @since 10
-   * @see StampedLock#isReadLockStamp(long)
+   * @see StampedLock#isOptimisticReadStamp(long)
    */
-  public static boolean isReadLockStamp(long stamp)
+  public static boolean isOptimisticReadStamp(long stamp)
   {
-    boolean result = StampedLock.isReadLockStamp(stamp);
+    boolean result = StampedLock.isOptimisticReadStamp(stamp);
     return result;
   }
 

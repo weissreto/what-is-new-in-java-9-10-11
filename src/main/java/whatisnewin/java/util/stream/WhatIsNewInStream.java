@@ -17,17 +17,6 @@ import java.util.function.UnaryOperator;
 public final class WhatIsNewInStream<T>
 {
   /**
-   * Example call to new method {@link Stream#ofNullable(Object)}.
-   * @since 9
-   * @see Stream#ofNullable(Object)
-   */
-  public static <T> Stream<T> ofNullable(T t)
-  {
-    Stream<T> result = Stream.ofNullable(t);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Stream#takeWhile(Predicate)}.
    * @since 9
    * @see Stream#takeWhile(Predicate)
@@ -41,17 +30,6 @@ public final class WhatIsNewInStream<T>
   }
 
   /**
-   * Example call to new method {@link Stream#iterate(Object, Predicate, UnaryOperator)}.
-   * @since 9
-   * @see Stream#iterate(Object, Predicate, UnaryOperator)
-   */
-  public static <T> Stream<T> iterate(T seed, Predicate<? super T> hasNext, UnaryOperator<T> next)
-  {
-    Stream<T> result = Stream.iterate(seed, hasNext, next);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Stream#dropWhile(Predicate)}.
    * @since 9
    * @see Stream#dropWhile(Predicate)
@@ -61,6 +39,28 @@ public final class WhatIsNewInStream<T>
     Stream<T> testee = $$$();
 
     Stream<T> result = testee.dropWhile(predicate);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Stream#ofNullable(Object)}.
+   * @since 9
+   * @see Stream#ofNullable(Object)
+   */
+  public static <T> Stream<T> ofNullable(T t)
+  {
+    Stream<T> result = Stream.ofNullable(t);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Stream#iterate(Object, Predicate, UnaryOperator)}.
+   * @since 9
+   * @see Stream#iterate(Object, Predicate, UnaryOperator)
+   */
+  public static <T> Stream<T> iterate(T seed, Predicate<? super T> hasNext, UnaryOperator<T> next)
+  {
+    Stream<T> result = Stream.iterate(seed, hasNext, next);
     return result;
   }
 

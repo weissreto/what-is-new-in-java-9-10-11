@@ -26,6 +26,19 @@ public final class WhatIsNewInKerberosCredMessage
   }
 
   /**
+   * Example call to new method {@link KerberosCredMessage#getEncoded()}.
+   * @since 9
+   * @see KerberosCredMessage#getEncoded()
+   */
+  public byte[] getEncoded()
+  {
+    KerberosCredMessage testee = $$$();
+
+    byte[] result = testee.getEncoded();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link KerberosCredMessage#getSender()}.
    * @since 9
    * @see KerberosCredMessage#getSender()
@@ -48,19 +61,6 @@ public final class WhatIsNewInKerberosCredMessage
     KerberosCredMessage testee = $$$();
 
     KerberosPrincipal result = testee.getRecipient();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link KerberosCredMessage#getEncoded()}.
-   * @since 9
-   * @see KerberosCredMessage#getEncoded()
-   */
-  public byte[] getEncoded()
-  {
-    KerberosCredMessage testee = $$$();
-
-    byte[] result = testee.getEncoded();
     return result;
   }
 

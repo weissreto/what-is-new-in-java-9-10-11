@@ -28,19 +28,6 @@ public final class WhatIsNewInTIFFTagSet
   }
 
   /**
-   * Example call to new method {@link TIFFTagSet#getTagNames()}.
-   * @since 9
-   * @see TIFFTagSet#getTagNames()
-   */
-  public SortedSet<String> getTagNames()
-  {
-    TIFFTagSet testee = $$$();
-
-    SortedSet<String> result = testee.getTagNames();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link TIFFTagSet#getTag(int)}.
    * @since 9
    * @see TIFFTagSet#getTag(int)
@@ -76,6 +63,19 @@ public final class WhatIsNewInTIFFTagSet
     TIFFTagSet testee = $$$();
 
     SortedSet<Integer> result = testee.getTagNumbers();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFTagSet#getTagNames()}.
+   * @since 9
+   * @see TIFFTagSet#getTagNames()
+   */
+  public SortedSet<String> getTagNames()
+  {
+    TIFFTagSet testee = $$$();
+
+    SortedSet<String> result = testee.getTagNames();
     return result;
   }
 

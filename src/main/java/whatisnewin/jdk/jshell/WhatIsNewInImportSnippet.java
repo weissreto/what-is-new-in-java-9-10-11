@@ -15,6 +15,19 @@ import jdk.jshell.ImportSnippet;
 public final class WhatIsNewInImportSnippet
 {
   /**
+   * Example call to new method {@link ImportSnippet#name()}.
+   * @since 9
+   * @see ImportSnippet#name()
+   */
+  public String name()
+  {
+    ImportSnippet testee = $$$();
+
+    String result = testee.name();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ImportSnippet#fullname()}.
    * @since 9
    * @see ImportSnippet#fullname()
@@ -37,19 +50,6 @@ public final class WhatIsNewInImportSnippet
     ImportSnippet testee = $$$();
 
     boolean result = testee.isStatic();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ImportSnippet#name()}.
-   * @since 9
-   * @see ImportSnippet#name()
-   */
-  public String name()
-  {
-    ImportSnippet testee = $$$();
-
-    String result = testee.name();
     return result;
   }
 

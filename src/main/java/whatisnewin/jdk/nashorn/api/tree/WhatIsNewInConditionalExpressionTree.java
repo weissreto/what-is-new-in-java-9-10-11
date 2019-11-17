@@ -29,19 +29,6 @@ public final class WhatIsNewInConditionalExpressionTree
   }
 
   /**
-   * Example call to new method {@link ConditionalExpressionTree#getFalseExpression()}.
-   * @since 9
-   * @see ConditionalExpressionTree#getFalseExpression()
-   */
-  public ExpressionTree getFalseExpression()
-  {
-    ConditionalExpressionTree testee = $$$();
-
-    ExpressionTree result = testee.getFalseExpression();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ConditionalExpressionTree#getTrueExpression()}.
    * @since 9
    * @see ConditionalExpressionTree#getTrueExpression()
@@ -51,6 +38,19 @@ public final class WhatIsNewInConditionalExpressionTree
     ConditionalExpressionTree testee = $$$();
 
     ExpressionTree result = testee.getTrueExpression();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ConditionalExpressionTree#getFalseExpression()}.
+   * @since 9
+   * @see ConditionalExpressionTree#getFalseExpression()
+   */
+  public ExpressionTree getFalseExpression()
+  {
+    ConditionalExpressionTree testee = $$$();
+
+    ExpressionTree result = testee.getFalseExpression();
     return result;
   }
 

@@ -50,17 +50,6 @@ public final class WhatIsNewInRecordingState
   public static final RecordingState CLOSED = RecordingState.CLOSED;
 
   /**
-   * Example call to new method {@link RecordingState#valueOf(String)}.
-   * @since 9
-   * @see RecordingState#valueOf(String)
-   */
-  public static RecordingState valueOf(String name)
-  {
-    RecordingState result = RecordingState.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RecordingState#values()}.
    * @since 9
    * @see RecordingState#values()
@@ -68,6 +57,17 @@ public final class WhatIsNewInRecordingState
   public static RecordingState[] values()
   {
     RecordingState[] result = RecordingState.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RecordingState#valueOf(String)}.
+   * @since 9
+   * @see RecordingState#valueOf(String)
+   */
+  public static RecordingState valueOf(String name)
+  {
+    RecordingState result = RecordingState.valueOf(name);
     return result;
   }
 

@@ -29,19 +29,6 @@ public final class WhatIsNewInRecordedClass
   }
 
   /**
-   * Example call to new method {@link RecordedClass#getName()}.
-   * @since 9
-   * @see RecordedClass#getName()
-   */
-  public String getName()
-  {
-    RecordedClass testee = $$$();
-
-    String result = testee.getName();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RecordedClass#getClassLoader()}.
    * @since 9
    * @see RecordedClass#getClassLoader()
@@ -51,6 +38,19 @@ public final class WhatIsNewInRecordedClass
     RecordedClass testee = $$$();
 
     RecordedClassLoader result = testee.getClassLoader();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RecordedClass#getName()}.
+   * @since 9
+   * @see RecordedClass#getName()
+   */
+  public String getName()
+  {
+    RecordedClass testee = $$$();
+
+    String result = testee.getName();
     return result;
   }
 

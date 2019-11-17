@@ -77,6 +77,18 @@ public final class WhatIsNewInStackWalker
   }
 
   /**
+   * Example call to new method {@link StackWalker#forEach(Consumer)}.
+   * @since 9
+   * @see StackWalker#forEach(Consumer)
+   */
+  public void forEach(Consumer<? super StackFrame> action)
+  {
+    StackWalker testee = $$$();
+
+    testee.forEach(action);
+  }
+
+  /**
    * Example call to new method {@link StackWalker#getCallerClass()}.
    * @since 9
    * @see StackWalker#getCallerClass()
@@ -87,18 +99,6 @@ public final class WhatIsNewInStackWalker
 
     Class<?> result = testee.getCallerClass();
     return result;
-  }
-
-  /**
-   * Example call to new method {@link StackWalker#forEach(Consumer)}.
-   * @since 9
-   * @see StackWalker#forEach(Consumer)
-   */
-  public void forEach(Consumer<? super StackFrame> action)
-  {
-    StackWalker testee = $$$();
-
-    testee.forEach(action);
   }
 
   private StackWalker $$$()

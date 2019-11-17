@@ -15,19 +15,6 @@ import jdk.nashorn.api.tree.RegExpLiteralTree;
 public final class WhatIsNewInRegExpLiteralTree
 {
   /**
-   * Example call to new method {@link RegExpLiteralTree#getOptions()}.
-   * @since 9
-   * @see RegExpLiteralTree#getOptions()
-   */
-  public String getOptions()
-  {
-    RegExpLiteralTree testee = $$$();
-
-    String result = testee.getOptions();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RegExpLiteralTree#getPattern()}.
    * @since 9
    * @see RegExpLiteralTree#getPattern()
@@ -37,6 +24,19 @@ public final class WhatIsNewInRegExpLiteralTree
     RegExpLiteralTree testee = $$$();
 
     String result = testee.getPattern();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link RegExpLiteralTree#getOptions()}.
+   * @since 9
+   * @see RegExpLiteralTree#getOptions()
+   */
+  public String getOptions()
+  {
+    RegExpLiteralTree testee = $$$();
+
+    String result = testee.getOptions();
     return result;
   }
 

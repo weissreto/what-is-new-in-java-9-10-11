@@ -15,15 +15,15 @@ import java.util.concurrent.atomic.AtomicLongArray;
 public final class WhatIsNewInAtomicLongArray
 {
   /**
-   * Example call to new method {@link AtomicLongArray#weakCompareAndSetVolatile(int, long, long)}.
+   * Example call to new method {@link AtomicLongArray#weakCompareAndSetPlain(int, long, long)}.
    * @since 9
-   * @see AtomicLongArray#weakCompareAndSetVolatile(int, long, long)
+   * @see AtomicLongArray#weakCompareAndSetPlain(int, long, long)
    */
-  public boolean weakCompareAndSetVolatile(int i, long expectedValue, long newValue)
+  public boolean weakCompareAndSetPlain(int i, long expectedValue, long newValue)
   {
     AtomicLongArray testee = $$$();
 
-    boolean result = testee.weakCompareAndSetVolatile(i, expectedValue, newValue);
+    boolean result = testee.weakCompareAndSetPlain(i, expectedValue, newValue);
     return result;
   }
 
@@ -41,6 +41,18 @@ public final class WhatIsNewInAtomicLongArray
   }
 
   /**
+   * Example call to new method {@link AtomicLongArray#setPlain(int, long)}.
+   * @since 9
+   * @see AtomicLongArray#setPlain(int, long)
+   */
+  public void setPlain(int i, long newValue)
+  {
+    AtomicLongArray testee = $$$();
+
+    testee.setPlain(i, newValue);
+  }
+
+  /**
    * Example call to new method {@link AtomicLongArray#getOpaque(int)}.
    * @since 9
    * @see AtomicLongArray#getOpaque(int)
@@ -50,19 +62,6 @@ public final class WhatIsNewInAtomicLongArray
     AtomicLongArray testee = $$$();
 
     long result = testee.getOpaque(i);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLongArray#compareAndExchangeRelease(int, long, long)}.
-   * @since 9
-   * @see AtomicLongArray#compareAndExchangeRelease(int, long, long)
-   */
-  public long compareAndExchangeRelease(int i, long expectedValue, long newValue)
-  {
-    AtomicLongArray testee = $$$();
-
-    long result = testee.compareAndExchangeRelease(i, expectedValue, newValue);
     return result;
   }
 
@@ -79,15 +78,15 @@ public final class WhatIsNewInAtomicLongArray
   }
 
   /**
-   * Example call to new method {@link AtomicLongArray#weakCompareAndSetAcquire(int, long, long)}.
+   * Example call to new method {@link AtomicLongArray#getAcquire(int)}.
    * @since 9
-   * @see AtomicLongArray#weakCompareAndSetAcquire(int, long, long)
+   * @see AtomicLongArray#getAcquire(int)
    */
-  public boolean weakCompareAndSetAcquire(int i, long expectedValue, long newValue)
+  public long getAcquire(int i)
   {
     AtomicLongArray testee = $$$();
 
-    boolean result = testee.weakCompareAndSetAcquire(i, expectedValue, newValue);
+    long result = testee.getAcquire(i);
     return result;
   }
 
@@ -104,15 +103,15 @@ public final class WhatIsNewInAtomicLongArray
   }
 
   /**
-   * Example call to new method {@link AtomicLongArray#getAcquire(int)}.
+   * Example call to new method {@link AtomicLongArray#compareAndExchange(int, long, long)}.
    * @since 9
-   * @see AtomicLongArray#getAcquire(int)
+   * @see AtomicLongArray#compareAndExchange(int, long, long)
    */
-  public long getAcquire(int i)
+  public long compareAndExchange(int i, long expectedValue, long newValue)
   {
     AtomicLongArray testee = $$$();
 
-    long result = testee.getAcquire(i);
+    long result = testee.compareAndExchange(i, expectedValue, newValue);
     return result;
   }
 
@@ -130,41 +129,42 @@ public final class WhatIsNewInAtomicLongArray
   }
 
   /**
-   * Example call to new method {@link AtomicLongArray#compareAndExchange(int, long, long)}.
+   * Example call to new method {@link AtomicLongArray#compareAndExchangeRelease(int, long, long)}.
    * @since 9
-   * @see AtomicLongArray#compareAndExchange(int, long, long)
+   * @see AtomicLongArray#compareAndExchangeRelease(int, long, long)
    */
-  public long compareAndExchange(int i, long expectedValue, long newValue)
+  public long compareAndExchangeRelease(int i, long expectedValue, long newValue)
   {
     AtomicLongArray testee = $$$();
 
-    long result = testee.compareAndExchange(i, expectedValue, newValue);
+    long result = testee.compareAndExchangeRelease(i, expectedValue, newValue);
     return result;
   }
 
   /**
-   * Example call to new method {@link AtomicLongArray#weakCompareAndSetPlain(int, long, long)}.
+   * Example call to new method {@link AtomicLongArray#weakCompareAndSetVolatile(int, long, long)}.
    * @since 9
-   * @see AtomicLongArray#weakCompareAndSetPlain(int, long, long)
+   * @see AtomicLongArray#weakCompareAndSetVolatile(int, long, long)
    */
-  public boolean weakCompareAndSetPlain(int i, long expectedValue, long newValue)
+  public boolean weakCompareAndSetVolatile(int i, long expectedValue, long newValue)
   {
     AtomicLongArray testee = $$$();
 
-    boolean result = testee.weakCompareAndSetPlain(i, expectedValue, newValue);
+    boolean result = testee.weakCompareAndSetVolatile(i, expectedValue, newValue);
     return result;
   }
 
   /**
-   * Example call to new method {@link AtomicLongArray#setPlain(int, long)}.
+   * Example call to new method {@link AtomicLongArray#weakCompareAndSetAcquire(int, long, long)}.
    * @since 9
-   * @see AtomicLongArray#setPlain(int, long)
+   * @see AtomicLongArray#weakCompareAndSetAcquire(int, long, long)
    */
-  public void setPlain(int i, long newValue)
+  public boolean weakCompareAndSetAcquire(int i, long expectedValue, long newValue)
   {
     AtomicLongArray testee = $$$();
 
-    testee.setPlain(i, newValue);
+    boolean result = testee.weakCompareAndSetAcquire(i, expectedValue, newValue);
+    return result;
   }
 
   private AtomicLongArray $$$()

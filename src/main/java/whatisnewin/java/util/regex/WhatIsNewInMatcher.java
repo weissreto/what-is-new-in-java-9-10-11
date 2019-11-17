@@ -18,15 +18,15 @@ import java.util.stream.Stream;
 public final class WhatIsNewInMatcher
 {
   /**
-   * Example call to new method {@link Matcher#replaceFirst(Function)}.
+   * Example call to new method {@link Matcher#appendReplacement(StringBuilder, String)}.
    * @since 9
-   * @see Matcher#replaceFirst(Function)
+   * @see Matcher#appendReplacement(StringBuilder, String)
    */
-  public String replaceFirst(Function<MatchResult, String> replacer)
+  public Matcher appendReplacement(StringBuilder sb, String replacement)
   {
     Matcher testee = $$$();
 
-    String result = testee.replaceFirst(replacer);
+    Matcher result = testee.appendReplacement(sb, replacement);
     return result;
   }
 
@@ -40,19 +40,6 @@ public final class WhatIsNewInMatcher
     Matcher testee = $$$();
 
     StringBuilder result = testee.appendTail(sb);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Matcher#appendReplacement(StringBuilder, String)}.
-   * @since 9
-   * @see Matcher#appendReplacement(StringBuilder, String)
-   */
-  public Matcher appendReplacement(StringBuilder sb, String replacement)
-  {
-    Matcher testee = $$$();
-
-    Matcher result = testee.appendReplacement(sb, replacement);
     return result;
   }
 
@@ -79,6 +66,19 @@ public final class WhatIsNewInMatcher
     Matcher testee = $$$();
 
     Stream<MatchResult> result = testee.results();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Matcher#replaceFirst(Function)}.
+   * @since 9
+   * @see Matcher#replaceFirst(Function)
+   */
+  public String replaceFirst(Function<MatchResult, String> replacer)
+  {
+    Matcher testee = $$$();
+
+    String result = testee.replaceFirst(replacer);
     return result;
   }
 

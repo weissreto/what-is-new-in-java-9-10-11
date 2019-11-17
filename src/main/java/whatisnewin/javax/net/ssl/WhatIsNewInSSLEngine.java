@@ -17,19 +17,6 @@ import java.util.List;
 public final class WhatIsNewInSSLEngine
 {
   /**
-   * Example call to new method {@link SSLEngine#getHandshakeApplicationProtocol()}.
-   * @since 9
-   * @see SSLEngine#getHandshakeApplicationProtocol()
-   */
-  public String getHandshakeApplicationProtocol()
-  {
-    SSLEngine testee = $$$();
-
-    String result = testee.getHandshakeApplicationProtocol();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link SSLEngine#getApplicationProtocol()}.
    * @since 9
    * @see SSLEngine#getApplicationProtocol()
@@ -39,6 +26,19 @@ public final class WhatIsNewInSSLEngine
     SSLEngine testee = $$$();
 
     String result = testee.getApplicationProtocol();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SSLEngine#getHandshakeApplicationProtocol()}.
+   * @since 9
+   * @see SSLEngine#getHandshakeApplicationProtocol()
+   */
+  public String getHandshakeApplicationProtocol()
+  {
+    SSLEngine testee = $$$();
+
+    String result = testee.getHandshakeApplicationProtocol();
     return result;
   }
 

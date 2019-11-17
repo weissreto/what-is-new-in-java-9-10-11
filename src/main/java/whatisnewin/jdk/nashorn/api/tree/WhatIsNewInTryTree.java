@@ -18,19 +18,6 @@ import jdk.nashorn.api.tree.CatchTree;
 public final class WhatIsNewInTryTree
 {
   /**
-   * Example call to new method {@link TryTree#getFinallyBlock()}.
-   * @since 9
-   * @see TryTree#getFinallyBlock()
-   */
-  public BlockTree getFinallyBlock()
-  {
-    TryTree testee = $$$();
-
-    BlockTree result = testee.getFinallyBlock();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link TryTree#getBlock()}.
    * @since 9
    * @see TryTree#getBlock()
@@ -53,6 +40,19 @@ public final class WhatIsNewInTryTree
     TryTree testee = $$$();
 
     List<? extends CatchTree> result = testee.getCatches();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TryTree#getFinallyBlock()}.
+   * @since 9
+   * @see TryTree#getFinallyBlock()
+   */
+  public BlockTree getFinallyBlock()
+  {
+    TryTree testee = $$$();
+
+    BlockTree result = testee.getFinallyBlock();
     return result;
   }
 

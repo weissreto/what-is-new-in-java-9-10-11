@@ -18,6 +18,19 @@ import java.sql.SQLException;
 public final class WhatIsNewInConnectionBuilder
 {
   /**
+   * Example call to new method {@link ConnectionBuilder#user(String)}.
+   * @since 9
+   * @see ConnectionBuilder#user(String)
+   */
+  public ConnectionBuilder user(String username)
+  {
+    ConnectionBuilder testee = $$$();
+
+    ConnectionBuilder result = testee.user(username);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ConnectionBuilder#password(String)}.
    * @since 9
    * @see ConnectionBuilder#password(String)
@@ -40,19 +53,6 @@ public final class WhatIsNewInConnectionBuilder
     ConnectionBuilder testee = $$$();
 
     ConnectionBuilder result = testee.shardingKey(shardingKey);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ConnectionBuilder#user(String)}.
-   * @since 9
-   * @see ConnectionBuilder#user(String)
-   */
-  public ConnectionBuilder user(String username)
-  {
-    ConnectionBuilder testee = $$$();
-
-    ConnectionBuilder result = testee.user(username);
     return result;
   }
 

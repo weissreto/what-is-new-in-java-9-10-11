@@ -16,18 +16,6 @@ import java.awt.desktop.ScreenSleepEvent;
 public final class WhatIsNewInScreenSleepListener
 {
   /**
-   * Example call to new method {@link ScreenSleepListener#screenAwoke(ScreenSleepEvent)}.
-   * @since 9
-   * @see ScreenSleepListener#screenAwoke(ScreenSleepEvent)
-   */
-  public void screenAwoke(ScreenSleepEvent e)
-  {
-    ScreenSleepListener testee = $$$();
-
-    testee.screenAwoke(e);
-  }
-
-  /**
    * Example call to new method {@link ScreenSleepListener#screenAboutToSleep(ScreenSleepEvent)}.
    * @since 9
    * @see ScreenSleepListener#screenAboutToSleep(ScreenSleepEvent)
@@ -37,6 +25,18 @@ public final class WhatIsNewInScreenSleepListener
     ScreenSleepListener testee = $$$();
 
     testee.screenAboutToSleep(e);
+  }
+
+  /**
+   * Example call to new method {@link ScreenSleepListener#screenAwoke(ScreenSleepEvent)}.
+   * @since 9
+   * @see ScreenSleepListener#screenAwoke(ScreenSleepEvent)
+   */
+  public void screenAwoke(ScreenSleepEvent e)
+  {
+    ScreenSleepListener testee = $$$();
+
+    testee.screenAwoke(e);
   }
 
   private ScreenSleepListener $$$()

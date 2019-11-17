@@ -17,28 +17,15 @@ import java.lang.module.ModuleDescriptor.Exports.Modifier;
 public final class WhatIsNewInModuleDescriptor$Exports
 {
   /**
-   * Example call to new method {@link Exports#source()}.
+   * Example call to new method {@link Exports#modifiers()}.
    * @since 9
-   * @see Exports#source()
+   * @see Exports#modifiers()
    */
-  public String source()
+  public Set<Modifier> modifiers()
   {
     Exports testee = $$$();
 
-    String result = testee.source();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Exports#compareTo(Exports)}.
-   * @since 9
-   * @see Exports#compareTo(Exports)
-   */
-  public int compareTo(Exports that)
-  {
-    Exports testee = $$$();
-
-    int result = testee.compareTo(that);
+    Set<Modifier> result = testee.modifiers();
     return result;
   }
 
@@ -56,6 +43,19 @@ public final class WhatIsNewInModuleDescriptor$Exports
   }
 
   /**
+   * Example call to new method {@link Exports#source()}.
+   * @since 9
+   * @see Exports#source()
+   */
+  public String source()
+  {
+    Exports testee = $$$();
+
+    String result = testee.source();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Exports#targets()}.
    * @since 9
    * @see Exports#targets()
@@ -69,15 +69,15 @@ public final class WhatIsNewInModuleDescriptor$Exports
   }
 
   /**
-   * Example call to new method {@link Exports#modifiers()}.
+   * Example call to new method {@link Exports#compareTo(Exports)}.
    * @since 9
-   * @see Exports#modifiers()
+   * @see Exports#compareTo(Exports)
    */
-  public Set<Modifier> modifiers()
+  public int compareTo(Exports that)
   {
     Exports testee = $$$();
 
-    Set<Modifier> result = testee.modifiers();
+    int result = testee.compareTo(that);
     return result;
   }
 

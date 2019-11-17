@@ -17,6 +17,17 @@ import javax.xml.catalog.CatalogFeatures.Builder;
 public final class WhatIsNewInCatalogFeatures
 {
   /**
+   * Example call to new method {@link CatalogFeatures#defaults()}.
+   * @since 9
+   * @see CatalogFeatures#defaults()
+   */
+  public static CatalogFeatures defaults()
+  {
+    CatalogFeatures result = CatalogFeatures.defaults();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link CatalogFeatures#get(Feature)}.
    * @since 9
    * @see CatalogFeatures#get(Feature)
@@ -26,17 +37,6 @@ public final class WhatIsNewInCatalogFeatures
     CatalogFeatures testee = $$$();
 
     String result = testee.get(cf);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link CatalogFeatures#defaults()}.
-   * @since 9
-   * @see CatalogFeatures#defaults()
-   */
-  public static CatalogFeatures defaults()
-  {
-    CatalogFeatures result = CatalogFeatures.defaults();
     return result;
   }
 

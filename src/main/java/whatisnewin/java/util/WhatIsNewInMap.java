@@ -16,17 +16,6 @@ import java.util.Map.Entry;
 public final class WhatIsNewInMap<K, V>
 {
   /**
-   * Example call to new method {@link Map#of(Object, Object)}.
-   * @since 9
-   * @see Map#of(Object, Object)
-   */
-  public static <K, V> Map<K, V> of(K k1, V v1)
-  {
-    Map<K, V> result = Map.of(k1, v1);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Map#of()}.
    * @since 9
    * @see Map#of()
@@ -34,6 +23,17 @@ public final class WhatIsNewInMap<K, V>
   public static <K, V> Map<K, V> of()
   {
     Map<K, V> result = Map.of();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Map#of(Object, Object)}.
+   * @since 9
+   * @see Map#of(Object, Object)
+   */
+  public static <K, V> Map<K, V> of(K k1, V v1)
+  {
+    Map<K, V> result = Map.of(k1, v1);
     return result;
   }
 
@@ -137,11 +137,11 @@ public final class WhatIsNewInMap<K, V>
   }
 
   /**
-   * Example call to new method {@link Map#ofEntries(java.util.Map.Entry[])}.
+   * Example call to new method {@link Map#ofEntries(Entry...)}.
    * @since 9
-   * @see Map#ofEntries(java.util.Map.Entry[])
+   * @see Map#ofEntries(Entry...)
    */
-  public static <K, V> Map<K, V> ofEntries(Entry<? extends K, ? extends V>[] entries)
+  public static <K, V> Map<K, V> ofEntries(Entry<? extends K, ? extends V>... entries)
   {
     Map<K, V> result = Map.ofEntries(entries);
     return result;

@@ -15,18 +15,6 @@ import java.util.concurrent.atomic.AtomicLong;
 public final class WhatIsNewInAtomicLong
 {
   /**
-   * Example call to new method {@link AtomicLong#setPlain(long)}.
-   * @since 9
-   * @see AtomicLong#setPlain(long)
-   */
-  public void setPlain(long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    testee.setPlain(newValue);
-  }
-
-  /**
    * Example call to new method {@link AtomicLong#weakCompareAndSetPlain(long, long)}.
    * @since 9
    * @see AtomicLong#weakCompareAndSetPlain(long, long)
@@ -36,95 +24,6 @@ public final class WhatIsNewInAtomicLong
     AtomicLong testee = $$$();
 
     boolean result = testee.weakCompareAndSetPlain(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#compareAndExchangeAcquire(long, long)}.
-   * @since 9
-   * @see AtomicLong#compareAndExchangeAcquire(long, long)
-   */
-  public long compareAndExchangeAcquire(long expectedValue, long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    long result = testee.compareAndExchangeAcquire(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#compareAndExchange(long, long)}.
-   * @since 9
-   * @see AtomicLong#compareAndExchange(long, long)
-   */
-  public long compareAndExchange(long expectedValue, long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    long result = testee.compareAndExchange(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#getAcquire()}.
-   * @since 9
-   * @see AtomicLong#getAcquire()
-   */
-  public long getAcquire()
-  {
-    AtomicLong testee = $$$();
-
-    long result = testee.getAcquire();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#weakCompareAndSetAcquire(long, long)}.
-   * @since 9
-   * @see AtomicLong#weakCompareAndSetAcquire(long, long)
-   */
-  public boolean weakCompareAndSetAcquire(long expectedValue, long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    boolean result = testee.weakCompareAndSetAcquire(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#setRelease(long)}.
-   * @since 9
-   * @see AtomicLong#setRelease(long)
-   */
-  public void setRelease(long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    testee.setRelease(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#setOpaque(long)}.
-   * @since 9
-   * @see AtomicLong#setOpaque(long)
-   */
-  public void setOpaque(long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    testee.setOpaque(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicLong#weakCompareAndSetVolatile(long, long)}.
-   * @since 9
-   * @see AtomicLong#weakCompareAndSetVolatile(long, long)
-   */
-  public boolean weakCompareAndSetVolatile(long expectedValue, long newValue)
-  {
-    AtomicLong testee = $$$();
-
-    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
     return result;
   }
 
@@ -142,6 +41,18 @@ public final class WhatIsNewInAtomicLong
   }
 
   /**
+   * Example call to new method {@link AtomicLong#setPlain(long)}.
+   * @since 9
+   * @see AtomicLong#setPlain(long)
+   */
+  public void setPlain(long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    testee.setPlain(newValue);
+  }
+
+  /**
    * Example call to new method {@link AtomicLong#getOpaque()}.
    * @since 9
    * @see AtomicLong#getOpaque()
@@ -155,6 +66,69 @@ public final class WhatIsNewInAtomicLong
   }
 
   /**
+   * Example call to new method {@link AtomicLong#setOpaque(long)}.
+   * @since 9
+   * @see AtomicLong#setOpaque(long)
+   */
+  public void setOpaque(long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    testee.setOpaque(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#getAcquire()}.
+   * @since 9
+   * @see AtomicLong#getAcquire()
+   */
+  public long getAcquire()
+  {
+    AtomicLong testee = $$$();
+
+    long result = testee.getAcquire();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#setRelease(long)}.
+   * @since 9
+   * @see AtomicLong#setRelease(long)
+   */
+  public void setRelease(long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    testee.setRelease(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#compareAndExchange(long, long)}.
+   * @since 9
+   * @see AtomicLong#compareAndExchange(long, long)
+   */
+  public long compareAndExchange(long expectedValue, long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    long result = testee.compareAndExchange(expectedValue, newValue);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#compareAndExchangeAcquire(long, long)}.
+   * @since 9
+   * @see AtomicLong#compareAndExchangeAcquire(long, long)
+   */
+  public long compareAndExchangeAcquire(long expectedValue, long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    long result = testee.compareAndExchangeAcquire(expectedValue, newValue);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link AtomicLong#compareAndExchangeRelease(long, long)}.
    * @since 9
    * @see AtomicLong#compareAndExchangeRelease(long, long)
@@ -164,6 +138,32 @@ public final class WhatIsNewInAtomicLong
     AtomicLong testee = $$$();
 
     long result = testee.compareAndExchangeRelease(expectedValue, newValue);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#weakCompareAndSetVolatile(long, long)}.
+   * @since 9
+   * @see AtomicLong#weakCompareAndSetVolatile(long, long)
+   */
+  public boolean weakCompareAndSetVolatile(long expectedValue, long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicLong#weakCompareAndSetAcquire(long, long)}.
+   * @since 9
+   * @see AtomicLong#weakCompareAndSetAcquire(long, long)
+   */
+  public boolean weakCompareAndSetAcquire(long expectedValue, long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    boolean result = testee.weakCompareAndSetAcquire(expectedValue, newValue);
     return result;
   }
 

@@ -30,19 +30,6 @@ public final class WhatIsNewInForOfLoopTree
   }
 
   /**
-   * Example call to new method {@link ForOfLoopTree#getStatement()}.
-   * @since 9
-   * @see ForOfLoopTree#getStatement()
-   */
-  public StatementTree getStatement()
-  {
-    ForOfLoopTree testee = $$$();
-
-    StatementTree result = testee.getStatement();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ForOfLoopTree#getExpression()}.
    * @since 9
    * @see ForOfLoopTree#getExpression()
@@ -52,6 +39,19 @@ public final class WhatIsNewInForOfLoopTree
     ForOfLoopTree testee = $$$();
 
     ExpressionTree result = testee.getExpression();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ForOfLoopTree#getStatement()}.
+   * @since 9
+   * @see ForOfLoopTree#getStatement()
+   */
+  public StatementTree getStatement()
+  {
+    ForOfLoopTree testee = $$$();
+
+    StatementTree result = testee.getStatement();
     return result;
   }
 

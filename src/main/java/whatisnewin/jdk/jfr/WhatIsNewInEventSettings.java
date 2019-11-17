@@ -16,6 +16,45 @@ import java.time.Duration;
 public final class WhatIsNewInEventSettings
 {
   /**
+   * Example call to new method {@link EventSettings#withStackTrace()}.
+   * @since 9
+   * @see EventSettings#withStackTrace()
+   */
+  public EventSettings withStackTrace()
+  {
+    EventSettings testee = $$$();
+
+    EventSettings result = testee.withStackTrace();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link EventSettings#withoutStackTrace()}.
+   * @since 9
+   * @see EventSettings#withoutStackTrace()
+   */
+  public EventSettings withoutStackTrace()
+  {
+    EventSettings testee = $$$();
+
+    EventSettings result = testee.withoutStackTrace();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link EventSettings#withoutThreshold()}.
+   * @since 9
+   * @see EventSettings#withoutThreshold()
+   */
+  public EventSettings withoutThreshold()
+  {
+    EventSettings testee = $$$();
+
+    EventSettings result = testee.withoutThreshold();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link EventSettings#withPeriod(Duration)}.
    * @since 9
    * @see EventSettings#withPeriod(Duration)
@@ -51,45 +90,6 @@ public final class WhatIsNewInEventSettings
     EventSettings testee = $$$();
 
     EventSettings result = testee.with(name, value);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link EventSettings#withoutStackTrace()}.
-   * @since 9
-   * @see EventSettings#withoutStackTrace()
-   */
-  public EventSettings withoutStackTrace()
-  {
-    EventSettings testee = $$$();
-
-    EventSettings result = testee.withoutStackTrace();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link EventSettings#withStackTrace()}.
-   * @since 9
-   * @see EventSettings#withStackTrace()
-   */
-  public EventSettings withStackTrace()
-  {
-    EventSettings testee = $$$();
-
-    EventSettings result = testee.withStackTrace();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link EventSettings#withoutThreshold()}.
-   * @since 9
-   * @see EventSettings#withoutThreshold()
-   */
-  public EventSettings withoutThreshold()
-  {
-    EventSettings testee = $$$();
-
-    EventSettings result = testee.withoutThreshold();
     return result;
   }
 

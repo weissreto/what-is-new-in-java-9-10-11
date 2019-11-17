@@ -14,17 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInLong
 {
   /**
-   * Example call to new method {@link Long#parseUnsignedLong(CharSequence, int, int, int)}.
-   * @since 9
-   * @see Long#parseUnsignedLong(CharSequence, int, int, int)
-   */
-  public static long parseUnsignedLong(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
-  {
-    long result = Long.parseUnsignedLong(s, beginIndex, endIndex, radix);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Long#parseLong(CharSequence, int, int, int)}.
    * @since 9
    * @see Long#parseLong(CharSequence, int, int, int)
@@ -32,6 +21,17 @@ public final class WhatIsNewInLong
   public static long parseLong(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
   {
     long result = Long.parseLong(s, beginIndex, endIndex, radix);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Long#parseUnsignedLong(CharSequence, int, int, int)}.
+   * @since 9
+   * @see Long#parseUnsignedLong(CharSequence, int, int, int)
+   */
+  public static long parseUnsignedLong(CharSequence s, int beginIndex, int endIndex, int radix) throws NumberFormatException
+  {
+    long result = Long.parseUnsignedLong(s, beginIndex, endIndex, radix);
     return result;
   }
 

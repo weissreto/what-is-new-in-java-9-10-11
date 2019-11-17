@@ -1,8 +1,8 @@
 package whatisnewin.jdk.jshell;
 
 import jdk.jshell.SnippetEvent;
-import jdk.jshell.Snippet.Status;
 import jdk.jshell.Snippet;
+import jdk.jshell.Snippet.Status;
 import jdk.jshell.JShellException;
 
 /**
@@ -17,6 +17,19 @@ import jdk.jshell.JShellException;
  */
 public final class WhatIsNewInSnippetEvent
 {
+  /**
+   * Example call to new method {@link SnippetEvent#snippet()}.
+   * @since 9
+   * @see SnippetEvent#snippet()
+   */
+  public Snippet snippet()
+  {
+    SnippetEvent testee = $$$();
+
+    Snippet result = testee.snippet();
+    return result;
+  }
+
   /**
    * Example call to new method {@link SnippetEvent#previousStatus()}.
    * @since 9
@@ -40,19 +53,6 @@ public final class WhatIsNewInSnippetEvent
     SnippetEvent testee = $$$();
 
     Status result = testee.status();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link SnippetEvent#value()}.
-   * @since 9
-   * @see SnippetEvent#value()
-   */
-  public String value()
-  {
-    SnippetEvent testee = $$$();
-
-    String result = testee.value();
     return result;
   }
 
@@ -83,19 +83,6 @@ public final class WhatIsNewInSnippetEvent
   }
 
   /**
-   * Example call to new method {@link SnippetEvent#snippet()}.
-   * @since 9
-   * @see SnippetEvent#snippet()
-   */
-  public Snippet snippet()
-  {
-    SnippetEvent testee = $$$();
-
-    Snippet result = testee.snippet();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link SnippetEvent#exception()}.
    * @since 9
    * @see SnippetEvent#exception()
@@ -105,6 +92,19 @@ public final class WhatIsNewInSnippetEvent
     SnippetEvent testee = $$$();
 
     JShellException result = testee.exception();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link SnippetEvent#value()}.
+   * @since 9
+   * @see SnippetEvent#value()
+   */
+  public String value()
+  {
+    SnippetEvent testee = $$$();
+
+    String result = testee.value();
     return result;
   }
 

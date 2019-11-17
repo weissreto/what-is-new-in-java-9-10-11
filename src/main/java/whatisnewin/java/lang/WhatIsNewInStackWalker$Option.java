@@ -36,17 +36,6 @@ public final class WhatIsNewInStackWalker$Option
   public static final Option SHOW_HIDDEN_FRAMES = Option.SHOW_HIDDEN_FRAMES;
 
   /**
-   * Example call to new method {@link Option#valueOf(String)}.
-   * @since 9
-   * @see Option#valueOf(String)
-   */
-  public static Option valueOf(String name)
-  {
-    Option result = Option.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Option#values()}.
    * @since 9
    * @see Option#values()
@@ -54,6 +43,17 @@ public final class WhatIsNewInStackWalker$Option
   public static Option[] values()
   {
     Option[] result = Option.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Option#valueOf(String)}.
+   * @since 9
+   * @see Option#valueOf(String)
+   */
+  public static Option valueOf(String name)
+  {
+    Option result = Option.valueOf(name);
     return result;
   }
 

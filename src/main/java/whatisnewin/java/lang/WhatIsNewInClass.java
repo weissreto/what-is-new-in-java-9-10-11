@@ -14,15 +14,13 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInClass<T>
 {
   /**
-   * Example call to new method {@link Class#getPackageName()}.
+   * Example call to new method {@link Class#forName(Module, String)}.
    * @since 9
-   * @see Class#getPackageName()
+   * @see Class#forName(Module, String)
    */
-  public String getPackageName()
+  public static Class<?> forName(Module module, String name)
   {
-    Class<T> testee = $$$();
-
-    String result = testee.getPackageName();
+    Class<?> result = Class.forName(module, name);
     return result;
   }
 
@@ -40,15 +38,28 @@ public final class WhatIsNewInClass<T>
   }
 
   /**
-   * Example call to new method {@link Class#getNestMembers()}.
-   * @since 11
-   * @see Class#getNestMembers()
+   * Example call to new method {@link Class#getPackageName()}.
+   * @since 9
+   * @see Class#getPackageName()
    */
-  public Class<?>[] getNestMembers()
+  public String getPackageName()
   {
     Class<T> testee = $$$();
 
-    Class<?>[] result = testee.getNestMembers();
+    String result = testee.getPackageName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Class#getNestHost()}.
+   * @since 11
+   * @see Class#getNestHost()
+   */
+  public Class<?> getNestHost()
+  {
+    Class<T> testee = $$$();
+
+    Class<?> result = testee.getNestHost();
     return result;
   }
 
@@ -66,26 +77,15 @@ public final class WhatIsNewInClass<T>
   }
 
   /**
-   * Example call to new method {@link Class#forName(Module, String)}.
-   * @since 9
-   * @see Class#forName(Module, String)
-   */
-  public static Class<?> forName(Module module, String name)
-  {
-    Class<?> result = Class.forName(module, name);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Class#getNestHost()}.
+   * Example call to new method {@link Class#getNestMembers()}.
    * @since 11
-   * @see Class#getNestHost()
+   * @see Class#getNestMembers()
    */
-  public Class<?> getNestHost()
+  public Class<?>[] getNestMembers()
   {
     Class<T> testee = $$$();
 
-    Class<?> result = testee.getNestHost();
+    Class<?>[] result = testee.getNestMembers();
     return result;
   }
 

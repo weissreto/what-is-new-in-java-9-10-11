@@ -17,19 +17,6 @@ import jdk.nashorn.api.tree.StatementTree;
 public final class WhatIsNewInForInLoopTree
 {
   /**
-   * Example call to new method {@link ForInLoopTree#isForEach()}.
-   * @since 9
-   * @see ForInLoopTree#isForEach()
-   */
-  public boolean isForEach()
-  {
-    ForInLoopTree testee = $$$();
-
-    boolean result = testee.isForEach();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ForInLoopTree#getVariable()}.
    * @since 9
    * @see ForInLoopTree#getVariable()
@@ -39,6 +26,19 @@ public final class WhatIsNewInForInLoopTree
     ForInLoopTree testee = $$$();
 
     ExpressionTree result = testee.getVariable();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ForInLoopTree#getExpression()}.
+   * @since 9
+   * @see ForInLoopTree#getExpression()
+   */
+  public ExpressionTree getExpression()
+  {
+    ForInLoopTree testee = $$$();
+
+    ExpressionTree result = testee.getExpression();
     return result;
   }
 
@@ -56,15 +56,15 @@ public final class WhatIsNewInForInLoopTree
   }
 
   /**
-   * Example call to new method {@link ForInLoopTree#getExpression()}.
+   * Example call to new method {@link ForInLoopTree#isForEach()}.
    * @since 9
-   * @see ForInLoopTree#getExpression()
+   * @see ForInLoopTree#isForEach()
    */
-  public ExpressionTree getExpression()
+  public boolean isForEach()
   {
     ForInLoopTree testee = $$$();
 
-    ExpressionTree result = testee.getExpression();
+    boolean result = testee.isForEach();
     return result;
   }
 

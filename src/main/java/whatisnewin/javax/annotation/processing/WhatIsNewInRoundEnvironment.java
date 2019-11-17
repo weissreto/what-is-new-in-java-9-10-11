@@ -18,11 +18,11 @@ import javax.lang.model.element.TypeElement;
 public final class WhatIsNewInRoundEnvironment
 {
   /**
-   * Example call to new method {@link RoundEnvironment#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])}.
+   * Example call to new method {@link RoundEnvironment#getElementsAnnotatedWithAny(TypeElement...)}.
    * @since 9
-   * @see RoundEnvironment#getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement[])
+   * @see RoundEnvironment#getElementsAnnotatedWithAny(TypeElement...)
    */
-  public Set<? extends Element> getElementsAnnotatedWithAny(TypeElement[] annotations)
+  public Set<? extends Element> getElementsAnnotatedWithAny(TypeElement... annotations)
   {
     RoundEnvironment testee = $$$();
 

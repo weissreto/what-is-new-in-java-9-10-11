@@ -28,19 +28,6 @@ public final class WhatIsNewInProvider
   }
 
   /**
-   * Example call to new method {@link Provider#getVersionStr()}.
-   * @since 9
-   * @see Provider#getVersionStr()
-   */
-  public String getVersionStr()
-  {
-    Provider testee = $$$();
-
-    String result = testee.getVersionStr();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Provider#isConfigured()}.
    * @since 9
    * @see Provider#isConfigured()
@@ -50,6 +37,19 @@ public final class WhatIsNewInProvider
     Provider testee = $$$();
 
     boolean result = testee.isConfigured();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Provider#getVersionStr()}.
+   * @since 9
+   * @see Provider#getVersionStr()
+   */
+  public String getVersionStr()
+  {
+    Provider testee = $$$();
+
+    String result = testee.getVersionStr();
     return result;
   }
 

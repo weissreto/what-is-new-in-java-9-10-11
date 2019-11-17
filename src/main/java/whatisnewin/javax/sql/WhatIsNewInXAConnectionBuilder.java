@@ -31,6 +31,32 @@ public final class WhatIsNewInXAConnectionBuilder
   }
 
   /**
+   * Example call to new method {@link XAConnectionBuilder#password(String)}.
+   * @since 9
+   * @see XAConnectionBuilder#password(String)
+   */
+  public XAConnectionBuilder password(String password)
+  {
+    XAConnectionBuilder testee = $$$();
+
+    XAConnectionBuilder result = testee.password(password);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link XAConnectionBuilder#shardingKey(ShardingKey)}.
+   * @since 9
+   * @see XAConnectionBuilder#shardingKey(ShardingKey)
+   */
+  public XAConnectionBuilder shardingKey(ShardingKey shardingKey)
+  {
+    XAConnectionBuilder testee = $$$();
+
+    XAConnectionBuilder result = testee.shardingKey(shardingKey);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link XAConnectionBuilder#superShardingKey(ShardingKey)}.
    * @since 9
    * @see XAConnectionBuilder#superShardingKey(ShardingKey)
@@ -53,32 +79,6 @@ public final class WhatIsNewInXAConnectionBuilder
     XAConnectionBuilder testee = $$$();
 
     XAConnection result = testee.build();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link XAConnectionBuilder#shardingKey(ShardingKey)}.
-   * @since 9
-   * @see XAConnectionBuilder#shardingKey(ShardingKey)
-   */
-  public XAConnectionBuilder shardingKey(ShardingKey shardingKey)
-  {
-    XAConnectionBuilder testee = $$$();
-
-    XAConnectionBuilder result = testee.shardingKey(shardingKey);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link XAConnectionBuilder#password(String)}.
-   * @since 9
-   * @see XAConnectionBuilder#password(String)
-   */
-  public XAConnectionBuilder password(String password)
-  {
-    XAConnectionBuilder testee = $$$();
-
-    XAConnectionBuilder result = testee.password(password);
     return result;
   }
 

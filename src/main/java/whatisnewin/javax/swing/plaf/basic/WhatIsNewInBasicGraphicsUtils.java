@@ -18,16 +18,6 @@ import java.awt.FontMetrics;
 public final class WhatIsNewInBasicGraphicsUtils
 {
   /**
-   * Example call to new method {@link BasicGraphicsUtils#drawStringUnderlineCharAt(JComponent, Graphics2D, String, int, float, float)}.
-   * @since 9
-   * @see BasicGraphicsUtils#drawStringUnderlineCharAt(JComponent, Graphics2D, String, int, float, float)
-   */
-  public static void drawStringUnderlineCharAt(JComponent c, Graphics2D g, String string, int underlinedIndex, float x, float y)
-  {
-    BasicGraphicsUtils.drawStringUnderlineCharAt(c, g, string, underlinedIndex, x, y);
-  }
-
-  /**
    * Example call to new method {@link BasicGraphicsUtils#drawString(JComponent, Graphics2D, String, float, float)}.
    * @since 9
    * @see BasicGraphicsUtils#drawString(JComponent, Graphics2D, String, float, float)
@@ -35,6 +25,16 @@ public final class WhatIsNewInBasicGraphicsUtils
   public static void drawString(JComponent c, Graphics2D g, String string, float x, float y)
   {
     BasicGraphicsUtils.drawString(c, g, string, x, y);
+  }
+
+  /**
+   * Example call to new method {@link BasicGraphicsUtils#drawStringUnderlineCharAt(JComponent, Graphics2D, String, int, float, float)}.
+   * @since 9
+   * @see BasicGraphicsUtils#drawStringUnderlineCharAt(JComponent, Graphics2D, String, int, float, float)
+   */
+  public static void drawStringUnderlineCharAt(JComponent c, Graphics2D g, String string, int underlinedIndex, float x, float y)
+  {
+    BasicGraphicsUtils.drawStringUnderlineCharAt(c, g, string, underlinedIndex, x, y);
   }
 
   /**

@@ -31,28 +31,15 @@ public final class WhatIsNewInEventTypeInfo
   }
 
   /**
-   * Example call to new method {@link EventTypeInfo#getName()}.
+   * Example call to new method {@link EventTypeInfo#getCategoryNames()}.
    * @since 9
-   * @see EventTypeInfo#getName()
+   * @see EventTypeInfo#getCategoryNames()
    */
-  public String getName()
+  public List<String> getCategoryNames()
   {
     EventTypeInfo testee = $$$();
 
-    String result = testee.getName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link EventTypeInfo#getSettingDescriptors()}.
-   * @since 9
-   * @see EventTypeInfo#getSettingDescriptors()
-   */
-  public List<SettingDescriptorInfo> getSettingDescriptors()
-  {
-    EventTypeInfo testee = $$$();
-
-    List<SettingDescriptorInfo> result = testee.getSettingDescriptors();
+    List<String> result = testee.getCategoryNames();
     return result;
   }
 
@@ -70,26 +57,15 @@ public final class WhatIsNewInEventTypeInfo
   }
 
   /**
-   * Example call to new method {@link EventTypeInfo#from(CompositeData)}.
+   * Example call to new method {@link EventTypeInfo#getName()}.
    * @since 9
-   * @see EventTypeInfo#from(CompositeData)
+   * @see EventTypeInfo#getName()
    */
-  public static EventTypeInfo from(CompositeData cd)
-  {
-    EventTypeInfo result = EventTypeInfo.from(cd);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link EventTypeInfo#getCategoryNames()}.
-   * @since 9
-   * @see EventTypeInfo#getCategoryNames()
-   */
-  public List<String> getCategoryNames()
+  public String getName()
   {
     EventTypeInfo testee = $$$();
 
-    List<String> result = testee.getCategoryNames();
+    String result = testee.getName();
     return result;
   }
 
@@ -103,6 +79,30 @@ public final class WhatIsNewInEventTypeInfo
     EventTypeInfo testee = $$$();
 
     String result = testee.getDescription();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link EventTypeInfo#getSettingDescriptors()}.
+   * @since 9
+   * @see EventTypeInfo#getSettingDescriptors()
+   */
+  public List<SettingDescriptorInfo> getSettingDescriptors()
+  {
+    EventTypeInfo testee = $$$();
+
+    List<SettingDescriptorInfo> result = testee.getSettingDescriptors();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link EventTypeInfo#from(CompositeData)}.
+   * @since 9
+   * @see EventTypeInfo#from(CompositeData)
+   */
+  public static EventTypeInfo from(CompositeData cd)
+  {
+    EventTypeInfo result = EventTypeInfo.from(cd);
     return result;
   }
 

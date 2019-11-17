@@ -18,15 +18,15 @@ import java.sql.SQLException;
 public final class WhatIsNewInPooledConnectionBuilder
 {
   /**
-   * Example call to new method {@link PooledConnectionBuilder#shardingKey(ShardingKey)}.
+   * Example call to new method {@link PooledConnectionBuilder#user(String)}.
    * @since 9
-   * @see PooledConnectionBuilder#shardingKey(ShardingKey)
+   * @see PooledConnectionBuilder#user(String)
    */
-  public PooledConnectionBuilder shardingKey(ShardingKey shardingKey)
+  public PooledConnectionBuilder user(String username)
   {
     PooledConnectionBuilder testee = $$$();
 
-    PooledConnectionBuilder result = testee.shardingKey(shardingKey);
+    PooledConnectionBuilder result = testee.user(username);
     return result;
   }
 
@@ -44,15 +44,15 @@ public final class WhatIsNewInPooledConnectionBuilder
   }
 
   /**
-   * Example call to new method {@link PooledConnectionBuilder#user(String)}.
+   * Example call to new method {@link PooledConnectionBuilder#shardingKey(ShardingKey)}.
    * @since 9
-   * @see PooledConnectionBuilder#user(String)
+   * @see PooledConnectionBuilder#shardingKey(ShardingKey)
    */
-  public PooledConnectionBuilder user(String username)
+  public PooledConnectionBuilder shardingKey(ShardingKey shardingKey)
   {
     PooledConnectionBuilder testee = $$$();
 
-    PooledConnectionBuilder result = testee.user(username);
+    PooledConnectionBuilder result = testee.shardingKey(shardingKey);
     return result;
   }
 

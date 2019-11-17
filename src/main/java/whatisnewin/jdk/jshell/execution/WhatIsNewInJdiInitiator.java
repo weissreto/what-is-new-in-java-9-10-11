@@ -28,19 +28,6 @@ public final class WhatIsNewInJdiInitiator
   }
 
   /**
-   * Example call to new method {@link JdiInitiator#process()}.
-   * @since 9
-   * @see JdiInitiator#process()
-   */
-  public Process process()
-  {
-    JdiInitiator testee = $$$();
-
-    Process result = testee.process();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link JdiInitiator#vm()}.
    * @since 9
    * @see JdiInitiator#vm()
@@ -50,6 +37,19 @@ public final class WhatIsNewInJdiInitiator
     JdiInitiator testee = $$$();
 
     VirtualMachine result = testee.vm();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link JdiInitiator#process()}.
+   * @since 9
+   * @see JdiInitiator#process()
+   */
+  public Process process()
+  {
+    JdiInitiator testee = $$$();
+
+    Process result = testee.process();
     return result;
   }
 

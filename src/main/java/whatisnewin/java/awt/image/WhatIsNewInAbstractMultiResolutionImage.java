@@ -1,8 +1,8 @@
 package whatisnewin.java.awt.image;
 
 import java.awt.image.AbstractMultiResolutionImage;
-import java.awt.image.ImageProducer;
 import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 import java.awt.Graphics;
 
 /**
@@ -18,15 +18,15 @@ import java.awt.Graphics;
 public final class WhatIsNewInAbstractMultiResolutionImage
 {
   /**
-   * Example call to new method {@link AbstractMultiResolutionImage#getSource()}.
+   * Example call to new method {@link AbstractMultiResolutionImage#getWidth(ImageObserver)}.
    * @since 9
-   * @see AbstractMultiResolutionImage#getSource()
+   * @see AbstractMultiResolutionImage#getWidth(ImageObserver)
    */
-  public ImageProducer getSource()
+  public int getWidth(ImageObserver observer)
   {
     AbstractMultiResolutionImage testee = $$$();
 
-    ImageProducer result = testee.getSource();
+    int result = testee.getWidth(observer);
     return result;
   }
 
@@ -44,15 +44,15 @@ public final class WhatIsNewInAbstractMultiResolutionImage
   }
 
   /**
-   * Example call to new method {@link AbstractMultiResolutionImage#getWidth(ImageObserver)}.
+   * Example call to new method {@link AbstractMultiResolutionImage#getSource()}.
    * @since 9
-   * @see AbstractMultiResolutionImage#getWidth(ImageObserver)
+   * @see AbstractMultiResolutionImage#getSource()
    */
-  public int getWidth(ImageObserver observer)
+  public ImageProducer getSource()
   {
     AbstractMultiResolutionImage testee = $$$();
 
-    int result = testee.getWidth(observer);
+    ImageProducer result = testee.getSource();
     return result;
   }
 

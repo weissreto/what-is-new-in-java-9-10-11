@@ -1,12 +1,12 @@
 package whatisnewin.java.lang.module;
 
 import java.lang.module.ModuleDescriptor.Builder;
+import java.lang.module.ModuleDescriptor.Requires;
 import java.util.Set;
+import java.lang.module.ModuleDescriptor.Requires.Modifier;
 import java.lang.module.ModuleDescriptor.Version;
 import java.lang.module.ModuleDescriptor.Exports;
-import java.lang.module.ModuleDescriptor.Exports.Modifier;
 import java.lang.module.ModuleDescriptor.Opens;
-import java.lang.module.ModuleDescriptor.Requires;
 import java.lang.module.ModuleDescriptor.Provides;
 import java.util.List;
 import java.lang.module.ModuleDescriptor;
@@ -24,41 +24,54 @@ import java.lang.module.ModuleDescriptor;
 public final class WhatIsNewInModuleDescriptor$Builder
 {
   /**
-   * Example call to new method {@link Builder#packages(Set)}.
+   * Example call to new method {@link Builder#requires(Requires)}.
    * @since 9
-   * @see Builder#packages(Set)
+   * @see Builder#requires(Requires)
    */
-  public Builder packages(Set<String> pns)
+  public Builder requires(Requires req)
   {
     Builder testee = $$$();
 
-    Builder result = testee.packages(pns);
+    Builder result = testee.requires(req);
     return result;
   }
 
   /**
-   * Example call to new method {@link Builder#version(Version)}.
+   * Example call to new method {@link Builder#requires(Set, String, Version)}.
    * @since 9
-   * @see Builder#version(Version)
+   * @see Builder#requires(Set, String, Version)
    */
-  public Builder version(Version v)
+  public Builder requires(Set<Modifier> ms, String mn, Version compiledVersion)
   {
     Builder testee = $$$();
 
-    Builder result = testee.version(v);
+    Builder result = testee.requires(ms, mn, compiledVersion);
     return result;
   }
 
   /**
-   * Example call to new method {@link Builder#version(String)}.
+   * Example call to new method {@link Builder#requires(Set, String)}.
    * @since 9
-   * @see Builder#version(String)
+   * @see Builder#requires(Set, String)
    */
-  public Builder version(String vs)
+  public Builder requires(Set<Modifier> ms, String mn)
   {
     Builder testee = $$$();
 
-    Builder result = testee.version(vs);
+    Builder result = testee.requires(ms, mn);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#requires(String)}.
+   * @since 9
+   * @see Builder#requires(String)
+   */
+  public Builder requires(String mn)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.requires(mn);
     return result;
   }
 
@@ -80,7 +93,7 @@ public final class WhatIsNewInModuleDescriptor$Builder
    * @since 9
    * @see Builder#exports(Set, String, Set)
    */
-  public Builder exports(Set<Modifier> ms, String pn, Set<String> targets)
+  public Builder exports(Set<java.lang.module.ModuleDescriptor.Exports.Modifier> ms, String pn, Set<String> targets)
   {
     Builder testee = $$$();
 
@@ -93,7 +106,7 @@ public final class WhatIsNewInModuleDescriptor$Builder
    * @since 9
    * @see Builder#exports(Set, String)
    */
-  public Builder exports(Set<Modifier> ms, String pn)
+  public Builder exports(Set<java.lang.module.ModuleDescriptor.Exports.Modifier> ms, String pn)
   {
     Builder testee = $$$();
 
@@ -124,32 +137,6 @@ public final class WhatIsNewInModuleDescriptor$Builder
     Builder testee = $$$();
 
     Builder result = testee.exports(pn);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Builder#mainClass(String)}.
-   * @since 9
-   * @see Builder#mainClass(String)
-   */
-  public Builder mainClass(String mc)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.mainClass(mc);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Builder#uses(String)}.
-   * @since 9
-   * @see Builder#uses(String)
-   */
-  public Builder uses(String service)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.uses(service);
     return result;
   }
 
@@ -219,54 +206,15 @@ public final class WhatIsNewInModuleDescriptor$Builder
   }
 
   /**
-   * Example call to new method {@link Builder#requires(Requires)}.
+   * Example call to new method {@link Builder#uses(String)}.
    * @since 9
-   * @see Builder#requires(Requires)
+   * @see Builder#uses(String)
    */
-  public Builder requires(Requires req)
+  public Builder uses(String service)
   {
     Builder testee = $$$();
 
-    Builder result = testee.requires(req);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Builder#requires(Set, String, Version)}.
-   * @since 9
-   * @see Builder#requires(Set, String, Version)
-   */
-  public Builder requires(Set<java.lang.module.ModuleDescriptor.Requires.Modifier> ms, String mn, Version compiledVersion)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.requires(ms, mn, compiledVersion);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Builder#requires(Set, String)}.
-   * @since 9
-   * @see Builder#requires(Set, String)
-   */
-  public Builder requires(Set<java.lang.module.ModuleDescriptor.Requires.Modifier> ms, String mn)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.requires(ms, mn);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Builder#requires(String)}.
-   * @since 9
-   * @see Builder#requires(String)
-   */
-  public Builder requires(String mn)
-  {
-    Builder testee = $$$();
-
-    Builder result = testee.requires(mn);
+    Builder result = testee.uses(service);
     return result;
   }
 
@@ -293,6 +241,58 @@ public final class WhatIsNewInModuleDescriptor$Builder
     Builder testee = $$$();
 
     Builder result = testee.provides(service, providers);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#packages(Set)}.
+   * @since 9
+   * @see Builder#packages(Set)
+   */
+  public Builder packages(Set<String> pns)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.packages(pns);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#version(Version)}.
+   * @since 9
+   * @see Builder#version(Version)
+   */
+  public Builder version(Version v)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.version(v);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#version(String)}.
+   * @since 9
+   * @see Builder#version(String)
+   */
+  public Builder version(String vs)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.version(vs);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Builder#mainClass(String)}.
+   * @since 9
+   * @see Builder#mainClass(String)
+   */
+  public Builder mainClass(String mc)
+  {
+    Builder testee = $$$();
+
+    Builder result = testee.mainClass(mc);
     return result;
   }
 

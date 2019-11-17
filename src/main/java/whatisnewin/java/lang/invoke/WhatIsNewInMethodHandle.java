@@ -15,19 +15,6 @@ import java.lang.invoke.MethodHandle;
 public final class WhatIsNewInMethodHandle
 {
   /**
-   * Example call to new method {@link MethodHandle#withVarargs(boolean)}.
-   * @since 9
-   * @see MethodHandle#withVarargs(boolean)
-   */
-  public MethodHandle withVarargs(boolean makeVarargs)
-  {
-    MethodHandle testee = $$$();
-
-    MethodHandle result = testee.withVarargs(makeVarargs);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link MethodHandle#asSpreader(int, Class, int)}.
    * @since 9
    * @see MethodHandle#asSpreader(int, Class, int)
@@ -37,6 +24,19 @@ public final class WhatIsNewInMethodHandle
     MethodHandle testee = $$$();
 
     MethodHandle result = testee.asSpreader(spreadArgPos, arrayType, arrayLength);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandle#withVarargs(boolean)}.
+   * @since 9
+   * @see MethodHandle#withVarargs(boolean)
+   */
+  public MethodHandle withVarargs(boolean makeVarargs)
+  {
+    MethodHandle testee = $$$();
+
+    MethodHandle result = testee.withVarargs(makeVarargs);
     return result;
   }
 

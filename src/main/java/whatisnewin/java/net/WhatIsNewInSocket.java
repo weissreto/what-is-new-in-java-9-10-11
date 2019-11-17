@@ -17,19 +17,6 @@ import java.io.IOException;
 public final class WhatIsNewInSocket
 {
   /**
-   * Example call to new method {@link Socket#getOption(SocketOption)}.
-   * @since 9
-   * @see Socket#getOption(SocketOption)
-   */
-  public <T> T getOption(SocketOption<T> name) throws IOException
-  {
-    Socket testee = $$$();
-
-    T result = testee.getOption(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Socket#setOption(SocketOption, Object)}.
    * @since 9
    * @see Socket#setOption(SocketOption, Object)
@@ -39,6 +26,19 @@ public final class WhatIsNewInSocket
     Socket testee = $$$();
 
     Socket result = testee.setOption(name, value);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Socket#getOption(SocketOption)}.
+   * @since 9
+   * @see Socket#getOption(SocketOption)
+   */
+  public <T> T getOption(SocketOption<T> name) throws IOException
+  {
+    Socket testee = $$$();
+
+    T result = testee.getOption(name);
     return result;
   }
 

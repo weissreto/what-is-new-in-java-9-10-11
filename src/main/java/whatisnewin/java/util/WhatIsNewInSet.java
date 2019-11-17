@@ -59,17 +59,6 @@ public final class WhatIsNewInSet<E>
   }
 
   /**
-   * Example call to new method {@link Set#of(Object[])}.
-   * @since 9
-   * @see Set#of(Object[])
-   */
-  public static <E> Set<E> of(E[] elements)
-  {
-    Set<E> result = Set.of(elements);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Set#of(Object, Object, Object, Object)}.
    * @since 9
    * @see Set#of(Object, Object, Object, Object)
@@ -143,6 +132,17 @@ public final class WhatIsNewInSet<E>
   public static <E> Set<E> of(E e1, E e2, E e3, E e4, E e5, E e6, E e7, E e8, E e9, E e10)
   {
     Set<E> result = Set.of(e1, e2, e3, e4, e5, e6, e7, e8, e9, e10);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Set#of(Object...)}.
+   * @since 9
+   * @see Set#of(Object...)
+   */
+  public static <E> Set<E> of(E... elements)
+  {
+    Set<E> result = Set.of(elements);
     return result;
   }
 

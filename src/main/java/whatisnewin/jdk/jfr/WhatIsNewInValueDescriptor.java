@@ -64,54 +64,15 @@ public final class WhatIsNewInValueDescriptor
   }
 
   /**
-   * Example call to new method {@link ValueDescriptor#getFields()}.
+   * Example call to new method {@link ValueDescriptor#getDescription()}.
    * @since 9
-   * @see ValueDescriptor#getFields()
+   * @see ValueDescriptor#getDescription()
    */
-  public List<ValueDescriptor> getFields()
+  public String getDescription()
   {
     ValueDescriptor testee = $$$();
 
-    List<ValueDescriptor> result = testee.getFields();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ValueDescriptor#getAnnotationElements()}.
-   * @since 9
-   * @see ValueDescriptor#getAnnotationElements()
-   */
-  public List<AnnotationElement> getAnnotationElements()
-  {
-    ValueDescriptor testee = $$$();
-
-    List<AnnotationElement> result = testee.getAnnotationElements();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ValueDescriptor#getAnnotation(Class)}.
-   * @since 9
-   * @see ValueDescriptor#getAnnotation(Class)
-   */
-  public <A extends Annotation> A getAnnotation(Class<A> annotationType)
-  {
-    ValueDescriptor testee = $$$();
-
-    A result = testee.getAnnotation(annotationType);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ValueDescriptor#isArray()}.
-   * @since 9
-   * @see ValueDescriptor#isArray()
-   */
-  public boolean isArray()
-  {
-    ValueDescriptor testee = $$$();
-
-    boolean result = testee.isArray();
+    String result = testee.getDescription();
     return result;
   }
 
@@ -129,15 +90,15 @@ public final class WhatIsNewInValueDescriptor
   }
 
   /**
-   * Example call to new method {@link ValueDescriptor#getDescription()}.
+   * Example call to new method {@link ValueDescriptor#getTypeName()}.
    * @since 9
-   * @see ValueDescriptor#getDescription()
+   * @see ValueDescriptor#getTypeName()
    */
-  public String getDescription()
+  public String getTypeName()
   {
     ValueDescriptor testee = $$$();
 
-    String result = testee.getDescription();
+    String result = testee.getTypeName();
     return result;
   }
 
@@ -155,15 +116,54 @@ public final class WhatIsNewInValueDescriptor
   }
 
   /**
-   * Example call to new method {@link ValueDescriptor#getTypeName()}.
+   * Example call to new method {@link ValueDescriptor#isArray()}.
    * @since 9
-   * @see ValueDescriptor#getTypeName()
+   * @see ValueDescriptor#isArray()
    */
-  public String getTypeName()
+  public boolean isArray()
   {
     ValueDescriptor testee = $$$();
 
-    String result = testee.getTypeName();
+    boolean result = testee.isArray();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ValueDescriptor#getAnnotation(Class)}.
+   * @since 9
+   * @see ValueDescriptor#getAnnotation(Class)
+   */
+  public <A extends Annotation> A getAnnotation(Class<A> annotationType)
+  {
+    ValueDescriptor testee = $$$();
+
+    A result = testee.getAnnotation(annotationType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ValueDescriptor#getAnnotationElements()}.
+   * @since 9
+   * @see ValueDescriptor#getAnnotationElements()
+   */
+  public List<AnnotationElement> getAnnotationElements()
+  {
+    ValueDescriptor testee = $$$();
+
+    List<AnnotationElement> result = testee.getAnnotationElements();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ValueDescriptor#getFields()}.
+   * @since 9
+   * @see ValueDescriptor#getFields()
+   */
+  public List<ValueDescriptor> getFields()
+  {
+    ValueDescriptor testee = $$$();
+
+    List<ValueDescriptor> result = testee.getFields();
     return result;
   }
 

@@ -1,12 +1,12 @@
 package whatisnewin.java.lang.invoke;
 
 import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodHandle;
 import java.lang.invoke.MethodHandles.Lookup;
-import java.lang.invoke.MethodType;
+import java.lang.invoke.MethodHandle;
 import java.lang.invoke.VarHandle;
-import java.lang.invoke.VarHandle.AccessMode;
 import java.nio.ByteOrder;
+import java.lang.invoke.VarHandle.AccessMode;
+import java.lang.invoke.MethodType;
 import java.util.List;
 
 /**
@@ -22,17 +22,6 @@ import java.util.List;
 public final class WhatIsNewInMethodHandles
 {
   /**
-   * Example call to new method {@link MethodHandles#whileLoop(MethodHandle, MethodHandle, MethodHandle)}.
-   * @since 9
-   * @see MethodHandles#whileLoop(MethodHandle, MethodHandle, MethodHandle)
-   */
-  public static MethodHandle whileLoop(MethodHandle init, MethodHandle pred, MethodHandle body)
-  {
-    MethodHandle result = MethodHandles.whileLoop(init, pred, body);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link MethodHandles#privateLookupIn(Class, Lookup)}.
    * @since 9
    * @see MethodHandles#privateLookupIn(Class, Lookup)
@@ -40,39 +29,6 @@ public final class WhatIsNewInMethodHandles
   public static Lookup privateLookupIn(Class<?> targetClass, Lookup lookup) throws IllegalAccessException
   {
     Lookup result = MethodHandles.privateLookupIn(targetClass, lookup);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#empty(MethodType)}.
-   * @since 9
-   * @see MethodHandles#empty(MethodType)
-   */
-  public static MethodHandle empty(MethodType type)
-  {
-    MethodHandle result = MethodHandles.empty(type);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#arrayElementVarHandle(Class)}.
-   * @since 9
-   * @see MethodHandles#arrayElementVarHandle(Class)
-   */
-  public static VarHandle arrayElementVarHandle(Class<?> arrayClass) throws IllegalArgumentException
-  {
-    VarHandle result = MethodHandles.arrayElementVarHandle(arrayClass);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#varHandleInvoker(AccessMode, MethodType)}.
-   * @since 9
-   * @see MethodHandles#varHandleInvoker(AccessMode, MethodType)
-   */
-  public static MethodHandle varHandleInvoker(AccessMode accessMode, MethodType type)
-  {
-    MethodHandle result = MethodHandles.varHandleInvoker(accessMode, type);
     return result;
   }
 
@@ -88,17 +44,6 @@ public final class WhatIsNewInMethodHandles
   }
 
   /**
-   * Example call to new method {@link MethodHandles#loop(java.lang.invoke.MethodHandle[][])}.
-   * @since 9
-   * @see MethodHandles#loop(java.lang.invoke.MethodHandle[][])
-   */
-  public static MethodHandle loop(MethodHandle[][] clauses)
-  {
-    MethodHandle result = MethodHandles.loop(clauses);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link MethodHandles#arrayLength(Class)}.
    * @since 9
    * @see MethodHandles#arrayLength(Class)
@@ -106,6 +51,28 @@ public final class WhatIsNewInMethodHandles
   public static MethodHandle arrayLength(Class<?> arrayClass) throws IllegalArgumentException
   {
     MethodHandle result = MethodHandles.arrayLength(arrayClass);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#arrayElementVarHandle(Class)}.
+   * @since 9
+   * @see MethodHandles#arrayElementVarHandle(Class)
+   */
+  public static VarHandle arrayElementVarHandle(Class<?> arrayClass) throws IllegalArgumentException
+  {
+    VarHandle result = MethodHandles.arrayElementVarHandle(arrayClass);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#byteArrayViewVarHandle(Class, ByteOrder)}.
+   * @since 9
+   * @see MethodHandles#byteArrayViewVarHandle(Class, ByteOrder)
+   */
+  public static VarHandle byteArrayViewVarHandle(Class<?> viewArrayClass, ByteOrder byteOrder) throws IllegalArgumentException
+  {
+    VarHandle result = MethodHandles.byteArrayViewVarHandle(viewArrayClass, byteOrder);
     return result;
   }
 
@@ -121,6 +88,28 @@ public final class WhatIsNewInMethodHandles
   }
 
   /**
+   * Example call to new method {@link MethodHandles#varHandleExactInvoker(AccessMode, MethodType)}.
+   * @since 9
+   * @see MethodHandles#varHandleExactInvoker(AccessMode, MethodType)
+   */
+  public static MethodHandle varHandleExactInvoker(AccessMode accessMode, MethodType type)
+  {
+    MethodHandle result = MethodHandles.varHandleExactInvoker(accessMode, type);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#varHandleInvoker(AccessMode, MethodType)}.
+   * @since 9
+   * @see MethodHandles#varHandleInvoker(AccessMode, MethodType)
+   */
+  public static MethodHandle varHandleInvoker(AccessMode accessMode, MethodType type)
+  {
+    MethodHandle result = MethodHandles.varHandleInvoker(accessMode, type);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link MethodHandles#zero(Class)}.
    * @since 9
    * @see MethodHandles#zero(Class)
@@ -132,6 +121,28 @@ public final class WhatIsNewInMethodHandles
   }
 
   /**
+   * Example call to new method {@link MethodHandles#empty(MethodType)}.
+   * @since 9
+   * @see MethodHandles#empty(MethodType)
+   */
+  public static MethodHandle empty(MethodType type)
+  {
+    MethodHandle result = MethodHandles.empty(type);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#dropArgumentsToMatch(MethodHandle, int, List, int)}.
+   * @since 9
+   * @see MethodHandles#dropArgumentsToMatch(MethodHandle, int, List, int)
+   */
+  public static MethodHandle dropArgumentsToMatch(MethodHandle target, int skip, List<Class<?>> newTypes, int pos)
+  {
+    MethodHandle result = MethodHandles.dropArgumentsToMatch(target, skip, newTypes, pos);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link MethodHandles#foldArguments(MethodHandle, int, MethodHandle)}.
    * @since 9
    * @see MethodHandles#foldArguments(MethodHandle, int, MethodHandle)
@@ -139,6 +150,39 @@ public final class WhatIsNewInMethodHandles
   public static MethodHandle foldArguments(MethodHandle target, int pos, MethodHandle combiner)
   {
     MethodHandle result = MethodHandles.foldArguments(target, pos, combiner);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#loop(java.lang.invoke.MethodHandle[]...)}.
+   * @since 9
+   * @see MethodHandles#loop(java.lang.invoke.MethodHandle[]...)
+   */
+  public static MethodHandle loop(MethodHandle[]... clauses)
+  {
+    MethodHandle result = MethodHandles.loop(clauses);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#whileLoop(MethodHandle, MethodHandle, MethodHandle)}.
+   * @since 9
+   * @see MethodHandles#whileLoop(MethodHandle, MethodHandle, MethodHandle)
+   */
+  public static MethodHandle whileLoop(MethodHandle init, MethodHandle pred, MethodHandle body)
+  {
+    MethodHandle result = MethodHandles.whileLoop(init, pred, body);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#doWhileLoop(MethodHandle, MethodHandle, MethodHandle)}.
+   * @since 9
+   * @see MethodHandles#doWhileLoop(MethodHandle, MethodHandle, MethodHandle)
+   */
+  public static MethodHandle doWhileLoop(MethodHandle init, MethodHandle body, MethodHandle pred)
+  {
+    MethodHandle result = MethodHandles.doWhileLoop(init, body, pred);
     return result;
   }
 
@@ -161,50 +205,6 @@ public final class WhatIsNewInMethodHandles
   public static MethodHandle countedLoop(MethodHandle start, MethodHandle end, MethodHandle init, MethodHandle body)
   {
     MethodHandle result = MethodHandles.countedLoop(start, end, init, body);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#dropArgumentsToMatch(MethodHandle, int, List, int)}.
-   * @since 9
-   * @see MethodHandles#dropArgumentsToMatch(MethodHandle, int, List, int)
-   */
-  public static MethodHandle dropArgumentsToMatch(MethodHandle target, int skip, List<Class<?>> newTypes, int pos)
-  {
-    MethodHandle result = MethodHandles.dropArgumentsToMatch(target, skip, newTypes, pos);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#varHandleExactInvoker(AccessMode, MethodType)}.
-   * @since 9
-   * @see MethodHandles#varHandleExactInvoker(AccessMode, MethodType)
-   */
-  public static MethodHandle varHandleExactInvoker(AccessMode accessMode, MethodType type)
-  {
-    MethodHandle result = MethodHandles.varHandleExactInvoker(accessMode, type);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#doWhileLoop(MethodHandle, MethodHandle, MethodHandle)}.
-   * @since 9
-   * @see MethodHandles#doWhileLoop(MethodHandle, MethodHandle, MethodHandle)
-   */
-  public static MethodHandle doWhileLoop(MethodHandle init, MethodHandle body, MethodHandle pred)
-  {
-    MethodHandle result = MethodHandles.doWhileLoop(init, body, pred);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link MethodHandles#byteArrayViewVarHandle(Class, ByteOrder)}.
-   * @since 9
-   * @see MethodHandles#byteArrayViewVarHandle(Class, ByteOrder)
-   */
-  public static VarHandle byteArrayViewVarHandle(Class<?> viewArrayClass, ByteOrder byteOrder) throws IllegalArgumentException
-  {
-    VarHandle result = MethodHandles.byteArrayViewVarHandle(viewArrayClass, byteOrder);
     return result;
   }
 

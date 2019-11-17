@@ -16,6 +16,19 @@ import jdk.jfr.consumer.RecordedClass;
 public final class WhatIsNewInRecordedMethod
 {
   /**
+   * Example call to new method {@link RecordedMethod#getType()}.
+   * @since 9
+   * @see RecordedMethod#getType()
+   */
+  public RecordedClass getType()
+  {
+    RecordedMethod testee = $$$();
+
+    RecordedClass result = testee.getType();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link RecordedMethod#getName()}.
    * @since 9
    * @see RecordedMethod#getName()
@@ -25,19 +38,6 @@ public final class WhatIsNewInRecordedMethod
     RecordedMethod testee = $$$();
 
     String result = testee.getName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link RecordedMethod#getModifiers()}.
-   * @since 9
-   * @see RecordedMethod#getModifiers()
-   */
-  public int getModifiers()
-  {
-    RecordedMethod testee = $$$();
-
-    int result = testee.getModifiers();
     return result;
   }
 
@@ -55,6 +55,19 @@ public final class WhatIsNewInRecordedMethod
   }
 
   /**
+   * Example call to new method {@link RecordedMethod#getModifiers()}.
+   * @since 9
+   * @see RecordedMethod#getModifiers()
+   */
+  public int getModifiers()
+  {
+    RecordedMethod testee = $$$();
+
+    int result = testee.getModifiers();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link RecordedMethod#isHidden()}.
    * @since 9
    * @see RecordedMethod#isHidden()
@@ -64,19 +77,6 @@ public final class WhatIsNewInRecordedMethod
     RecordedMethod testee = $$$();
 
     boolean result = testee.isHidden();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link RecordedMethod#getType()}.
-   * @since 9
-   * @see RecordedMethod#getType()
-   */
-  public RecordedClass getType()
-  {
-    RecordedMethod testee = $$$();
-
-    RecordedClass result = testee.getType();
     return result;
   }
 

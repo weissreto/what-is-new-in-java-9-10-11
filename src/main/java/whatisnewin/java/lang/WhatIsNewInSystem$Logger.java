@@ -18,19 +18,6 @@ import java.util.ResourceBundle;
 public final class WhatIsNewInSystem$Logger
 {
   /**
-   * Example call to new method {@link Logger#isLoggable(Level)}.
-   * @since 9
-   * @see Logger#isLoggable(Level)
-   */
-  public boolean isLoggable(Level level)
-  {
-    Logger testee = $$$();
-
-    boolean result = testee.isLoggable(level);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Logger#getName()}.
    * @since 9
    * @see Logger#getName()
@@ -40,6 +27,19 @@ public final class WhatIsNewInSystem$Logger
     Logger testee = $$$();
 
     String result = testee.getName();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Logger#isLoggable(Level)}.
+   * @since 9
+   * @see Logger#isLoggable(Level)
+   */
+  public boolean isLoggable(Level level)
+  {
+    Logger testee = $$$();
+
+    boolean result = testee.isLoggable(level);
     return result;
   }
 
@@ -104,11 +104,11 @@ public final class WhatIsNewInSystem$Logger
   }
 
   /**
-   * Example call to new method {@link Logger#log(Level, String, Object[])}.
+   * Example call to new method {@link Logger#log(Level, String, Object...)}.
    * @since 9
-   * @see Logger#log(Level, String, Object[])
+   * @see Logger#log(Level, String, Object...)
    */
-  public void log(Level level, String format, Object[] params)
+  public void log(Level level, String format, Object... params)
   {
     Logger testee = $$$();
 
@@ -128,11 +128,11 @@ public final class WhatIsNewInSystem$Logger
   }
 
   /**
-   * Example call to new method {@link Logger#log(Level, ResourceBundle, String, Object[])}.
+   * Example call to new method {@link Logger#log(Level, ResourceBundle, String, Object...)}.
    * @since 9
-   * @see Logger#log(Level, ResourceBundle, String, Object[])
+   * @see Logger#log(Level, ResourceBundle, String, Object...)
    */
-  public void log(Level level, ResourceBundle bundle, String format, Object[] params)
+  public void log(Level level, ResourceBundle bundle, String format, Object... params)
   {
     Logger testee = $$$();
 

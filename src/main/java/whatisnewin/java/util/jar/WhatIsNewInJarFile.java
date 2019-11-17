@@ -30,6 +30,17 @@ public final class WhatIsNewInJarFile
   }
 
   /**
+   * Example call to new method {@link JarFile#baseVersion()}.
+   * @since 9
+   * @see JarFile#baseVersion()
+   */
+  public static Version baseVersion()
+  {
+    Version result = JarFile.baseVersion();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link JarFile#runtimeVersion()}.
    * @since 9
    * @see JarFile#runtimeVersion()
@@ -37,19 +48,6 @@ public final class WhatIsNewInJarFile
   public static Version runtimeVersion()
   {
     Version result = JarFile.runtimeVersion();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link JarFile#isMultiRelease()}.
-   * @since 9
-   * @see JarFile#isMultiRelease()
-   */
-  public boolean isMultiRelease()
-  {
-    JarFile testee = $$$();
-
-    boolean result = testee.isMultiRelease();
     return result;
   }
 
@@ -67,6 +65,19 @@ public final class WhatIsNewInJarFile
   }
 
   /**
+   * Example call to new method {@link JarFile#isMultiRelease()}.
+   * @since 9
+   * @see JarFile#isMultiRelease()
+   */
+  public boolean isMultiRelease()
+  {
+    JarFile testee = $$$();
+
+    boolean result = testee.isMultiRelease();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link JarFile#versionedStream()}.
    * @since 10
    * @see JarFile#versionedStream()
@@ -76,17 +87,6 @@ public final class WhatIsNewInJarFile
     JarFile testee = $$$();
 
     Stream<JarEntry> result = testee.versionedStream();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link JarFile#baseVersion()}.
-   * @since 9
-   * @see JarFile#baseVersion()
-   */
-  public static Version baseVersion()
-  {
-    Version result = JarFile.baseVersion();
     return result;
   }
 

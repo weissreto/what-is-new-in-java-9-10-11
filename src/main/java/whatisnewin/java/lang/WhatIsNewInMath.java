@@ -14,28 +14,6 @@ package whatisnewin.java.lang;
 public final class WhatIsNewInMath
 {
   /**
-   * Example call to new method {@link Math#fma(double, double, double)}.
-   * @since 9
-   * @see Math#fma(double, double, double)
-   */
-  public static double fma(double a, double b, double c)
-  {
-    double result = Math.fma(a, b, c);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Math#fma(float, float, float)}.
-   * @since 9
-   * @see Math#fma(float, float, float)
-   */
-  public static float fma(float a, float b, float c)
-  {
-    float result = Math.fma(a, b, c);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Math#multiplyExact(long, int)}.
    * @since 9
    * @see Math#multiplyExact(long, int)
@@ -69,6 +47,17 @@ public final class WhatIsNewInMath
   }
 
   /**
+   * Example call to new method {@link Math#floorDiv(long, int)}.
+   * @since 9
+   * @see Math#floorDiv(long, int)
+   */
+  public static long floorDiv(long x, int y)
+  {
+    long result = Math.floorDiv(x, y);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Math#floorMod(long, int)}.
    * @since 9
    * @see Math#floorMod(long, int)
@@ -80,13 +69,24 @@ public final class WhatIsNewInMath
   }
 
   /**
-   * Example call to new method {@link Math#floorDiv(long, int)}.
+   * Example call to new method {@link Math#fma(double, double, double)}.
    * @since 9
-   * @see Math#floorDiv(long, int)
+   * @see Math#fma(double, double, double)
    */
-  public static long floorDiv(long x, int y)
+  public static double fma(double a, double b, double c)
   {
-    long result = Math.floorDiv(x, y);
+    double result = Math.fma(a, b, c);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Math#fma(float, float, float)}.
+   * @since 9
+   * @see Math#fma(float, float, float)
+   */
+  public static float fma(float a, float b, float c)
+  {
+    float result = Math.fma(a, b, c);
     return result;
   }
 

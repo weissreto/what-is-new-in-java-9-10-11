@@ -19,19 +19,6 @@ import java.io.InputStream;
 public final class WhatIsNewInLogManager
 {
   /**
-   * Example call to new method {@link LogManager#addConfigurationListener(Runnable)}.
-   * @since 9
-   * @see LogManager#addConfigurationListener(Runnable)
-   */
-  public LogManager addConfigurationListener(Runnable listener)
-  {
-    LogManager testee = $$$();
-
-    LogManager result = testee.addConfigurationListener(listener);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link LogManager#updateConfiguration(Function)}.
    * @since 9
    * @see LogManager#updateConfiguration(Function)
@@ -53,6 +40,19 @@ public final class WhatIsNewInLogManager
     LogManager testee = $$$();
 
     testee.updateConfiguration(ins, mapper);
+  }
+
+  /**
+   * Example call to new method {@link LogManager#addConfigurationListener(Runnable)}.
+   * @since 9
+   * @see LogManager#addConfigurationListener(Runnable)
+   */
+  public LogManager addConfigurationListener(Runnable listener)
+  {
+    LogManager testee = $$$();
+
+    LogManager result = testee.addConfigurationListener(listener);
+    return result;
   }
 
   private LogManager $$$()

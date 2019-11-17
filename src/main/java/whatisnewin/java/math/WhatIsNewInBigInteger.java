@@ -42,19 +42,6 @@ public final class WhatIsNewInBigInteger
   }
 
   /**
-   * Example call to new method {@link BigInteger#sqrtAndRemainder()}.
-   * @since 9
-   * @see BigInteger#sqrtAndRemainder()
-   */
-  public BigInteger[] sqrtAndRemainder()
-  {
-    BigInteger testee = $$$();
-
-    BigInteger[] result = testee.sqrtAndRemainder();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link BigInteger#sqrt()}.
    * @since 9
    * @see BigInteger#sqrt()
@@ -64,6 +51,19 @@ public final class WhatIsNewInBigInteger
     BigInteger testee = $$$();
 
     BigInteger result = testee.sqrt();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link BigInteger#sqrtAndRemainder()}.
+   * @since 9
+   * @see BigInteger#sqrtAndRemainder()
+   */
+  public BigInteger[] sqrtAndRemainder()
+  {
+    BigInteger testee = $$$();
+
+    BigInteger[] result = testee.sqrtAndRemainder();
     return result;
   }
 

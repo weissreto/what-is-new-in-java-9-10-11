@@ -15,19 +15,6 @@ import java.util.stream.IntStream;
 public final class WhatIsNewInStringBuffer
 {
   /**
-   * Example call to new method {@link StringBuffer#chars()}.
-   * @since 9
-   * @see StringBuffer#chars()
-   */
-  public IntStream chars()
-  {
-    StringBuffer testee = $$$();
-
-    IntStream result = testee.chars();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link StringBuffer#compareTo(StringBuffer)}.
    * @since 11
    * @see StringBuffer#compareTo(StringBuffer)
@@ -37,6 +24,19 @@ public final class WhatIsNewInStringBuffer
     StringBuffer testee = $$$();
 
     int result = testee.compareTo(another);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link StringBuffer#chars()}.
+   * @since 9
+   * @see StringBuffer#chars()
+   */
+  public IntStream chars()
+  {
+    StringBuffer testee = $$$();
+
+    IntStream result = testee.chars();
     return result;
   }
 

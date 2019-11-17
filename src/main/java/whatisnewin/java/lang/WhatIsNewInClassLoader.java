@@ -16,6 +16,19 @@ import java.net.URL;
 public final class WhatIsNewInClassLoader
 {
   /**
+   * Example call to new method {@link ClassLoader#getName()}.
+   * @since 9
+   * @see ClassLoader#getName()
+   */
+  public String getName()
+  {
+    ClassLoader testee = $$$();
+
+    String result = testee.getName();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ClassLoader#resources(String)}.
    * @since 9
    * @see ClassLoader#resources(String)
@@ -29,6 +42,19 @@ public final class WhatIsNewInClassLoader
   }
 
   /**
+   * Example call to new method {@link ClassLoader#isRegisteredAsParallelCapable()}.
+   * @since 9
+   * @see ClassLoader#isRegisteredAsParallelCapable()
+   */
+  public boolean isRegisteredAsParallelCapable()
+  {
+    ClassLoader testee = $$$();
+
+    boolean result = testee.isRegisteredAsParallelCapable();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ClassLoader#getUnnamedModule()}.
    * @since 9
    * @see ClassLoader#getUnnamedModule()
@@ -38,32 +64,6 @@ public final class WhatIsNewInClassLoader
     ClassLoader testee = $$$();
 
     Module result = testee.getUnnamedModule();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ClassLoader#getDefinedPackages()}.
-   * @since 9
-   * @see ClassLoader#getDefinedPackages()
-   */
-  public Package[] getDefinedPackages()
-  {
-    ClassLoader testee = $$$();
-
-    Package[] result = testee.getDefinedPackages();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ClassLoader#getName()}.
-   * @since 9
-   * @see ClassLoader#getName()
-   */
-  public String getName()
-  {
-    ClassLoader testee = $$$();
-
-    String result = testee.getName();
     return result;
   }
 
@@ -92,15 +92,15 @@ public final class WhatIsNewInClassLoader
   }
 
   /**
-   * Example call to new method {@link ClassLoader#isRegisteredAsParallelCapable()}.
+   * Example call to new method {@link ClassLoader#getDefinedPackages()}.
    * @since 9
-   * @see ClassLoader#isRegisteredAsParallelCapable()
+   * @see ClassLoader#getDefinedPackages()
    */
-  public boolean isRegisteredAsParallelCapable()
+  public Package[] getDefinedPackages()
   {
     ClassLoader testee = $$$();
 
-    boolean result = testee.isRegisteredAsParallelCapable();
+    Package[] result = testee.getDefinedPackages();
     return result;
   }
 

@@ -1,7 +1,7 @@
 package whatisnewin.java.lang;
 
-import java.util.stream.Stream;
 import java.util.Optional;
+import java.util.stream.Stream;
 import java.lang.ProcessHandle.Info;
 import java.util.concurrent.CompletableFuture;
 
@@ -18,6 +18,54 @@ import java.util.concurrent.CompletableFuture;
 public final class WhatIsNewInProcessHandle
 {
   /**
+   * Example call to new method {@link ProcessHandle#pid()}.
+   * @since 9
+   * @see ProcessHandle#pid()
+   */
+  public long pid()
+  {
+    ProcessHandle testee = $$$();
+
+    long result = testee.pid();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#of(long)}.
+   * @since 9
+   * @see ProcessHandle#of(long)
+   */
+  public static Optional<ProcessHandle> of(long pid)
+  {
+    Optional<ProcessHandle> result = ProcessHandle.of(pid);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#current()}.
+   * @since 9
+   * @see ProcessHandle#current()
+   */
+  public static ProcessHandle current()
+  {
+    ProcessHandle result = ProcessHandle.current();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#parent()}.
+   * @since 9
+   * @see ProcessHandle#parent()
+   */
+  public Optional<ProcessHandle> parent()
+  {
+    ProcessHandle testee = $$$();
+
+    Optional<ProcessHandle> result = testee.parent();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link ProcessHandle#children()}.
    * @since 9
    * @see ProcessHandle#children()
@@ -31,13 +79,78 @@ public final class WhatIsNewInProcessHandle
   }
 
   /**
-   * Example call to new method {@link ProcessHandle#of(long)}.
+   * Example call to new method {@link ProcessHandle#descendants()}.
    * @since 9
-   * @see ProcessHandle#of(long)
+   * @see ProcessHandle#descendants()
    */
-  public static Optional<ProcessHandle> of(long pid)
+  public Stream<ProcessHandle> descendants()
   {
-    Optional<ProcessHandle> result = ProcessHandle.of(pid);
+    ProcessHandle testee = $$$();
+
+    Stream<ProcessHandle> result = testee.descendants();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#allProcesses()}.
+   * @since 9
+   * @see ProcessHandle#allProcesses()
+   */
+  public static Stream<ProcessHandle> allProcesses()
+  {
+    Stream<ProcessHandle> result = ProcessHandle.allProcesses();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#info()}.
+   * @since 9
+   * @see ProcessHandle#info()
+   */
+  public Info info()
+  {
+    ProcessHandle testee = $$$();
+
+    Info result = testee.info();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#onExit()}.
+   * @since 9
+   * @see ProcessHandle#onExit()
+   */
+  public CompletableFuture<ProcessHandle> onExit()
+  {
+    ProcessHandle testee = $$$();
+
+    CompletableFuture<ProcessHandle> result = testee.onExit();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#supportsNormalTermination()}.
+   * @since 9
+   * @see ProcessHandle#supportsNormalTermination()
+   */
+  public boolean supportsNormalTermination()
+  {
+    ProcessHandle testee = $$$();
+
+    boolean result = testee.supportsNormalTermination();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ProcessHandle#destroy()}.
+   * @since 9
+   * @see ProcessHandle#destroy()
+   */
+  public boolean destroy()
+  {
+    ProcessHandle testee = $$$();
+
+    boolean result = testee.destroy();
     return result;
   }
 
@@ -68,106 +181,6 @@ public final class WhatIsNewInProcessHandle
   }
 
   /**
-   * Example call to new method {@link ProcessHandle#supportsNormalTermination()}.
-   * @since 9
-   * @see ProcessHandle#supportsNormalTermination()
-   */
-  public boolean supportsNormalTermination()
-  {
-    ProcessHandle testee = $$$();
-
-    boolean result = testee.supportsNormalTermination();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#current()}.
-   * @since 9
-   * @see ProcessHandle#current()
-   */
-  public static ProcessHandle current()
-  {
-    ProcessHandle result = ProcessHandle.current();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#info()}.
-   * @since 9
-   * @see ProcessHandle#info()
-   */
-  public Info info()
-  {
-    ProcessHandle testee = $$$();
-
-    Info result = testee.info();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#allProcesses()}.
-   * @since 9
-   * @see ProcessHandle#allProcesses()
-   */
-  public static Stream<ProcessHandle> allProcesses()
-  {
-    Stream<ProcessHandle> result = ProcessHandle.allProcesses();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#onExit()}.
-   * @since 9
-   * @see ProcessHandle#onExit()
-   */
-  public CompletableFuture<ProcessHandle> onExit()
-  {
-    ProcessHandle testee = $$$();
-
-    CompletableFuture<ProcessHandle> result = testee.onExit();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#parent()}.
-   * @since 9
-   * @see ProcessHandle#parent()
-   */
-  public Optional<ProcessHandle> parent()
-  {
-    ProcessHandle testee = $$$();
-
-    Optional<ProcessHandle> result = testee.parent();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#descendants()}.
-   * @since 9
-   * @see ProcessHandle#descendants()
-   */
-  public Stream<ProcessHandle> descendants()
-  {
-    ProcessHandle testee = $$$();
-
-    Stream<ProcessHandle> result = testee.descendants();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#destroy()}.
-   * @since 9
-   * @see ProcessHandle#destroy()
-   */
-  public boolean destroy()
-  {
-    ProcessHandle testee = $$$();
-
-    boolean result = testee.destroy();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ProcessHandle#compareTo(ProcessHandle)}.
    * @since 9
    * @see ProcessHandle#compareTo(ProcessHandle)
@@ -177,19 +190,6 @@ public final class WhatIsNewInProcessHandle
     ProcessHandle testee = $$$();
 
     int result = testee.compareTo(other);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ProcessHandle#pid()}.
-   * @since 9
-   * @see ProcessHandle#pid()
-   */
-  public long pid()
-  {
-    ProcessHandle testee = $$$();
-
-    long result = testee.pid();
     return result;
   }
 

@@ -16,19 +16,6 @@ import java.time.temporal.TemporalUnit;
 public final class WhatIsNewInDuration
 {
   /**
-   * Example call to new method {@link Duration#truncatedTo(TemporalUnit)}.
-   * @since 9
-   * @see Duration#truncatedTo(TemporalUnit)
-   */
-  public Duration truncatedTo(TemporalUnit unit)
-  {
-    Duration testee = $$$();
-
-    Duration result = testee.truncatedTo(unit);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Duration#dividedBy(Duration)}.
    * @since 9
    * @see Duration#dividedBy(Duration)
@@ -38,6 +25,19 @@ public final class WhatIsNewInDuration
     Duration testee = $$$();
 
     long result = testee.dividedBy(divisor);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Duration#toSeconds()}.
+   * @since 9
+   * @see Duration#toSeconds()
+   */
+  public long toSeconds()
+  {
+    Duration testee = $$$();
+
+    long result = testee.toSeconds();
     return result;
   }
 
@@ -81,32 +81,6 @@ public final class WhatIsNewInDuration
   }
 
   /**
-   * Example call to new method {@link Duration#toNanosPart()}.
-   * @since 9
-   * @see Duration#toNanosPart()
-   */
-  public int toNanosPart()
-  {
-    Duration testee = $$$();
-
-    int result = testee.toNanosPart();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Duration#toSeconds()}.
-   * @since 9
-   * @see Duration#toSeconds()
-   */
-  public long toSeconds()
-  {
-    Duration testee = $$$();
-
-    long result = testee.toSeconds();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Duration#toSecondsPart()}.
    * @since 9
    * @see Duration#toSecondsPart()
@@ -129,6 +103,32 @@ public final class WhatIsNewInDuration
     Duration testee = $$$();
 
     int result = testee.toMillisPart();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Duration#toNanosPart()}.
+   * @since 9
+   * @see Duration#toNanosPart()
+   */
+  public int toNanosPart()
+  {
+    Duration testee = $$$();
+
+    int result = testee.toNanosPart();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Duration#truncatedTo(TemporalUnit)}.
+   * @since 9
+   * @see Duration#truncatedTo(TemporalUnit)
+   */
+  public Duration truncatedTo(TemporalUnit unit)
+  {
+    Duration testee = $$$();
+
+    Duration result = testee.truncatedTo(unit);
     return result;
   }
 

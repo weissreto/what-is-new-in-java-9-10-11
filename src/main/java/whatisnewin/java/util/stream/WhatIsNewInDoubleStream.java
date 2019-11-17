@@ -17,17 +17,6 @@ import java.util.function.DoubleUnaryOperator;
 public final class WhatIsNewInDoubleStream
 {
   /**
-   * Example call to new method {@link DoubleStream#iterate(double, DoublePredicate, DoubleUnaryOperator)}.
-   * @since 9
-   * @see DoubleStream#iterate(double, DoublePredicate, DoubleUnaryOperator)
-   */
-  public static DoubleStream iterate(double seed, DoublePredicate hasNext, DoubleUnaryOperator next)
-  {
-    DoubleStream result = DoubleStream.iterate(seed, hasNext, next);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link DoubleStream#takeWhile(DoublePredicate)}.
    * @since 9
    * @see DoubleStream#takeWhile(DoublePredicate)
@@ -50,6 +39,17 @@ public final class WhatIsNewInDoubleStream
     DoubleStream testee = $$$();
 
     DoubleStream result = testee.dropWhile(predicate);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link DoubleStream#iterate(double, DoublePredicate, DoubleUnaryOperator)}.
+   * @since 9
+   * @see DoubleStream#iterate(double, DoublePredicate, DoubleUnaryOperator)
+   */
+  public static DoubleStream iterate(double seed, DoublePredicate hasNext, DoubleUnaryOperator next)
+  {
+    DoubleStream result = DoubleStream.iterate(seed, hasNext, next);
     return result;
   }
 

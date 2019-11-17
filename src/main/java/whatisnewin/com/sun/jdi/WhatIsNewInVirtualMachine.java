@@ -17,19 +17,6 @@ import com.sun.jdi.ModuleReference;
 public final class WhatIsNewInVirtualMachine
 {
   /**
-   * Example call to new method {@link VirtualMachine#canGetModuleInfo()}.
-   * @since 9
-   * @see VirtualMachine#canGetModuleInfo()
-   */
-  public boolean canGetModuleInfo()
-  {
-    VirtualMachine testee = $$$();
-
-    boolean result = testee.canGetModuleInfo();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link VirtualMachine#allModules()}.
    * @since 9
    * @see VirtualMachine#allModules()
@@ -39,6 +26,19 @@ public final class WhatIsNewInVirtualMachine
     VirtualMachine testee = $$$();
 
     List<ModuleReference> result = testee.allModules();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link VirtualMachine#canGetModuleInfo()}.
+   * @since 9
+   * @see VirtualMachine#canGetModuleInfo()
+   */
+  public boolean canGetModuleInfo()
+  {
+    VirtualMachine testee = $$$();
+
+    boolean result = testee.canGetModuleInfo();
     return result;
   }
 

@@ -30,6 +30,19 @@ public final class WhatIsNewInJarSigner
   }
 
   /**
+   * Example call to new method {@link JarSigner#getDigestAlgorithm()}.
+   * @since 9
+   * @see JarSigner#getDigestAlgorithm()
+   */
+  public String getDigestAlgorithm()
+  {
+    JarSigner testee = $$$();
+
+    String result = testee.getDigestAlgorithm();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link JarSigner#getSignatureAlgorithm()}.
    * @since 9
    * @see JarSigner#getSignatureAlgorithm()
@@ -39,6 +52,19 @@ public final class WhatIsNewInJarSigner
     JarSigner testee = $$$();
 
     String result = testee.getSignatureAlgorithm();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link JarSigner#getTsa()}.
+   * @since 9
+   * @see JarSigner#getTsa()
+   */
+  public URI getTsa()
+  {
+    JarSigner testee = $$$();
+
+    URI result = testee.getTsa();
     return result;
   }
 
@@ -65,32 +91,6 @@ public final class WhatIsNewInJarSigner
     JarSigner testee = $$$();
 
     String result = testee.getProperty(key);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link JarSigner#getTsa()}.
-   * @since 9
-   * @see JarSigner#getTsa()
-   */
-  public URI getTsa()
-  {
-    JarSigner testee = $$$();
-
-    URI result = testee.getTsa();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link JarSigner#getDigestAlgorithm()}.
-   * @since 9
-   * @see JarSigner#getDigestAlgorithm()
-   */
-  public String getDigestAlgorithm()
-  {
-    JarSigner testee = $$$();
-
-    String result = testee.getDigestAlgorithm();
     return result;
   }
 

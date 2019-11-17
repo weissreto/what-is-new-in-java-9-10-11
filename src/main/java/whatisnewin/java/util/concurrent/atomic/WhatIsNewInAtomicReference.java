@@ -15,27 +15,15 @@ import java.util.concurrent.atomic.AtomicReference;
 public final class WhatIsNewInAtomicReference<V>
 {
   /**
-   * Example call to new method {@link AtomicReference#setOpaque(Object)}.
+   * Example call to new method {@link AtomicReference#weakCompareAndSetPlain(Object, Object)}.
    * @since 9
-   * @see AtomicReference#setOpaque(Object)
+   * @see AtomicReference#weakCompareAndSetPlain(Object, Object)
    */
-  public void setOpaque(V newValue)
+  public boolean weakCompareAndSetPlain(V expectedValue, V newValue)
   {
     AtomicReference<V> testee = $$$();
 
-    testee.setOpaque(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#weakCompareAndSetVolatile(Object, Object)}.
-   * @since 9
-   * @see AtomicReference#weakCompareAndSetVolatile(Object, Object)
-   */
-  public boolean weakCompareAndSetVolatile(V expectedValue, V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
+    boolean result = testee.weakCompareAndSetPlain(expectedValue, newValue);
     return result;
   }
 
@@ -53,6 +41,18 @@ public final class WhatIsNewInAtomicReference<V>
   }
 
   /**
+   * Example call to new method {@link AtomicReference#setPlain(Object)}.
+   * @since 9
+   * @see AtomicReference#setPlain(Object)
+   */
+  public void setPlain(V newValue)
+  {
+    AtomicReference<V> testee = $$$();
+
+    testee.setPlain(newValue);
+  }
+
+  /**
    * Example call to new method {@link AtomicReference#getOpaque()}.
    * @since 9
    * @see AtomicReference#getOpaque()
@@ -62,6 +62,69 @@ public final class WhatIsNewInAtomicReference<V>
     AtomicReference<V> testee = $$$();
 
     V result = testee.getOpaque();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicReference#setOpaque(Object)}.
+   * @since 9
+   * @see AtomicReference#setOpaque(Object)
+   */
+  public void setOpaque(V newValue)
+  {
+    AtomicReference<V> testee = $$$();
+
+    testee.setOpaque(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicReference#getAcquire()}.
+   * @since 9
+   * @see AtomicReference#getAcquire()
+   */
+  public V getAcquire()
+  {
+    AtomicReference<V> testee = $$$();
+
+    V result = testee.getAcquire();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicReference#setRelease(Object)}.
+   * @since 9
+   * @see AtomicReference#setRelease(Object)
+   */
+  public void setRelease(V newValue)
+  {
+    AtomicReference<V> testee = $$$();
+
+    testee.setRelease(newValue);
+  }
+
+  /**
+   * Example call to new method {@link AtomicReference#compareAndExchange(Object, Object)}.
+   * @since 9
+   * @see AtomicReference#compareAndExchange(Object, Object)
+   */
+  public V compareAndExchange(V expectedValue, V newValue)
+  {
+    AtomicReference<V> testee = $$$();
+
+    V result = testee.compareAndExchange(expectedValue, newValue);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AtomicReference#compareAndExchangeAcquire(Object, Object)}.
+   * @since 9
+   * @see AtomicReference#compareAndExchangeAcquire(Object, Object)
+   */
+  public V compareAndExchangeAcquire(V expectedValue, V newValue)
+  {
+    AtomicReference<V> testee = $$$();
+
+    V result = testee.compareAndExchangeAcquire(expectedValue, newValue);
     return result;
   }
 
@@ -79,15 +142,15 @@ public final class WhatIsNewInAtomicReference<V>
   }
 
   /**
-   * Example call to new method {@link AtomicReference#getAcquire()}.
+   * Example call to new method {@link AtomicReference#weakCompareAndSetVolatile(Object, Object)}.
    * @since 9
-   * @see AtomicReference#getAcquire()
+   * @see AtomicReference#weakCompareAndSetVolatile(Object, Object)
    */
-  public V getAcquire()
+  public boolean weakCompareAndSetVolatile(V expectedValue, V newValue)
   {
     AtomicReference<V> testee = $$$();
 
-    V result = testee.getAcquire();
+    boolean result = testee.weakCompareAndSetVolatile(expectedValue, newValue);
     return result;
   }
 
@@ -101,69 +164,6 @@ public final class WhatIsNewInAtomicReference<V>
     AtomicReference<V> testee = $$$();
 
     boolean result = testee.weakCompareAndSetAcquire(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#setRelease(Object)}.
-   * @since 9
-   * @see AtomicReference#setRelease(Object)
-   */
-  public void setRelease(V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    testee.setRelease(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#compareAndExchangeAcquire(Object, Object)}.
-   * @since 9
-   * @see AtomicReference#compareAndExchangeAcquire(Object, Object)
-   */
-  public V compareAndExchangeAcquire(V expectedValue, V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    V result = testee.compareAndExchangeAcquire(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#compareAndExchange(Object, Object)}.
-   * @since 9
-   * @see AtomicReference#compareAndExchange(Object, Object)
-   */
-  public V compareAndExchange(V expectedValue, V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    V result = testee.compareAndExchange(expectedValue, newValue);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#setPlain(Object)}.
-   * @since 9
-   * @see AtomicReference#setPlain(Object)
-   */
-  public void setPlain(V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    testee.setPlain(newValue);
-  }
-
-  /**
-   * Example call to new method {@link AtomicReference#weakCompareAndSetPlain(Object, Object)}.
-   * @since 9
-   * @see AtomicReference#weakCompareAndSetPlain(Object, Object)
-   */
-  public boolean weakCompareAndSetPlain(V expectedValue, V newValue)
-  {
-    AtomicReference<V> testee = $$$();
-
-    boolean result = testee.weakCompareAndSetPlain(expectedValue, newValue);
     return result;
   }
 

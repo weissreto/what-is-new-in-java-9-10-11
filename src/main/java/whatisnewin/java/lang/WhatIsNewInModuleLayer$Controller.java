@@ -15,6 +15,32 @@ import java.lang.ModuleLayer.Controller;
 public final class WhatIsNewInModuleLayer$Controller
 {
   /**
+   * Example call to new method {@link Controller#layer()}.
+   * @since 9
+   * @see Controller#layer()
+   */
+  public ModuleLayer layer()
+  {
+    Controller testee = $$$();
+
+    ModuleLayer result = testee.layer();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Controller#addReads(Module, Module)}.
+   * @since 9
+   * @see Controller#addReads(Module, Module)
+   */
+  public Controller addReads(Module source, Module target)
+  {
+    Controller testee = $$$();
+
+    Controller result = testee.addReads(source, target);
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Controller#addExports(Module, String, Module)}.
    * @since 9
    * @see Controller#addExports(Module, String, Module)
@@ -37,32 +63,6 @@ public final class WhatIsNewInModuleLayer$Controller
     Controller testee = $$$();
 
     Controller result = testee.addOpens(source, pn, target);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Controller#addReads(Module, Module)}.
-   * @since 9
-   * @see Controller#addReads(Module, Module)
-   */
-  public Controller addReads(Module source, Module target)
-  {
-    Controller testee = $$$();
-
-    Controller result = testee.addReads(source, target);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Controller#layer()}.
-   * @since 9
-   * @see Controller#layer()
-   */
-  public ModuleLayer layer()
-  {
-    Controller testee = $$$();
-
-    ModuleLayer result = testee.layer();
     return result;
   }
 

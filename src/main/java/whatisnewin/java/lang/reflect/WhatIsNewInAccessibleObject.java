@@ -15,19 +15,6 @@ import java.lang.reflect.AccessibleObject;
 public final class WhatIsNewInAccessibleObject
 {
   /**
-   * Example call to new method {@link AccessibleObject#canAccess(Object)}.
-   * @since 9
-   * @see AccessibleObject#canAccess(Object)
-   */
-  public boolean canAccess(Object obj)
-  {
-    AccessibleObject testee = $$$();
-
-    boolean result = testee.canAccess(obj);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link AccessibleObject#trySetAccessible()}.
    * @since 9
    * @see AccessibleObject#trySetAccessible()
@@ -37,6 +24,19 @@ public final class WhatIsNewInAccessibleObject
     AccessibleObject testee = $$$();
 
     boolean result = testee.trySetAccessible();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AccessibleObject#canAccess(Object)}.
+   * @since 9
+   * @see AccessibleObject#canAccess(Object)
+   */
+  public boolean canAccess(Object obj)
+  {
+    AccessibleObject testee = $$$();
+
+    boolean result = testee.canAccess(obj);
     return result;
   }
 

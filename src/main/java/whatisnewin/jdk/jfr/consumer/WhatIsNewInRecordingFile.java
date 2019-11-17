@@ -30,19 +30,6 @@ public final class WhatIsNewInRecordingFile
   }
 
   /**
-   * Example call to new method {@link RecordingFile#hasMoreEvents()}.
-   * @since 9
-   * @see RecordingFile#hasMoreEvents()
-   */
-  public boolean hasMoreEvents()
-  {
-    RecordingFile testee = $$$();
-
-    boolean result = testee.hasMoreEvents();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link RecordingFile#readEvent()}.
    * @since 9
    * @see RecordingFile#readEvent()
@@ -56,13 +43,15 @@ public final class WhatIsNewInRecordingFile
   }
 
   /**
-   * Example call to new method {@link RecordingFile#readAllEvents(Path)}.
+   * Example call to new method {@link RecordingFile#hasMoreEvents()}.
    * @since 9
-   * @see RecordingFile#readAllEvents(Path)
+   * @see RecordingFile#hasMoreEvents()
    */
-  public static List<RecordedEvent> readAllEvents(Path path) throws IOException
+  public boolean hasMoreEvents()
   {
-    List<RecordedEvent> result = RecordingFile.readAllEvents(path);
+    RecordingFile testee = $$$();
+
+    boolean result = testee.hasMoreEvents();
     return result;
   }
 
@@ -89,6 +78,17 @@ public final class WhatIsNewInRecordingFile
     RecordingFile testee = $$$();
 
     testee.close();
+  }
+
+  /**
+   * Example call to new method {@link RecordingFile#readAllEvents(Path)}.
+   * @since 9
+   * @see RecordingFile#readAllEvents(Path)
+   */
+  public static List<RecordedEvent> readAllEvents(Path path) throws IOException
+  {
+    List<RecordedEvent> result = RecordingFile.readAllEvents(path);
+    return result;
   }
 
   private RecordingFile $$$()

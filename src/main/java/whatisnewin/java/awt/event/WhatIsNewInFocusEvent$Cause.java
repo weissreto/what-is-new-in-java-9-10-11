@@ -92,17 +92,6 @@ public final class WhatIsNewInFocusEvent$Cause
   public static final Cause CLEAR_GLOBAL_FOCUS_OWNER = Cause.CLEAR_GLOBAL_FOCUS_OWNER;
 
   /**
-   * Example call to new method {@link Cause#valueOf(String)}.
-   * @since 9
-   * @see Cause#valueOf(String)
-   */
-  public static Cause valueOf(String name)
-  {
-    Cause result = Cause.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Cause#values()}.
    * @since 9
    * @see Cause#values()
@@ -110,6 +99,17 @@ public final class WhatIsNewInFocusEvent$Cause
   public static Cause[] values()
   {
     Cause[] result = Cause.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Cause#valueOf(String)}.
+   * @since 9
+   * @see Cause#valueOf(String)
+   */
+  public static Cause valueOf(String name)
+  {
+    Cause result = Cause.valueOf(name);
     return result;
   }
 

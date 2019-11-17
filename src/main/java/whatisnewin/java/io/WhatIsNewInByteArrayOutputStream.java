@@ -16,6 +16,18 @@ import java.nio.charset.Charset;
 public final class WhatIsNewInByteArrayOutputStream
 {
   /**
+   * Example call to new method {@link ByteArrayOutputStream#writeBytes(byte[])}.
+   * @since 11
+   * @see ByteArrayOutputStream#writeBytes(byte[])
+   */
+  public void writeBytes(byte[] b)
+  {
+    ByteArrayOutputStream testee = $$$();
+
+    testee.writeBytes(b);
+  }
+
+  /**
    * Example call to new method {@link ByteArrayOutputStream#toString(Charset)}.
    * @since 10
    * @see ByteArrayOutputStream#toString(Charset)
@@ -26,18 +38,6 @@ public final class WhatIsNewInByteArrayOutputStream
 
     String result = testee.toString(charset);
     return result;
-  }
-
-  /**
-   * Example call to new method {@link ByteArrayOutputStream#writeBytes(byte[])}.
-   * @since 11
-   * @see ByteArrayOutputStream#writeBytes(byte[])
-   */
-  public void writeBytes(byte[] b)
-  {
-    ByteArrayOutputStream testee = $$$();
-
-    testee.writeBytes(b);
   }
 
   private ByteArrayOutputStream $$$()

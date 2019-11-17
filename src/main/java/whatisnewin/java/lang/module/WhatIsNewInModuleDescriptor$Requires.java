@@ -32,19 +32,6 @@ public final class WhatIsNewInModuleDescriptor$Requires
   }
 
   /**
-   * Example call to new method {@link Requires#compiledVersion()}.
-   * @since 9
-   * @see Requires#compiledVersion()
-   */
-  public Optional<Version> compiledVersion()
-  {
-    Requires testee = $$$();
-
-    Optional<Version> result = testee.compiledVersion();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Requires#name()}.
    * @since 9
    * @see Requires#name()
@@ -54,6 +41,19 @@ public final class WhatIsNewInModuleDescriptor$Requires
     Requires testee = $$$();
 
     String result = testee.name();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Requires#compiledVersion()}.
+   * @since 9
+   * @see Requires#compiledVersion()
+   */
+  public Optional<Version> compiledVersion()
+  {
+    Requires testee = $$$();
+
+    Optional<Version> result = testee.compiledVersion();
     return result;
   }
 

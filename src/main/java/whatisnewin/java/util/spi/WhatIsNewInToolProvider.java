@@ -18,11 +18,24 @@ import java.util.Optional;
 public final class WhatIsNewInToolProvider
 {
   /**
-   * Example call to new method {@link ToolProvider#run(PrintWriter, PrintWriter, String[])}.
+   * Example call to new method {@link ToolProvider#name()}.
    * @since 9
-   * @see ToolProvider#run(PrintWriter, PrintWriter, String[])
+   * @see ToolProvider#name()
    */
-  public int run(PrintWriter out, PrintWriter err, String[] args)
+  public String name()
+  {
+    ToolProvider testee = $$$();
+
+    String result = testee.name();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ToolProvider#run(PrintWriter, PrintWriter, String...)}.
+   * @since 9
+   * @see ToolProvider#run(PrintWriter, PrintWriter, String...)
+   */
+  public int run(PrintWriter out, PrintWriter err, String... args)
   {
     ToolProvider testee = $$$();
 
@@ -31,11 +44,11 @@ public final class WhatIsNewInToolProvider
   }
 
   /**
-   * Example call to new method {@link ToolProvider#run(PrintStream, PrintStream, String[])}.
+   * Example call to new method {@link ToolProvider#run(PrintStream, PrintStream, String...)}.
    * @since 9
-   * @see ToolProvider#run(PrintStream, PrintStream, String[])
+   * @see ToolProvider#run(PrintStream, PrintStream, String...)
    */
-  public int run(PrintStream out, PrintStream err, String[] args)
+  public int run(PrintStream out, PrintStream err, String... args)
   {
     ToolProvider testee = $$$();
 
@@ -51,19 +64,6 @@ public final class WhatIsNewInToolProvider
   public static Optional<ToolProvider> findFirst(String name)
   {
     Optional<ToolProvider> result = ToolProvider.findFirst(name);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link ToolProvider#name()}.
-   * @since 9
-   * @see ToolProvider#name()
-   */
-  public String name()
-  {
-    ToolProvider testee = $$$();
-
-    String result = testee.name();
     return result;
   }
 

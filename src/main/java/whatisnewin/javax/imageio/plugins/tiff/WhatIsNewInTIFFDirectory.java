@@ -30,27 +30,13 @@ public final class WhatIsNewInTIFFDirectory
   }
 
   /**
-   * Example call to new method {@link TIFFDirectory#removeTIFFField(int)}.
+   * Example call to new method {@link TIFFDirectory#createFromMetadata(IIOMetadata)}.
    * @since 9
-   * @see TIFFDirectory#removeTIFFField(int)
+   * @see TIFFDirectory#createFromMetadata(IIOMetadata)
    */
-  public void removeTIFFField(int tagNumber)
+  public static TIFFDirectory createFromMetadata(IIOMetadata tiffImageMetadata) throws IIOInvalidTreeException
   {
-    TIFFDirectory testee = $$$();
-
-    testee.removeTIFFField(tagNumber);
-  }
-
-  /**
-   * Example call to new method {@link TIFFDirectory#getTag(int)}.
-   * @since 9
-   * @see TIFFDirectory#getTag(int)
-   */
-  public TIFFTag getTag(int tagNumber)
-  {
-    TIFFDirectory testee = $$$();
-
-    TIFFTag result = testee.getTag(tagNumber);
+    TIFFDirectory result = TIFFDirectory.createFromMetadata(tiffImageMetadata);
     return result;
   }
 
@@ -68,27 +54,15 @@ public final class WhatIsNewInTIFFDirectory
   }
 
   /**
-   * Example call to new method {@link TIFFDirectory#getAsMetadata()}.
+   * Example call to new method {@link TIFFDirectory#addTagSet(TIFFTagSet)}.
    * @since 9
-   * @see TIFFDirectory#getAsMetadata()
+   * @see TIFFDirectory#addTagSet(TIFFTagSet)
    */
-  public IIOMetadata getAsMetadata()
+  public void addTagSet(TIFFTagSet tagSet)
   {
     TIFFDirectory testee = $$$();
 
-    IIOMetadata result = testee.getAsMetadata();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link TIFFDirectory#createFromMetadata(IIOMetadata)}.
-   * @since 9
-   * @see TIFFDirectory#createFromMetadata(IIOMetadata)
-   */
-  public static TIFFDirectory createFromMetadata(IIOMetadata tiffImageMetadata) throws IIOInvalidTreeException
-  {
-    TIFFDirectory result = TIFFDirectory.createFromMetadata(tiffImageMetadata);
-    return result;
+    testee.addTagSet(tagSet);
   }
 
   /**
@@ -117,27 +91,15 @@ public final class WhatIsNewInTIFFDirectory
   }
 
   /**
-   * Example call to new method {@link TIFFDirectory#addTIFFField(TIFFField)}.
+   * Example call to new method {@link TIFFDirectory#getTag(int)}.
    * @since 9
-   * @see TIFFDirectory#addTIFFField(TIFFField)
+   * @see TIFFDirectory#getTag(int)
    */
-  public void addTIFFField(TIFFField f)
+  public TIFFTag getTag(int tagNumber)
   {
     TIFFDirectory testee = $$$();
 
-    testee.addTIFFField(f);
-  }
-
-  /**
-   * Example call to new method {@link TIFFDirectory#getTIFFField(int)}.
-   * @since 9
-   * @see TIFFDirectory#getTIFFField(int)
-   */
-  public TIFFField getTIFFField(int tagNumber)
-  {
-    TIFFDirectory testee = $$$();
-
-    TIFFField result = testee.getTIFFField(tagNumber);
+    TIFFTag result = testee.getTag(tagNumber);
     return result;
   }
 
@@ -168,15 +130,40 @@ public final class WhatIsNewInTIFFDirectory
   }
 
   /**
-   * Example call to new method {@link TIFFDirectory#removeTIFFFields()}.
+   * Example call to new method {@link TIFFDirectory#addTIFFField(TIFFField)}.
    * @since 9
-   * @see TIFFDirectory#removeTIFFFields()
+   * @see TIFFDirectory#addTIFFField(TIFFField)
    */
-  public void removeTIFFFields()
+  public void addTIFFField(TIFFField f)
   {
     TIFFDirectory testee = $$$();
 
-    testee.removeTIFFFields();
+    testee.addTIFFField(f);
+  }
+
+  /**
+   * Example call to new method {@link TIFFDirectory#getTIFFField(int)}.
+   * @since 9
+   * @see TIFFDirectory#getTIFFField(int)
+   */
+  public TIFFField getTIFFField(int tagNumber)
+  {
+    TIFFDirectory testee = $$$();
+
+    TIFFField result = testee.getTIFFField(tagNumber);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link TIFFDirectory#removeTIFFField(int)}.
+   * @since 9
+   * @see TIFFDirectory#removeTIFFField(int)
+   */
+  public void removeTIFFField(int tagNumber)
+  {
+    TIFFDirectory testee = $$$();
+
+    testee.removeTIFFField(tagNumber);
   }
 
   /**
@@ -193,15 +180,28 @@ public final class WhatIsNewInTIFFDirectory
   }
 
   /**
-   * Example call to new method {@link TIFFDirectory#addTagSet(TIFFTagSet)}.
+   * Example call to new method {@link TIFFDirectory#removeTIFFFields()}.
    * @since 9
-   * @see TIFFDirectory#addTagSet(TIFFTagSet)
+   * @see TIFFDirectory#removeTIFFFields()
    */
-  public void addTagSet(TIFFTagSet tagSet)
+  public void removeTIFFFields()
   {
     TIFFDirectory testee = $$$();
 
-    testee.addTagSet(tagSet);
+    testee.removeTIFFFields();
+  }
+
+  /**
+   * Example call to new method {@link TIFFDirectory#getAsMetadata()}.
+   * @since 9
+   * @see TIFFDirectory#getAsMetadata()
+   */
+  public IIOMetadata getAsMetadata()
+  {
+    TIFFDirectory testee = $$$();
+
+    IIOMetadata result = testee.getAsMetadata();
+    return result;
   }
 
   private TIFFDirectory $$$()

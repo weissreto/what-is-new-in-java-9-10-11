@@ -62,15 +62,15 @@ public final class WhatIsNewInAnnotationElement
   }
 
   /**
-   * Example call to new method {@link AnnotationElement#getAnnotation(Class)}.
+   * Example call to new method {@link AnnotationElement#getValueDescriptors()}.
    * @since 9
-   * @see AnnotationElement#getAnnotation(Class)
+   * @see AnnotationElement#getValueDescriptors()
    */
-  public <A> A getAnnotation(Class<? extends Annotation> annotationType)
+  public List<ValueDescriptor> getValueDescriptors()
   {
     AnnotationElement testee = $$$();
 
-    A result = testee.getAnnotation(annotationType);
+    List<ValueDescriptor> result = testee.getValueDescriptors();
     return result;
   }
 
@@ -88,19 +88,6 @@ public final class WhatIsNewInAnnotationElement
   }
 
   /**
-   * Example call to new method {@link AnnotationElement#getValue(String)}.
-   * @since 9
-   * @see AnnotationElement#getValue(String)
-   */
-  public Object getValue(String name)
-  {
-    AnnotationElement testee = $$$();
-
-    Object result = testee.getValue(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link AnnotationElement#getTypeName()}.
    * @since 9
    * @see AnnotationElement#getTypeName()
@@ -114,15 +101,15 @@ public final class WhatIsNewInAnnotationElement
   }
 
   /**
-   * Example call to new method {@link AnnotationElement#getTypeId()}.
+   * Example call to new method {@link AnnotationElement#getValue(String)}.
    * @since 9
-   * @see AnnotationElement#getTypeId()
+   * @see AnnotationElement#getValue(String)
    */
-  public long getTypeId()
+  public Object getValue(String name)
   {
     AnnotationElement testee = $$$();
 
-    long result = testee.getTypeId();
+    Object result = testee.getValue(name);
     return result;
   }
 
@@ -140,15 +127,28 @@ public final class WhatIsNewInAnnotationElement
   }
 
   /**
-   * Example call to new method {@link AnnotationElement#getValueDescriptors()}.
+   * Example call to new method {@link AnnotationElement#getAnnotation(Class)}.
    * @since 9
-   * @see AnnotationElement#getValueDescriptors()
+   * @see AnnotationElement#getAnnotation(Class)
    */
-  public List<ValueDescriptor> getValueDescriptors()
+  public <A> A getAnnotation(Class<? extends Annotation> annotationType)
   {
     AnnotationElement testee = $$$();
 
-    List<ValueDescriptor> result = testee.getValueDescriptors();
+    A result = testee.getAnnotation(annotationType);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link AnnotationElement#getTypeId()}.
+   * @since 9
+   * @see AnnotationElement#getTypeId()
+   */
+  public long getTypeId()
+  {
+    AnnotationElement testee = $$$();
+
+    long result = testee.getTypeId();
     return result;
   }
 

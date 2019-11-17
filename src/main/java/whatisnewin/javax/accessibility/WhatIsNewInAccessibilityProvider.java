@@ -15,18 +15,6 @@ import javax.accessibility.AccessibilityProvider;
 public final class WhatIsNewInAccessibilityProvider
 {
   /**
-   * Example call to new method {@link AccessibilityProvider#activate()}.
-   * @since 9
-   * @see AccessibilityProvider#activate()
-   */
-  public void activate()
-  {
-    AccessibilityProvider testee = $$$();
-
-    testee.activate();
-  }
-
-  /**
    * Example call to new method {@link AccessibilityProvider#getName()}.
    * @since 9
    * @see AccessibilityProvider#getName()
@@ -37,6 +25,18 @@ public final class WhatIsNewInAccessibilityProvider
 
     String result = testee.getName();
     return result;
+  }
+
+  /**
+   * Example call to new method {@link AccessibilityProvider#activate()}.
+   * @since 9
+   * @see AccessibilityProvider#activate()
+   */
+  public void activate()
+  {
+    AccessibilityProvider testee = $$$();
+
+    testee.activate();
   }
 
   private AccessibilityProvider $$$()

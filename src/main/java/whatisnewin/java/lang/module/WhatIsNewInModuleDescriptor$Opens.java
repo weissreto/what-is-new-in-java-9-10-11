@@ -17,19 +17,6 @@ import java.lang.module.ModuleDescriptor.Opens.Modifier;
 public final class WhatIsNewInModuleDescriptor$Opens
 {
   /**
-   * Example call to new method {@link Opens#targets()}.
-   * @since 9
-   * @see Opens#targets()
-   */
-  public Set<String> targets()
-  {
-    Opens testee = $$$();
-
-    Set<String> result = testee.targets();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Opens#modifiers()}.
    * @since 9
    * @see Opens#modifiers()
@@ -39,6 +26,19 @@ public final class WhatIsNewInModuleDescriptor$Opens
     Opens testee = $$$();
 
     Set<Modifier> result = testee.modifiers();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Opens#isQualified()}.
+   * @since 9
+   * @see Opens#isQualified()
+   */
+  public boolean isQualified()
+  {
+    Opens testee = $$$();
+
+    boolean result = testee.isQualified();
     return result;
   }
 
@@ -56,6 +56,19 @@ public final class WhatIsNewInModuleDescriptor$Opens
   }
 
   /**
+   * Example call to new method {@link Opens#targets()}.
+   * @since 9
+   * @see Opens#targets()
+   */
+  public Set<String> targets()
+  {
+    Opens testee = $$$();
+
+    Set<String> result = testee.targets();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Opens#compareTo(Opens)}.
    * @since 9
    * @see Opens#compareTo(Opens)
@@ -65,19 +78,6 @@ public final class WhatIsNewInModuleDescriptor$Opens
     Opens testee = $$$();
 
     int result = testee.compareTo(that);
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Opens#isQualified()}.
-   * @since 9
-   * @see Opens#isQualified()
-   */
-  public boolean isQualified()
-  {
-    Opens testee = $$$();
-
-    boolean result = testee.isQualified();
     return result;
   }
 

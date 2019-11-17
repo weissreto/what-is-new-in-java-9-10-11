@@ -17,19 +17,6 @@ import jdk.jshell.Snippet.SubKind;
 public final class WhatIsNewInSnippet
 {
   /**
-   * Example call to new method {@link Snippet#kind()}.
-   * @since 9
-   * @see Snippet#kind()
-   */
-  public Kind kind()
-  {
-    Snippet testee = $$$();
-
-    Kind result = testee.kind();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Snippet#id()}.
    * @since 9
    * @see Snippet#id()
@@ -43,15 +30,15 @@ public final class WhatIsNewInSnippet
   }
 
   /**
-   * Example call to new method {@link Snippet#source()}.
+   * Example call to new method {@link Snippet#kind()}.
    * @since 9
-   * @see Snippet#source()
+   * @see Snippet#kind()
    */
-  public String source()
+  public Kind kind()
   {
     Snippet testee = $$$();
 
-    String result = testee.source();
+    Kind result = testee.kind();
     return result;
   }
 
@@ -65,6 +52,19 @@ public final class WhatIsNewInSnippet
     Snippet testee = $$$();
 
     SubKind result = testee.subKind();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Snippet#source()}.
+   * @since 9
+   * @see Snippet#source()
+   */
+  public String source()
+  {
+    Snippet testee = $$$();
+
+    String result = testee.source();
     return result;
   }
 

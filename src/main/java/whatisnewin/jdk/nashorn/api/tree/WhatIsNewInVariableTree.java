@@ -16,19 +16,6 @@ import jdk.nashorn.api.tree.ExpressionTree;
 public final class WhatIsNewInVariableTree
 {
   /**
-   * Example call to new method {@link VariableTree#isLet()}.
-   * @since 9
-   * @see VariableTree#isLet()
-   */
-  public boolean isLet()
-  {
-    VariableTree testee = $$$();
-
-    boolean result = testee.isLet();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link VariableTree#getBinding()}.
    * @since 9
    * @see VariableTree#getBinding()
@@ -38,6 +25,19 @@ public final class WhatIsNewInVariableTree
     VariableTree testee = $$$();
 
     ExpressionTree result = testee.getBinding();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link VariableTree#getInitializer()}.
+   * @since 9
+   * @see VariableTree#getInitializer()
+   */
+  public ExpressionTree getInitializer()
+  {
+    VariableTree testee = $$$();
+
+    ExpressionTree result = testee.getInitializer();
     return result;
   }
 
@@ -55,15 +55,15 @@ public final class WhatIsNewInVariableTree
   }
 
   /**
-   * Example call to new method {@link VariableTree#getInitializer()}.
+   * Example call to new method {@link VariableTree#isLet()}.
    * @since 9
-   * @see VariableTree#getInitializer()
+   * @see VariableTree#isLet()
    */
-  public ExpressionTree getInitializer()
+  public boolean isLet()
   {
     VariableTree testee = $$$();
 
-    ExpressionTree result = testee.getInitializer();
+    boolean result = testee.isLet();
     return result;
   }
 

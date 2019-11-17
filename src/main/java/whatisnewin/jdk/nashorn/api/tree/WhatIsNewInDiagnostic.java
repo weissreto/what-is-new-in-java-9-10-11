@@ -23,15 +23,15 @@ public final class WhatIsNewInDiagnostic
   public static final long NOPOS = Diagnostic.NOPOS;
 
   /**
-   * Example call to new method {@link Diagnostic#getLineNumber()}.
+   * Example call to new method {@link Diagnostic#getKind()}.
    * @since 9
-   * @see Diagnostic#getLineNumber()
+   * @see Diagnostic#getKind()
    */
-  public long getLineNumber()
+  public Kind getKind()
   {
     Diagnostic testee = $$$();
 
-    long result = testee.getLineNumber();
+    Kind result = testee.getKind();
     return result;
   }
 
@@ -49,45 +49,6 @@ public final class WhatIsNewInDiagnostic
   }
 
   /**
-   * Example call to new method {@link Diagnostic#getColumnNumber()}.
-   * @since 9
-   * @see Diagnostic#getColumnNumber()
-   */
-  public long getColumnNumber()
-  {
-    Diagnostic testee = $$$();
-
-    long result = testee.getColumnNumber();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Diagnostic#getMessage()}.
-   * @since 9
-   * @see Diagnostic#getMessage()
-   */
-  public String getMessage()
-  {
-    Diagnostic testee = $$$();
-
-    String result = testee.getMessage();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link Diagnostic#getKind()}.
-   * @since 9
-   * @see Diagnostic#getKind()
-   */
-  public Kind getKind()
-  {
-    Diagnostic testee = $$$();
-
-    Kind result = testee.getKind();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link Diagnostic#getFileName()}.
    * @since 9
    * @see Diagnostic#getFileName()
@@ -101,6 +62,32 @@ public final class WhatIsNewInDiagnostic
   }
 
   /**
+   * Example call to new method {@link Diagnostic#getLineNumber()}.
+   * @since 9
+   * @see Diagnostic#getLineNumber()
+   */
+  public long getLineNumber()
+  {
+    Diagnostic testee = $$$();
+
+    long result = testee.getLineNumber();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Diagnostic#getColumnNumber()}.
+   * @since 9
+   * @see Diagnostic#getColumnNumber()
+   */
+  public long getColumnNumber()
+  {
+    Diagnostic testee = $$$();
+
+    long result = testee.getColumnNumber();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link Diagnostic#getCode()}.
    * @since 9
    * @see Diagnostic#getCode()
@@ -110,6 +97,19 @@ public final class WhatIsNewInDiagnostic
     Diagnostic testee = $$$();
 
     String result = testee.getCode();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Diagnostic#getMessage()}.
+   * @since 9
+   * @see Diagnostic#getMessage()
+   */
+  public String getMessage()
+  {
+    Diagnostic testee = $$$();
+
+    String result = testee.getMessage();
     return result;
   }
 

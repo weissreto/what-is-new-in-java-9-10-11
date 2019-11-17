@@ -15,19 +15,6 @@ import jdk.jshell.MethodSnippet;
 public final class WhatIsNewInMethodSnippet
 {
   /**
-   * Example call to new method {@link MethodSnippet#signature()}.
-   * @since 9
-   * @see MethodSnippet#signature()
-   */
-  public String signature()
-  {
-    MethodSnippet testee = $$$();
-
-    String result = testee.signature();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link MethodSnippet#parameterTypes()}.
    * @since 9
    * @see MethodSnippet#parameterTypes()
@@ -37,6 +24,19 @@ public final class WhatIsNewInMethodSnippet
     MethodSnippet testee = $$$();
 
     String result = testee.parameterTypes();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodSnippet#signature()}.
+   * @since 9
+   * @see MethodSnippet#signature()
+   */
+  public String signature()
+  {
+    MethodSnippet testee = $$$();
+
+    String result = testee.signature();
     return result;
   }
 

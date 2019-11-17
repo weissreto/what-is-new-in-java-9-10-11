@@ -2,14 +2,14 @@ package whatisnewin.jdk.jshell.execution;
 
 import jdk.jshell.execution.Util;
 import jdk.jshell.spi.ExecutionControl;
+import java.io.ObjectInput;
+import java.io.ObjectOutput;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Map;
 import java.util.function.Consumer;
 import java.io.IOException;
 import java.util.function.BiFunction;
-import java.io.ObjectInput;
-import java.io.ObjectOutput;
 import com.sun.jdi.VirtualMachine;
 
 /**
@@ -24,6 +24,16 @@ import com.sun.jdi.VirtualMachine;
  */
 public final class WhatIsNewInUtil
 {
+  /**
+   * Example call to new method {@link Util#forwardExecutionControl(ExecutionControl, ObjectInput, ObjectOutput)}.
+   * @since 9
+   * @see Util#forwardExecutionControl(ExecutionControl, ObjectInput, ObjectOutput)
+   */
+  public static void forwardExecutionControl(ExecutionControl ec, ObjectInput in, ObjectOutput out)
+  {
+    Util.forwardExecutionControl(ec, in, out);
+  }
+
   /**
    * Example call to new method {@link Util#forwardExecutionControlAndIO(ExecutionControl, InputStream, OutputStream, Map, Map)}.
    * @since 9
@@ -53,16 +63,6 @@ public final class WhatIsNewInUtil
   public static void detectJdiExitEvent(VirtualMachine vm, Consumer<String> unbiddenExitHandler)
   {
     Util.detectJdiExitEvent(vm, unbiddenExitHandler);
-  }
-
-  /**
-   * Example call to new method {@link Util#forwardExecutionControl(ExecutionControl, ObjectInput, ObjectOutput)}.
-   * @since 9
-   * @see Util#forwardExecutionControl(ExecutionControl, ObjectInput, ObjectOutput)
-   */
-  public static void forwardExecutionControl(ExecutionControl ec, ObjectInput in, ObjectOutput out)
-  {
-    Util.forwardExecutionControl(ec, in, out);
   }
 
 }

@@ -15,19 +15,6 @@ import java.util.stream.IntStream;
 public final class WhatIsNewInStringBuilder
 {
   /**
-   * Example call to new method {@link StringBuilder#chars()}.
-   * @since 9
-   * @see StringBuilder#chars()
-   */
-  public IntStream chars()
-  {
-    StringBuilder testee = $$$();
-
-    IntStream result = testee.chars();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link StringBuilder#compareTo(StringBuilder)}.
    * @since 11
    * @see StringBuilder#compareTo(StringBuilder)
@@ -37,6 +24,19 @@ public final class WhatIsNewInStringBuilder
     StringBuilder testee = $$$();
 
     int result = testee.compareTo(another);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link StringBuilder#chars()}.
+   * @since 9
+   * @see StringBuilder#chars()
+   */
+  public IntStream chars()
+  {
+    StringBuilder testee = $$$();
+
+    IntStream result = testee.chars();
     return result;
   }
 

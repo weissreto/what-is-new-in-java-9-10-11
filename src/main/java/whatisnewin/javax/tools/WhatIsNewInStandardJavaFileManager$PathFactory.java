@@ -16,11 +16,11 @@ import java.nio.file.Path;
 public final class WhatIsNewInStandardJavaFileManager$PathFactory
 {
   /**
-   * Example call to new method {@link PathFactory#getPath(String, String[])}.
+   * Example call to new method {@link PathFactory#getPath(String, String...)}.
    * @since 9
-   * @see PathFactory#getPath(String, String[])
+   * @see PathFactory#getPath(String, String...)
    */
-  public Path getPath(String first, String[] more)
+  public Path getPath(String first, String... more)
   {
     PathFactory testee = $$$();
 

@@ -24,6 +24,19 @@ public final class WhatIsNewInStackTraceElement
   }
 
   /**
+   * Example call to new method {@link StackTraceElement#getModuleName()}.
+   * @since 9
+   * @see StackTraceElement#getModuleName()
+   */
+  public String getModuleName()
+  {
+    StackTraceElement testee = $$$();
+
+    String result = testee.getModuleName();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link StackTraceElement#getModuleVersion()}.
    * @since 9
    * @see StackTraceElement#getModuleVersion()
@@ -46,19 +59,6 @@ public final class WhatIsNewInStackTraceElement
     StackTraceElement testee = $$$();
 
     String result = testee.getClassLoaderName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link StackTraceElement#getModuleName()}.
-   * @since 9
-   * @see StackTraceElement#getModuleName()
-   */
-  public String getModuleName()
-  {
-    StackTraceElement testee = $$$();
-
-    String result = testee.getModuleName();
     return result;
   }
 

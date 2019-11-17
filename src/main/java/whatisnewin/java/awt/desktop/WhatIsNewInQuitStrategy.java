@@ -29,17 +29,6 @@ public final class WhatIsNewInQuitStrategy
   public static final QuitStrategy CLOSE_ALL_WINDOWS = QuitStrategy.CLOSE_ALL_WINDOWS;
 
   /**
-   * Example call to new method {@link QuitStrategy#valueOf(String)}.
-   * @since 9
-   * @see QuitStrategy#valueOf(String)
-   */
-  public static QuitStrategy valueOf(String name)
-  {
-    QuitStrategy result = QuitStrategy.valueOf(name);
-    return result;
-  }
-
-  /**
    * Example call to new method {@link QuitStrategy#values()}.
    * @since 9
    * @see QuitStrategy#values()
@@ -47,6 +36,17 @@ public final class WhatIsNewInQuitStrategy
   public static QuitStrategy[] values()
   {
     QuitStrategy[] result = QuitStrategy.values();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link QuitStrategy#valueOf(String)}.
+   * @since 9
+   * @see QuitStrategy#valueOf(String)
+   */
+  public static QuitStrategy valueOf(String name)
+  {
+    QuitStrategy result = QuitStrategy.valueOf(name);
     return result;
   }
 

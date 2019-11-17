@@ -16,19 +16,6 @@ import jdk.nashorn.api.tree.ExpressionTree;
 public final class WhatIsNewInArrayAccessTree
 {
   /**
-   * Example call to new method {@link ArrayAccessTree#getIndex()}.
-   * @since 9
-   * @see ArrayAccessTree#getIndex()
-   */
-  public ExpressionTree getIndex()
-  {
-    ArrayAccessTree testee = $$$();
-
-    ExpressionTree result = testee.getIndex();
-    return result;
-  }
-
-  /**
    * Example call to new method {@link ArrayAccessTree#getExpression()}.
    * @since 9
    * @see ArrayAccessTree#getExpression()
@@ -38,6 +25,19 @@ public final class WhatIsNewInArrayAccessTree
     ArrayAccessTree testee = $$$();
 
     ExpressionTree result = testee.getExpression();
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link ArrayAccessTree#getIndex()}.
+   * @since 9
+   * @see ArrayAccessTree#getIndex()
+   */
+  public ExpressionTree getIndex()
+  {
+    ArrayAccessTree testee = $$$();
+
+    ExpressionTree result = testee.getIndex();
     return result;
   }
 

@@ -56,6 +56,19 @@ public final class WhatIsNewInPropertyTree
   }
 
   /**
+   * Example call to new method {@link PropertyTree#getSetter()}.
+   * @since 9
+   * @see PropertyTree#getSetter()
+   */
+  public FunctionExpressionTree getSetter()
+  {
+    PropertyTree testee = $$$();
+
+    FunctionExpressionTree result = testee.getSetter();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link PropertyTree#isStatic()}.
    * @since 9
    * @see PropertyTree#isStatic()
@@ -78,19 +91,6 @@ public final class WhatIsNewInPropertyTree
     PropertyTree testee = $$$();
 
     boolean result = testee.isComputed();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link PropertyTree#getSetter()}.
-   * @since 9
-   * @see PropertyTree#getSetter()
-   */
-  public FunctionExpressionTree getSetter()
-  {
-    PropertyTree testee = $$$();
-
-    FunctionExpressionTree result = testee.getSetter();
     return result;
   }
 

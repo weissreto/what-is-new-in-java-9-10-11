@@ -15,27 +15,15 @@ import jdk.jfr.Event;
 public final class WhatIsNewInEvent
 {
   /**
-   * Example call to new method {@link Event#commit()}.
+   * Example call to new method {@link Event#begin()}.
    * @since 9
-   * @see Event#commit()
+   * @see Event#begin()
    */
-  public void commit()
+  public void begin()
   {
     Event testee = $$$();
 
-    testee.commit();
-  }
-
-  /**
-   * Example call to new method {@link Event#set(int, Object)}.
-   * @since 9
-   * @see Event#set(int, Object)
-   */
-  public void set(int index, Object value)
-  {
-    Event testee = $$$();
-
-    testee.set(index, value);
+    testee.begin();
   }
 
   /**
@@ -51,15 +39,28 @@ public final class WhatIsNewInEvent
   }
 
   /**
-   * Example call to new method {@link Event#begin()}.
+   * Example call to new method {@link Event#commit()}.
    * @since 9
-   * @see Event#begin()
+   * @see Event#commit()
    */
-  public void begin()
+  public void commit()
   {
     Event testee = $$$();
 
-    testee.begin();
+    testee.commit();
+  }
+
+  /**
+   * Example call to new method {@link Event#isEnabled()}.
+   * @since 9
+   * @see Event#isEnabled()
+   */
+  public boolean isEnabled()
+  {
+    Event testee = $$$();
+
+    boolean result = testee.isEnabled();
+    return result;
   }
 
   /**
@@ -76,16 +77,15 @@ public final class WhatIsNewInEvent
   }
 
   /**
-   * Example call to new method {@link Event#isEnabled()}.
+   * Example call to new method {@link Event#set(int, Object)}.
    * @since 9
-   * @see Event#isEnabled()
+   * @see Event#set(int, Object)
    */
-  public boolean isEnabled()
+  public void set(int index, Object value)
   {
     Event testee = $$$();
 
-    boolean result = testee.isEnabled();
-    return result;
+    testee.set(index, value);
   }
 
   private Event $$$()

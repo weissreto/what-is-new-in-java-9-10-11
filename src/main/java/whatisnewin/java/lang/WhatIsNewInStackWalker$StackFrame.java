@@ -16,6 +16,19 @@ import java.lang.invoke.MethodType;
 public final class WhatIsNewInStackWalker$StackFrame
 {
   /**
+   * Example call to new method {@link StackFrame#getClassName()}.
+   * @since 9
+   * @see StackFrame#getClassName()
+   */
+  public String getClassName()
+  {
+    StackFrame testee = $$$();
+
+    String result = testee.getClassName();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link StackFrame#getMethodName()}.
    * @since 9
    * @see StackFrame#getMethodName()
@@ -42,28 +55,15 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
-   * Example call to new method {@link StackFrame#getByteCodeIndex()}.
-   * @since 9
-   * @see StackFrame#getByteCodeIndex()
+   * Example call to new method {@link StackFrame#getMethodType()}.
+   * @since 10
+   * @see StackFrame#getMethodType()
    */
-  public int getByteCodeIndex()
+  public MethodType getMethodType()
   {
     StackFrame testee = $$$();
 
-    int result = testee.getByteCodeIndex();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link StackFrame#getLineNumber()}.
-   * @since 9
-   * @see StackFrame#getLineNumber()
-   */
-  public int getLineNumber()
-  {
-    StackFrame testee = $$$();
-
-    int result = testee.getLineNumber();
+    MethodType result = testee.getMethodType();
     return result;
   }
 
@@ -81,15 +81,15 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
-   * Example call to new method {@link StackFrame#toStackTraceElement()}.
+   * Example call to new method {@link StackFrame#getByteCodeIndex()}.
    * @since 9
-   * @see StackFrame#toStackTraceElement()
+   * @see StackFrame#getByteCodeIndex()
    */
-  public StackTraceElement toStackTraceElement()
+  public int getByteCodeIndex()
   {
     StackFrame testee = $$$();
 
-    StackTraceElement result = testee.toStackTraceElement();
+    int result = testee.getByteCodeIndex();
     return result;
   }
 
@@ -107,6 +107,19 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
+   * Example call to new method {@link StackFrame#getLineNumber()}.
+   * @since 9
+   * @see StackFrame#getLineNumber()
+   */
+  public int getLineNumber()
+  {
+    StackFrame testee = $$$();
+
+    int result = testee.getLineNumber();
+    return result;
+  }
+
+  /**
    * Example call to new method {@link StackFrame#isNativeMethod()}.
    * @since 9
    * @see StackFrame#isNativeMethod()
@@ -120,28 +133,15 @@ public final class WhatIsNewInStackWalker$StackFrame
   }
 
   /**
-   * Example call to new method {@link StackFrame#getClassName()}.
+   * Example call to new method {@link StackFrame#toStackTraceElement()}.
    * @since 9
-   * @see StackFrame#getClassName()
+   * @see StackFrame#toStackTraceElement()
    */
-  public String getClassName()
+  public StackTraceElement toStackTraceElement()
   {
     StackFrame testee = $$$();
 
-    String result = testee.getClassName();
-    return result;
-  }
-
-  /**
-   * Example call to new method {@link StackFrame#getMethodType()}.
-   * @since 10
-   * @see StackFrame#getMethodType()
-   */
-  public MethodType getMethodType()
-  {
-    StackFrame testee = $$$();
-
-    MethodType result = testee.getMethodType();
+    StackTraceElement result = testee.toStackTraceElement();
     return result;
   }
 
