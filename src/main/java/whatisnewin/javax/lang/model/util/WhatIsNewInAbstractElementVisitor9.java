@@ -28,7 +28,7 @@ public final class WhatIsNewInAbstractElementVisitor9<R, P>
     return result;
   }
 
-  private AbstractElementVisitor9 $$$()
+  private AbstractElementVisitor9<R, P> $$$()
   {
     return null;
   }

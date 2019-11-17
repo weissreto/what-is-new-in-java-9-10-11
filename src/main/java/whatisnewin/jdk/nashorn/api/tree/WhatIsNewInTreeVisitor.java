@@ -728,7 +728,7 @@ public final class WhatIsNewInTreeVisitor<R, P>
     return result;
   }
 
-  private TreeVisitor $$$()
+  private TreeVisitor<R, P> $$$()
   {
     return null;
   }

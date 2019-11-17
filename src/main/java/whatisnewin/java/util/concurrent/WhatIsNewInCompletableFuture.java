@@ -166,7 +166,7 @@ public final class WhatIsNewInCompletableFuture<T>
     return result;
   }
 
-  private CompletableFuture $$$()
+  private CompletableFuture<T> $$$()
   {
     return null;
   }

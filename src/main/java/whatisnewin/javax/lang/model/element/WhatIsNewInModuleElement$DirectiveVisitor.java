@@ -124,7 +124,7 @@ public final class WhatIsNewInModuleElement$DirectiveVisitor<R, P>
     return result;
   }
 
-  private DirectiveVisitor $$$()
+  private DirectiveVisitor<R, P> $$$()
   {
     return null;
   }

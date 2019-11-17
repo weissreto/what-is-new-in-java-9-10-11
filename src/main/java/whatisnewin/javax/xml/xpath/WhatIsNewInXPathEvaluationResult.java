@@ -41,7 +41,7 @@ public final class WhatIsNewInXPathEvaluationResult<T>
     return result;
   }
 
-  private XPathEvaluationResult $$$()
+  private XPathEvaluationResult<T> $$$()
   {
     return null;
   }

@@ -28,7 +28,7 @@ public final class WhatIsNewInElementScanner9<R, P>
     return result;
   }
 
-  private ElementScanner9 $$$()
+  private ElementScanner9<R, P> $$$()
   {
     return null;
   }

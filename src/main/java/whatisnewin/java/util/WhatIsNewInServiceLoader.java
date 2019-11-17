@@ -54,7 +54,7 @@ public final class WhatIsNewInServiceLoader<S>
     return result;
   }
 
-  private ServiceLoader $$$()
+  private ServiceLoader<S> $$$()
   {
     return null;
   }

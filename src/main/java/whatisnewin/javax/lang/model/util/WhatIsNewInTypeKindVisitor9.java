@@ -28,7 +28,7 @@ public final class WhatIsNewInTypeKindVisitor9<R, P>
     return result;
   }
 
-  private TypeKindVisitor9 $$$()
+  private TypeKindVisitor9<R, P> $$$()
   {
     return null;
   }

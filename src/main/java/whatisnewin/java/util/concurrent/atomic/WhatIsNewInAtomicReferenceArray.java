@@ -167,7 +167,7 @@ public final class WhatIsNewInAtomicReferenceArray<E>
     return result;
   }
 
-  private AtomicReferenceArray $$$()
+  private AtomicReferenceArray<E> $$$()
   {
     return null;
   }

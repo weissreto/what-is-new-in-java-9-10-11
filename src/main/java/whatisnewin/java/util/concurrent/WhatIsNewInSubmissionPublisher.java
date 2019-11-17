@@ -270,7 +270,7 @@ public final class WhatIsNewInSubmissionPublisher<T>
     return result;
   }
 
-  private SubmissionPublisher $$$()
+  private SubmissionPublisher<T> $$$()
   {
     return null;
   }

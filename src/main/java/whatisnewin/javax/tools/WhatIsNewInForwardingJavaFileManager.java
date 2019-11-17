@@ -84,7 +84,7 @@ public final class WhatIsNewInForwardingJavaFileManager<M extends javax.tools.Ja
     return result;
   }
 
-  private ForwardingJavaFileManager $$$()
+  private ForwardingJavaFileManager<M> $$$()
   {
     return null;
   }

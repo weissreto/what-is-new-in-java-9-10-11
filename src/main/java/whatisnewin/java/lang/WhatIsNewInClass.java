@@ -89,7 +89,7 @@ public final class WhatIsNewInClass<T>
     return result;
   }
 
-  private Class $$$()
+  private Class<T> $$$()
   {
     return null;
   }

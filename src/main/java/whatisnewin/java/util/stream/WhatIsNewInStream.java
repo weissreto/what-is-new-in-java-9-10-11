@@ -64,7 +64,7 @@ public final class WhatIsNewInStream<T>
     return result;
   }
 
-  private Stream $$$()
+  private Stream<T> $$$()
   {
     return null;
   }

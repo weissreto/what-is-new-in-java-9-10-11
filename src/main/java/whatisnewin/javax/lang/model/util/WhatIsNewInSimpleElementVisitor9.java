@@ -28,7 +28,7 @@ public final class WhatIsNewInSimpleElementVisitor9<R, P>
     return result;
   }
 
-  private SimpleElementVisitor9 $$$()
+  private SimpleElementVisitor9<R, P> $$$()
   {
     return null;
   }

@@ -40,7 +40,7 @@ public final class WhatIsNewInServiceLoader$Provider<S>
     return result;
   }
 
-  private Provider $$$()
+  private Provider<S> $$$()
   {
     return null;
   }

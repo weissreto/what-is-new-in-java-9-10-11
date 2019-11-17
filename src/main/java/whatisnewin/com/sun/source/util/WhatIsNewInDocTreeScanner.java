@@ -28,7 +28,7 @@ public final class WhatIsNewInDocTreeScanner<R, P>
     return result;
   }
 
-  private DocTreeScanner $$$()
+  private DocTreeScanner<R, P> $$$()
   {
     return null;
   }

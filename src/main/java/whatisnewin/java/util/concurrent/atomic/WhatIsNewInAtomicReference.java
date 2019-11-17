@@ -167,7 +167,7 @@ public final class WhatIsNewInAtomicReference<V>
     return result;
   }
 
-  private AtomicReference $$$()
+  private AtomicReference<V> $$$()
   {
     return null;
   }
