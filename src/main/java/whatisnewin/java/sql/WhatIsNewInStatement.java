@@ -54,6 +54,19 @@ public final class WhatIsNewInStatement
     return result;
   }
 
+  /**
+   * Example call to new method {@link Statement#enquoteNCharLiteral(String)}.
+   * @since 9
+   * @see Statement#enquoteNCharLiteral(String)
+   */
+  public String enquoteNCharLiteral(String val) throws SQLException
+  {
+    Statement testee = $$$();
+
+    String result = testee.enquoteNCharLiteral(val);
+    return result;
+  }
+
   private Statement $$$()
   {
     return null;

@@ -56,6 +56,19 @@ public final class WhatIsNewInXPathExpression
     return result;
   }
 
+  /**
+   * Example call to new method {@link XPathExpression#evaluateExpression(InputSource)}.
+   * @since 9
+   * @see XPathExpression#evaluateExpression(InputSource)
+   */
+  public XPathEvaluationResult<?> evaluateExpression(InputSource source) throws XPathExpressionException
+  {
+    XPathExpression testee = $$$();
+
+    XPathEvaluationResult<?> result = testee.evaluateExpression(source);
+    return result;
+  }
+
   private XPathExpression $$$()
   {
     return null;

@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicInteger
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicInteger#weakCompareAndSetRelease(int, int)}.
+   * @since 9
+   * @see AtomicInteger#weakCompareAndSetRelease(int, int)
+   */
+  public boolean weakCompareAndSetRelease(int expectedValue, int newValue)
+  {
+    AtomicInteger testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(expectedValue, newValue);
+    return result;
+  }
+
   private AtomicInteger $$$()
   {
     return null;

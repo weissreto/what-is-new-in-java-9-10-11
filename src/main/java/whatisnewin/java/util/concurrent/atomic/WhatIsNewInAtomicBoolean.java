@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicBoolean
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicBoolean#weakCompareAndSetRelease(boolean, boolean)}.
+   * @since 9
+   * @see AtomicBoolean#weakCompareAndSetRelease(boolean, boolean)
+   */
+  public boolean weakCompareAndSetRelease(boolean expectedValue, boolean newValue)
+  {
+    AtomicBoolean testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(expectedValue, newValue);
+    return result;
+  }
+
   private AtomicBoolean $$$()
   {
     return null;

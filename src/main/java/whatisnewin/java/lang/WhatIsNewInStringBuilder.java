@@ -40,6 +40,19 @@ public final class WhatIsNewInStringBuilder
     return result;
   }
 
+  /**
+   * Example call to new method {@link StringBuilder#codePoints()}.
+   * @since 9
+   * @see StringBuilder#codePoints()
+   */
+  public IntStream codePoints()
+  {
+    StringBuilder testee = $$$();
+
+    IntStream result = testee.codePoints();
+    return result;
+  }
+
   private StringBuilder $$$()
   {
     return null;

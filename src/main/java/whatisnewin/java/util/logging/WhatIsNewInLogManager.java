@@ -55,6 +55,18 @@ public final class WhatIsNewInLogManager
     return result;
   }
 
+  /**
+   * Example call to new method {@link LogManager#removeConfigurationListener(Runnable)}.
+   * @since 9
+   * @see LogManager#removeConfigurationListener(Runnable)
+   */
+  public void removeConfigurationListener(Runnable listener)
+  {
+    LogManager testee = $$$();
+
+    testee.removeConfigurationListener(listener);
+  }
+
   private LogManager $$$()
   {
     return null;

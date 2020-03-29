@@ -45,6 +45,19 @@ public final class WhatIsNewInTextUI
     return result;
   }
 
+  /**
+   * Example call to new method {@link TextUI#getToolTipText2D(JTextComponent, Point2D)}.
+   * @since 9
+   * @see TextUI#getToolTipText2D(JTextComponent, Point2D)
+   */
+  public String getToolTipText2D(JTextComponent t, Point2D pt)
+  {
+    TextUI testee = $$$();
+
+    String result = testee.getToolTipText2D(t, pt);
+    return result;
+  }
+
   private TextUI $$$()
   {
     return null;

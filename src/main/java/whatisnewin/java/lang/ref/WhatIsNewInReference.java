@@ -14,4 +14,14 @@ import java.lang.ref.Reference;
  */
 public final class WhatIsNewInReference<T>
 {
+  /**
+   * Example call to new method {@link Reference#reachabilityFence(Object)}.
+   * @since 9
+   * @see Reference#reachabilityFence(Object)
+   */
+  public static void reachabilityFence(Object ref)
+  {
+    Reference.reachabilityFence(ref);
+  }
+
 }

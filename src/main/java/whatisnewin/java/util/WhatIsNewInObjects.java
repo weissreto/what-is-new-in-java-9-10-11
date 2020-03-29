@@ -59,4 +59,15 @@ public final class WhatIsNewInObjects
     return result;
   }
 
+  /**
+   * Example call to new method {@link Objects#checkFromIndexSize(int, int, int)}.
+   * @since 9
+   * @see Objects#checkFromIndexSize(int, int, int)
+   */
+  public static int checkFromIndexSize(int fromIndex, int size, int length)
+  {
+    int result = Objects.checkFromIndexSize(fromIndex, size, length);
+    return result;
+  }
+
 }

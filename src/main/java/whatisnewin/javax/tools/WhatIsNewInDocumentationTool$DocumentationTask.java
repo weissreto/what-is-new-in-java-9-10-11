@@ -9,7 +9,7 @@ import javax.tools.DocumentationTool.DocumentationTask;
  * that were newly introduced in Java versions 9, 10, 11.<br>
  *
  * {@link DocumentationTask} is an old class but has new fields, constructors or methods.
- * @since UNDEFINED
+ * @since 1.8
  * @see DocumentationTask
  */
 public final class WhatIsNewInDocumentationTool$DocumentationTask

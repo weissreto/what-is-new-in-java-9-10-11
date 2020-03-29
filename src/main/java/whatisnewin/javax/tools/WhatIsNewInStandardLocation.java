@@ -56,4 +56,21 @@ public final class WhatIsNewInStandardLocation
    */
   public static final StandardLocation PATCH_MODULE_PATH = StandardLocation.PATCH_MODULE_PATH;
 
+  /**
+   * Example call to new method {@link StandardLocation#isModuleOrientedLocation()}.
+   * @since 9
+   * @see StandardLocation#isModuleOrientedLocation()
+   */
+  public boolean isModuleOrientedLocation()
+  {
+    StandardLocation testee = $$$();
+
+    boolean result = testee.isModuleOrientedLocation();
+    return result;
+  }
+
+  private StandardLocation $$$()
+  {
+    return null;
+  }
 }

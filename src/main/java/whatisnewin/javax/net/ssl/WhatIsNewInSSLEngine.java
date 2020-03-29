@@ -54,6 +54,19 @@ public final class WhatIsNewInSSLEngine
     testee.setHandshakeApplicationProtocolSelector(selector);
   }
 
+  /**
+   * Example call to new method {@link SSLEngine#getHandshakeApplicationProtocolSelector()}.
+   * @since 9
+   * @see SSLEngine#getHandshakeApplicationProtocolSelector()
+   */
+  public BiFunction<SSLEngine, List<String>, String> getHandshakeApplicationProtocolSelector()
+  {
+    SSLEngine testee = $$$();
+
+    BiFunction<SSLEngine, List<String>, String> result = testee.getHandshakeApplicationProtocolSelector();
+    return result;
+  }
+
   private SSLEngine $$$()
   {
     return null;

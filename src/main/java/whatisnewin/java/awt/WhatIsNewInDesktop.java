@@ -204,6 +204,19 @@ public final class WhatIsNewInDesktop
     testee.browseFileDirectory(file);
   }
 
+  /**
+   * Example call to new method {@link Desktop#moveToTrash(File)}.
+   * @since 9
+   * @see Desktop#moveToTrash(File)
+   */
+  public boolean moveToTrash(File file)
+  {
+    Desktop testee = $$$();
+
+    boolean result = testee.moveToTrash(file);
+    return result;
+  }
+
   private Desktop $$$()
   {
     return null;

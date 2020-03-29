@@ -28,6 +28,19 @@ public final class WhatIsNewInThreadMXBean
     return result;
   }
 
+  /**
+   * Example call to new method {@link ThreadMXBean#dumpAllThreads(boolean, boolean, int)}.
+   * @since 10
+   * @see ThreadMXBean#dumpAllThreads(boolean, boolean, int)
+   */
+  public ThreadInfo[] dumpAllThreads(boolean lockedMonitors, boolean lockedSynchronizers, int maxDepth)
+  {
+    ThreadMXBean testee = $$$();
+
+    ThreadInfo[] result = testee.dumpAllThreads(lockedMonitors, lockedSynchronizers, maxDepth);
+    return result;
+  }
+
   private ThreadMXBean $$$()
   {
     return null;

@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicLongArray
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicLongArray#weakCompareAndSetRelease(int, long, long)}.
+   * @since 9
+   * @see AtomicLongArray#weakCompareAndSetRelease(int, long, long)
+   */
+  public boolean weakCompareAndSetRelease(int i, long expectedValue, long newValue)
+  {
+    AtomicLongArray testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(i, expectedValue, newValue);
+    return result;
+  }
+
   private AtomicLongArray $$$()
   {
     return null;

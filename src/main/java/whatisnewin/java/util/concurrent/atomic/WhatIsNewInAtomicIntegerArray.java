@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicIntegerArray
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicIntegerArray#weakCompareAndSetRelease(int, int, int)}.
+   * @since 9
+   * @see AtomicIntegerArray#weakCompareAndSetRelease(int, int, int)
+   */
+  public boolean weakCompareAndSetRelease(int i, int expectedValue, int newValue)
+  {
+    AtomicIntegerArray testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(i, expectedValue, newValue);
+    return result;
+  }
+
   private AtomicIntegerArray $$$()
   {
     return null;

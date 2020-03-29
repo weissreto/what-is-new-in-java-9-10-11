@@ -9,7 +9,7 @@ import javax.tools.JavaCompiler.CompilationTask;
  * that were newly introduced in Java versions 9, 10, 11.<br>
  *
  * {@link CompilationTask} is an old class but has new fields, constructors or methods.
- * @since UNDEFINED
+ * @since 1.6
  * @see CompilationTask
  */
 public final class WhatIsNewInJavaCompiler$CompilationTask

@@ -9,7 +9,7 @@ import java.util.jar.Attributes.Name;
  * that were newly introduced in Java versions 9, 10, 11.<br>
  *
  * {@link Name} is an old class but has new fields, constructors or methods.
- * @since UNDEFINED
+ * @since 1.2
  * @see Name
  */
 public final class WhatIsNewInAttributes$Name

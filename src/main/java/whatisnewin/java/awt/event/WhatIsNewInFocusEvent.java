@@ -26,4 +26,21 @@ public final class WhatIsNewInFocusEvent
     FocusEvent testee = new FocusEvent(source, id, temporary, opposite, cause);
   }
 
+  /**
+   * Example call to new method {@link FocusEvent#getCause()}.
+   * @since 9
+   * @see FocusEvent#getCause()
+   */
+  public Cause getCause()
+  {
+    FocusEvent testee = $$$();
+
+    Cause result = testee.getCause();
+    return result;
+  }
+
+  private FocusEvent $$$()
+  {
+    return null;
+  }
 }

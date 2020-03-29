@@ -26,6 +26,19 @@ public final class WhatIsNewInDeprecated
     return result;
   }
 
+  /**
+   * Example call to new method {@link Deprecated#forRemoval()}.
+   * @since 9
+   * @see Deprecated#forRemoval()
+   */
+  public boolean forRemoval()
+  {
+    Deprecated testee = $$$();
+
+    boolean result = testee.forRemoval();
+    return result;
+  }
+
   private Deprecated $$$()
   {
     return null;

@@ -89,6 +89,19 @@ public final class WhatIsNewInScanner
     return result;
   }
 
+  /**
+   * Example call to new method {@link Scanner#findAll(String)}.
+   * @since 9
+   * @see Scanner#findAll(String)
+   */
+  public Stream<MatchResult> findAll(String patString)
+  {
+    Scanner testee = $$$();
+
+    Stream<MatchResult> result = testee.findAll(patString);
+    return result;
+  }
+
   private Scanner $$$()
   {
     return null;

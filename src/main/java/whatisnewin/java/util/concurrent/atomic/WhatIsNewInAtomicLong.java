@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicLong
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicLong#weakCompareAndSetRelease(long, long)}.
+   * @since 9
+   * @see AtomicLong#weakCompareAndSetRelease(long, long)
+   */
+  public boolean weakCompareAndSetRelease(long expectedValue, long newValue)
+  {
+    AtomicLong testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(expectedValue, newValue);
+    return result;
+  }
+
   private AtomicLong $$$()
   {
     return null;

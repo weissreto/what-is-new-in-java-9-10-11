@@ -26,9 +26,9 @@ public final class WhatIsNewInMethodHandles
    * @since 9
    * @see MethodHandles#privateLookupIn(Class, Lookup)
    */
-  public static Lookup privateLookupIn(Class<?> targetClass, Lookup lookup) throws IllegalAccessException
+  public static Lookup privateLookupIn(Class<?> targetClass, Lookup caller) throws IllegalAccessException
   {
-    Lookup result = MethodHandles.privateLookupIn(targetClass, lookup);
+    Lookup result = MethodHandles.privateLookupIn(targetClass, caller);
     return result;
   }
 
@@ -216,6 +216,17 @@ public final class WhatIsNewInMethodHandles
   public static MethodHandle iteratedLoop(MethodHandle iterator, MethodHandle init, MethodHandle body)
   {
     MethodHandle result = MethodHandles.iteratedLoop(iterator, init, body);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link MethodHandles#tryFinally(MethodHandle, MethodHandle)}.
+   * @since 9
+   * @see MethodHandles#tryFinally(MethodHandle, MethodHandle)
+   */
+  public static MethodHandle tryFinally(MethodHandle target, MethodHandle cleanup)
+  {
+    MethodHandle result = MethodHandles.tryFinally(target, cleanup);
     return result;
   }
 

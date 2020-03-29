@@ -27,6 +27,19 @@ public final class WhatIsNewInBuffer
     return result;
   }
 
+  /**
+   * Example call to new method {@link Buffer#duplicate()}.
+   * @since 9
+   * @see Buffer#duplicate()
+   */
+  public Buffer duplicate()
+  {
+    Buffer testee = $$$();
+
+    Buffer result = testee.duplicate();
+    return result;
+  }
+
   private Buffer $$$()
   {
     return null;

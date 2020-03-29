@@ -166,6 +166,17 @@ public final class WhatIsNewInCompletableFuture<T>
     return result;
   }
 
+  /**
+   * Example call to new method {@link CompletableFuture#failedStage(Throwable)}.
+   * @since 9
+   * @see CompletableFuture#failedStage(Throwable)
+   */
+  public static <U> CompletionStage<U> failedStage(Throwable ex)
+  {
+    CompletionStage<U> result = CompletableFuture.failedStage(ex);
+    return result;
+  }
+
   private CompletableFuture<T> $$$()
   {
     return null;

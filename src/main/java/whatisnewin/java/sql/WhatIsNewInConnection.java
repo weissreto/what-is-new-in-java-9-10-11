@@ -78,6 +78,18 @@ public final class WhatIsNewInConnection
     testee.setShardingKey(shardingKey, superShardingKey);
   }
 
+  /**
+   * Example call to new method {@link Connection#setShardingKey(ShardingKey)}.
+   * @since 9
+   * @see Connection#setShardingKey(ShardingKey)
+   */
+  public void setShardingKey(ShardingKey shardingKey) throws SQLException
+  {
+    Connection testee = $$$();
+
+    testee.setShardingKey(shardingKey);
+  }
+
   private Connection $$$()
   {
     return null;

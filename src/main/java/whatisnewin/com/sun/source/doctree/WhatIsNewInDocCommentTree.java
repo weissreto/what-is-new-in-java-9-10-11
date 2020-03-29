@@ -42,6 +42,19 @@ public final class WhatIsNewInDocCommentTree
     return result;
   }
 
+  /**
+   * Example call to new method {@link DocCommentTree#getPostamble()}.
+   * @since 10
+   * @see DocCommentTree#getPostamble()
+   */
+  public List<? extends DocTree> getPostamble()
+  {
+    DocCommentTree testee = $$$();
+
+    List<? extends DocTree> result = testee.getPostamble();
+    return result;
+  }
+
   private DocCommentTree $$$()
   {
     return null;

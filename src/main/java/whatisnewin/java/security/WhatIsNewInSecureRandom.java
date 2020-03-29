@@ -88,6 +88,18 @@ public final class WhatIsNewInSecureRandom
     testee.reseed();
   }
 
+  /**
+   * Example call to new method {@link SecureRandom#reseed(SecureRandomParameters)}.
+   * @since 9
+   * @see SecureRandom#reseed(SecureRandomParameters)
+   */
+  public void reseed(SecureRandomParameters params)
+  {
+    SecureRandom testee = $$$();
+
+    testee.reseed(params);
+  }
+
   private SecureRandom $$$()
   {
     return null;

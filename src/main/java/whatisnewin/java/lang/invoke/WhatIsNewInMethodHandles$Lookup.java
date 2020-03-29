@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
  * that were newly introduced in Java versions 9, 10, 11.<br>
  *
  * {@link Lookup} is an old class but has new fields, constructors or methods.
- * @since UNDEFINED
+ * @since 1.7
  * @see Lookup
  */
 public final class WhatIsNewInMethodHandles$Lookup
@@ -118,6 +118,19 @@ public final class WhatIsNewInMethodHandles$Lookup
     Lookup testee = $$$();
 
     VarHandle result = testee.unreflectVarHandle(f);
+    return result;
+  }
+
+  /**
+   * Example call to new method {@link Lookup#hasPrivateAccess()}.
+   * @since 9
+   * @see Lookup#hasPrivateAccess()
+   */
+  public boolean hasPrivateAccess()
+  {
+    Lookup testee = $$$();
+
+    boolean result = testee.hasPrivateAccess();
     return result;
   }
 

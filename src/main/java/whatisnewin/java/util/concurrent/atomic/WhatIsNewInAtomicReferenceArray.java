@@ -167,6 +167,19 @@ public final class WhatIsNewInAtomicReferenceArray<E>
     return result;
   }
 
+  /**
+   * Example call to new method {@link AtomicReferenceArray#weakCompareAndSetRelease(int, Object, Object)}.
+   * @since 9
+   * @see AtomicReferenceArray#weakCompareAndSetRelease(int, Object, Object)
+   */
+  public boolean weakCompareAndSetRelease(int i, E expectedValue, E newValue)
+  {
+    AtomicReferenceArray<E> testee = $$$();
+
+    boolean result = testee.weakCompareAndSetRelease(i, expectedValue, newValue);
+    return result;
+  }
+
   private AtomicReferenceArray<E> $$$()
   {
     return null;

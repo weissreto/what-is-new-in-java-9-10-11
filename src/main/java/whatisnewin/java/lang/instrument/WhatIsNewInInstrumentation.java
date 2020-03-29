@@ -29,6 +29,19 @@ public final class WhatIsNewInInstrumentation
     testee.redefineModule(module, extraReads, extraExports, extraOpens, extraUses, extraProvides);
   }
 
+  /**
+   * Example call to new method {@link Instrumentation#isModifiableModule(Module)}.
+   * @since 9
+   * @see Instrumentation#isModifiableModule(Module)
+   */
+  public boolean isModifiableModule(Module module)
+  {
+    Instrumentation testee = $$$();
+
+    boolean result = testee.isModifiableModule(module);
+    return result;
+  }
+
   private Instrumentation $$$()
   {
     return null;

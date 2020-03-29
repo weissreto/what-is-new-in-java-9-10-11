@@ -17,7 +17,7 @@ public final class WhatIsNewInTypeKindVisitor9<R, P>
 {
   /**
    * Example call to new method {@link TypeKindVisitor9#visitNoTypeAsModule(NoType, Object)}.
-   * @since 9
+   * @since 10
    * @see TypeKindVisitor9#visitNoTypeAsModule(NoType, Object)
    */
   public R visitNoTypeAsModule(NoType t, P p)

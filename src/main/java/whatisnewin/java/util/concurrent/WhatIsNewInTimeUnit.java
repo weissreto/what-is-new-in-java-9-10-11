@@ -42,6 +42,17 @@ public final class WhatIsNewInTimeUnit
     return result;
   }
 
+  /**
+   * Example call to new method {@link TimeUnit#of(ChronoUnit)}.
+   * @since 9
+   * @see TimeUnit#of(ChronoUnit)
+   */
+  public static TimeUnit of(ChronoUnit chronoUnit)
+  {
+    TimeUnit result = TimeUnit.of(chronoUnit);
+    return result;
+  }
+
   private TimeUnit $$$()
   {
     return null;

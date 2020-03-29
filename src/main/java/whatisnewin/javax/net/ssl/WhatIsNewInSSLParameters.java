@@ -77,6 +77,18 @@ public final class WhatIsNewInSSLParameters
     return result;
   }
 
+  /**
+   * Example call to new method {@link SSLParameters#setApplicationProtocols(String[])}.
+   * @since 9
+   * @see SSLParameters#setApplicationProtocols(String[])
+   */
+  public void setApplicationProtocols(String[] protocols)
+  {
+    SSLParameters testee = $$$();
+
+    testee.setApplicationProtocols(protocols);
+  }
+
   private SSLParameters $$$()
   {
     return null;

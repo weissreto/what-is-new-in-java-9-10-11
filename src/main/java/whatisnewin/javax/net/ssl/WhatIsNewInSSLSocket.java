@@ -54,6 +54,19 @@ public final class WhatIsNewInSSLSocket
     testee.setHandshakeApplicationProtocolSelector(selector);
   }
 
+  /**
+   * Example call to new method {@link SSLSocket#getHandshakeApplicationProtocolSelector()}.
+   * @since 9
+   * @see SSLSocket#getHandshakeApplicationProtocolSelector()
+   */
+  public BiFunction<SSLSocket, List<String>, String> getHandshakeApplicationProtocolSelector()
+  {
+    SSLSocket testee = $$$();
+
+    BiFunction<SSLSocket, List<String>, String> result = testee.getHandshakeApplicationProtocolSelector();
+    return result;
+  }
+
   private SSLSocket $$$()
   {
     return null;

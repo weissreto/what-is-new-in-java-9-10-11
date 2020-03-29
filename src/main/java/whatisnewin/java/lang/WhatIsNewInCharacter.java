@@ -52,4 +52,15 @@ public final class WhatIsNewInCharacter
     return result;
   }
 
+  /**
+   * Example call to new method {@link Character#codePointOf(String)}.
+   * @since 9
+   * @see Character#codePointOf(String)
+   */
+  public static int codePointOf(String name)
+  {
+    int result = Character.codePointOf(name);
+    return result;
+  }
+
 }

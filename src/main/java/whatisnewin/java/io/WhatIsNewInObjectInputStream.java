@@ -28,6 +28,18 @@ public final class WhatIsNewInObjectInputStream
     return result;
   }
 
+  /**
+   * Example call to new method {@link ObjectInputStream#setObjectInputFilter(ObjectInputFilter)}.
+   * @since 9
+   * @see ObjectInputStream#setObjectInputFilter(ObjectInputFilter)
+   */
+  public void setObjectInputFilter(ObjectInputFilter filter)
+  {
+    ObjectInputStream testee = $$$();
+
+    testee.setObjectInputFilter(filter);
+  }
+
   private ObjectInputStream $$$()
   {
     return null;

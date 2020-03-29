@@ -28,6 +28,19 @@ public final class WhatIsNewInInputVerifier
     return result;
   }
 
+  /**
+   * Example call to new method {@link InputVerifier#shouldYieldFocus(JComponent, JComponent)}.
+   * @since 9
+   * @see InputVerifier#shouldYieldFocus(JComponent, JComponent)
+   */
+  public boolean shouldYieldFocus(JComponent source, JComponent target)
+  {
+    InputVerifier testee = $$$();
+
+    boolean result = testee.shouldYieldFocus(source, target);
+    return result;
+  }
+
   private InputVerifier $$$()
   {
     return null;

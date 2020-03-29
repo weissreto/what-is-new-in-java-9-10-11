@@ -653,4 +653,15 @@ public final class WhatIsNewInArrays
     return result;
   }
 
+  /**
+   * Example call to new method {@link Arrays#mismatch(Object[], int, int, Object[], int, int, Comparator)}.
+   * @since 9
+   * @see Arrays#mismatch(Object[], int, int, Object[], int, int, Comparator)
+   */
+  public static <T> int mismatch(T[] a, int aFromIndex, int aToIndex, T[] b, int bFromIndex, int bToIndex, Comparator<? super T> cmp)
+  {
+    int result = Arrays.mismatch(a, aFromIndex, aToIndex, b, bFromIndex, bToIndex, cmp);
+    return result;
+  }
+
 }

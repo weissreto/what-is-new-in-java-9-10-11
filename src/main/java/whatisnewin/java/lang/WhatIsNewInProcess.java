@@ -94,6 +94,19 @@ public final class WhatIsNewInProcess
     return result;
   }
 
+  /**
+   * Example call to new method {@link Process#descendants()}.
+   * @since 9
+   * @see Process#descendants()
+   */
+  public Stream<ProcessHandle> descendants()
+  {
+    Process testee = $$$();
+
+    Stream<ProcessHandle> result = testee.descendants();
+    return result;
+  }
+
   private Process $$$()
   {
     return null;

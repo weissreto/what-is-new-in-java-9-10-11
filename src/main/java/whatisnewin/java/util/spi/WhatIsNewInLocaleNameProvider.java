@@ -28,6 +28,19 @@ public final class WhatIsNewInLocaleNameProvider
     return result;
   }
 
+  /**
+   * Example call to new method {@link LocaleNameProvider#getDisplayUnicodeExtensionType(String, String, Locale)}.
+   * @since 10
+   * @see LocaleNameProvider#getDisplayUnicodeExtensionType(String, String, Locale)
+   */
+  public String getDisplayUnicodeExtensionType(String type, String key, Locale locale)
+  {
+    LocaleNameProvider testee = $$$();
+
+    String result = testee.getDisplayUnicodeExtensionType(type, key, locale);
+    return result;
+  }
+
   private LocaleNameProvider $$$()
   {
     return null;

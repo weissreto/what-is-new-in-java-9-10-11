@@ -48,4 +48,15 @@ public final class WhatIsNewInBasicGraphicsUtils
     return result;
   }
 
+  /**
+   * Example call to new method {@link BasicGraphicsUtils#getStringWidth(JComponent, FontMetrics, String)}.
+   * @since 9
+   * @see BasicGraphicsUtils#getStringWidth(JComponent, FontMetrics, String)
+   */
+  public static float getStringWidth(JComponent c, FontMetrics fm, String string)
+  {
+    float result = BasicGraphicsUtils.getStringWidth(c, fm, string);
+    return result;
+  }
+
 }

@@ -159,11 +159,11 @@ public final class WhatIsNewInElements
    * @since 9
    * @see Elements#getModuleOf(Element)
    */
-  public ModuleElement getModuleOf(Element type)
+  public ModuleElement getModuleOf(Element e)
   {
     Elements testee = $$$();
 
-    ModuleElement result = testee.getModuleOf(type);
+    ModuleElement result = testee.getModuleOf(e);
     return result;
   }
 

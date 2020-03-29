@@ -30,7 +30,7 @@ public final class WhatIsNewInEvalException
 
   /**
    * Example call to new method {@link EvalException#getCause()}.
-   * @since 9
+   * @since 11
    * @see EvalException#getCause()
    */
   public JShellException getCause()

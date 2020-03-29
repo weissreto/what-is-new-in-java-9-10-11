@@ -158,4 +158,15 @@ public final class WhatIsNewInMap<K, V>
     return result;
   }
 
+  /**
+   * Example call to new method {@link Map#copyOf(Map)}.
+   * @since 10
+   * @see Map#copyOf(Map)
+   */
+  public static <K, V> Map<K, V> copyOf(Map<? extends K, ? extends V> map)
+  {
+    Map<K, V> result = Map.copyOf(map);
+    return result;
+  }
+
 }

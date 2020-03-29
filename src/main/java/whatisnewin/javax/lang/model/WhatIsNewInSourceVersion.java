@@ -46,4 +46,15 @@ public final class WhatIsNewInSourceVersion
     return result;
   }
 
+  /**
+   * Example call to new method {@link SourceVersion#isKeyword(CharSequence, SourceVersion)}.
+   * @since 9
+   * @see SourceVersion#isKeyword(CharSequence, SourceVersion)
+   */
+  public static boolean isKeyword(CharSequence s, SourceVersion version)
+  {
+    boolean result = SourceVersion.isKeyword(s, version);
+    return result;
+  }
+
 }
